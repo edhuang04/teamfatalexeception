@@ -17,11 +17,9 @@ public class PosGui extends JFrame{
     private JButton btnExit;
     private JPanel LoginMenu;
     private JButton btnTableExit;
-    private JButton button2;
-    private JButton button3;
-    private JButton button4;
-    private JButton button5;
-    private JButton button6;
+    private JButton btnOpen;
+    private JButton btnServer;
+    private JButton btnManager;
     private JButton btnOrderExit;
     private JList listReceipt;
     private JList listFoodItems;

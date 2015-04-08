@@ -1,3 +1,5 @@
+package teamfatal;
+
 import javax.swing.*;
 
 /**
@@ -12,6 +14,11 @@ public class CategoryButton extends JButton{
     public CategoryButton(Category category) {
         super();
         this.category = category;
+    }
+
+    public void setCategory()
+    {
+        this.category = getCategory();
     }
 
     public Category getCategory()

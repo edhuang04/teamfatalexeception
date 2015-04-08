@@ -1,3 +1,5 @@
+package teamfatal;
+
 /**
  * Created by Trenton on 3/18/2015.
  */
@@ -48,5 +50,17 @@ public class FoodItem {
     public void setComments(String comments)
     {
         this.comments = comments;
+    }
+
+    /**
+     *
+     * @param price
+     */
+    public void setPrice(double price){ this.price = price;}
+
+    @Override
+    public String toString()
+    {
+        return name + " - " + comments;
     }
 }

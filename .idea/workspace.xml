@@ -5,36 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="638b04cb-8866-4b24-8010-753adc8f00a9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/teamfatal/CategoryParser.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/Category.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/CategoryButton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/CategoryParser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/FoodItem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/PosGui$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/PosGui$10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/PosGui$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/PosGui$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/PosGui$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/PosGui$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/PosGui$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/PosGui$7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/PosGui$8.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/PosGui$9.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/PosGui.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/Receipt.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/RestaurantPOS/psvita wallpaper-XADS.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/CategoryParser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/PosGui.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Category.java" afterPath="$PROJECT_DIR$/src/teamfatal/Category.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/CategoryButton.java" afterPath="$PROJECT_DIR$/src/teamfatal/CategoryButton.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/FoodItem.java" afterPath="$PROJECT_DIR$/src/teamfatal/FoodItem.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/teamfatal/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/PosGui.form" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Receipt.java" afterPath="$PROJECT_DIR$/src/teamfatal/Receipt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestaurantPOS.iml" afterPath="$PROJECT_DIR$/RestaurantPOS.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RestaurantPOS.iws" />
@@ -643,7 +613,7 @@
       <workItem from="1428083060621" duration="264000" />
       <workItem from="1428096793130" duration="12263000" />
       <workItem from="1428535203097" duration="53000" />
-      <workItem from="1428535560579" duration="1127000" />
+      <workItem from="1428535560579" duration="1198000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1428536651181</created>
@@ -651,11 +621,17 @@
       <option name="project" value="LOCAL" />
       <updated>1428536651181</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test">
+      <created>1428536696331</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1428536696331</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20772000" />
+    <option name="totallyTimeSpent" value="20843000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1056" extended-state="6" />

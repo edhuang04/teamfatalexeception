@@ -59,6 +59,7 @@ public class PosGui extends JFrame{
     private JPanel panelTopbar;
     private JTable table5;
     private JButton btnSlice;
+    private JPanel loginBackground;
     private JButton currentOrderButton;
     private JLabel label2;
 

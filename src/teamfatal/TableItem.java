@@ -17,7 +17,7 @@ public class TableItem extends JLabel
     public TableItem()
     {
         super();
-        ImageIcon icon = createImageIcon("Resources/Images/table.png", "");//
+        ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");//
         this.setIcon(icon);
         this.setVisible(true);
         tableReceipt = new Receipt();

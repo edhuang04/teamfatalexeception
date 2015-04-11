@@ -3,25 +3,25 @@ package teamfatal;
 import javax.swing.*;
 
 /**
- * Created by Trenton on 3/18/2015.
+ * created by trenton on 3/18/2015.
  */
-public class CategoryButton extends JButton{
+public class CategoryButton{
     private Category category;
 
     /**
-     * Creates a button with no set text or icon.
+     * creates a button with no set text or icon.
      */
     public CategoryButton(Category category) {
         super();
         this.category = category;
     }
 
-    public void setCategory()
+    public void setcategory()
     {
-        this.category = getCategory();
+        this.category = getcategory();
     }
 
-    public Category getCategory()
+    public Category getcategory()
     {
         return category;
     }

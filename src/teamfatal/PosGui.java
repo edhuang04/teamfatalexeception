@@ -21,7 +21,6 @@ public class PosGui extends JFrame{
     private JButton btnOrderExit;
     private JPanel LoginMenu;
     private JButton btnTableExit;
-    private JButton btnOpen;
     private JButton btnServer;
     private JButton btnManager;
     private JButton btnCheckout;
@@ -34,18 +33,11 @@ public class PosGui extends JFrame{
     private JButton btn4x;
     private JButton btn3x;
     private JButton btn10x;
-    private JPanel paneMultiplier;
     private JPanel OrderToolsPanel;
     private JPanel OrderMenuPanel;
-    private JPanel TableLayoutPanel;
     private JButton btnPrintReceipt;
     private JButton button2;
     private JButton button3;
-    private JButton btnBeverage;
-    private JButton btnDessert;
-    private JButton btnSalads;
-    private JButton btnSoups;
-    private JButton btnPizza;
     private JButton btnAddTable;
     private JButton btnLogin;
     private JPanel FoodItems;
@@ -54,12 +46,39 @@ public class PosGui extends JFrame{
     private JPanel PanelSoups;
     private JPanel PanelDessert;
     private JPanel tablePanel;
-    private JLabel labelUsername;
     private JLabel labelTime;
     private JPanel panelTopbar;
     private JTable table5;
     private JButton btnSlice;
-    private JPanel loginBackground;
+    private JButton EXITButton;
+    private JButton DINEINButton;
+    private JButton CARRYOUTButton;
+    private JButton btnPlus;
+    private JButton btnMinus;
+    private JTextField QuantityCoutn;
+    private JButton baconButton;
+    private JButton btnMarinara;
+    private JButton button7;
+    private JButton button8;
+    private JButton button9;
+    private JButton button10;
+    private JButton button11;
+    private JButton button12;
+    private JButton button13;
+    private JButton button14;
+    private JButton button15;
+    private JButton button16;
+    private JButton smallButton;
+    private JButton extraLargeButton;
+    private JButton mediumButton;
+    private JButton largeButton;
+    private JButton deepDishButton;
+    private JButton originalButton;
+    private JButton thinCrustButton;
+    private JTabbedPane tabbedPane1;
+    private ImagePanel imagePanel1;
+    private JTextField textField1;
+    private JTextField textField2;
     private JButton currentOrderButton;
     private JLabel label2;
 
@@ -87,6 +106,22 @@ public class PosGui extends JFrame{
             public void actionPerformed(ActionEvent actionEvent) {
                 currentReceipt.addItem(new FoodItem("Pizza", 3));
                 model.fireTableDataChanged();
+                table5.repaint();
+            }
+        });
+        CARRYOUTButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+
+            }
+        });
+        btnPlus.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                int temp = Integer.parseInt(QuantityCoutn.getText());
+                ++temp;
+                QuantityCoutn.setText(Integer.toString(temp));
+
             }
         });
     }
@@ -156,113 +191,6 @@ public class PosGui extends JFrame{
      */
     private void setupButtons()
     {
-        btn2x.addActionListener(new ActionListener() {
-            /**
-             * Invoked when an action occurs.
-             *
-             * @param e
-             */
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                multiplier = 2;
-            }
-        });
-
-        btn3x.addActionListener(new ActionListener() {
-            /**
-             * Invoked when an action occurs.
-             *
-             * @param e
-             */
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                multiplier = 3;
-            }
-        });
-
-        btn4x.addActionListener(new ActionListener() {
-            /**
-             * Invoked when an action occurs.
-             *
-             * @param e
-             */
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                multiplier = 4;
-            }
-        });
-
-        btn5x.addActionListener(new ActionListener() {
-            /**
-             * Invoked when an action occurs.
-             *
-             * @param e
-             */
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                multiplier = 5;
-            }
-        });
-
-        btn6x.addActionListener(new ActionListener() {
-            /**
-             * Invoked when an action occurs.
-             *
-             * @param e
-             */
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                multiplier = 6;
-            }
-        });
-
-        btn7x.addActionListener(new ActionListener() {
-            /**
-             * Invoked when an action occurs.
-             *
-             * @param e
-             */
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                multiplier = 7;
-            }
-        });
-
-        btn8x.addActionListener(new ActionListener() {
-            /**
-             * Invoked when an action occurs.
-             *
-             * @param e
-             */
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                multiplier = 8;
-            }
-        });
-
-        btn9x.addActionListener(new ActionListener() {
-            /**
-             * Invoked when an action occurs.
-             *
-             * @param e
-             */
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                multiplier = 9;
-            }
-        });
-
-        btn10x.addActionListener(new ActionListener() {
-            /**
-             * Invoked when an action occurs.
-             *
-             * @param e
-             */
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                multiplier = 10;
-            }
-        });
 
         btnOrderExit.addActionListener(new ActionListener() {
             @Override
@@ -272,6 +200,7 @@ public class PosGui extends JFrame{
         });
 
         btnTableExit.addActionListener(new ActionListener() {
+            @Override
             public void actionPerformed(ActionEvent actionEvent)
             {
                 logOff();
@@ -304,5 +233,6 @@ public class PosGui extends JFrame{
         table5.setModel(model);
         table5.repaint();
         table5.updateUI();
+        imagePanel1 = new ImagePanel();
     }
 }

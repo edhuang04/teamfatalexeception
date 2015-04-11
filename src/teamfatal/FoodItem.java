@@ -9,7 +9,7 @@ public class FoodItem {
     private String comments;
 
     /**
-     *
+     * Getter for the FoodItem price
      * @return The price of the food item
      */
     public double getPrice() {
@@ -17,7 +17,7 @@ public class FoodItem {
     }
 
     /**
-     *
+     * Getter for the FoodItem name
      * @return The name of the food item
      */
     public String getName() {
@@ -25,7 +25,7 @@ public class FoodItem {
     }
 
     /**
-     *
+     * Getter for the FoodItem comments
      * @return The comments left on the food item
      */
     public String getComments() {
@@ -33,7 +33,7 @@ public class FoodItem {
     }
 
     /**
-     *
+     * Initializes FoodItem with a name and price
      * @param name The name of the food item
      * @param price The price of the food item
      */
@@ -44,7 +44,7 @@ public class FoodItem {
     }
 
     /**
-     *
+     * Sets FoodItem comments to param comments
      * @param comments Comments to add to the food item
      */
     public void setComments(String comments)
@@ -53,11 +53,15 @@ public class FoodItem {
     }
 
     /**
-     *
+     * Sets FoodItem price to param price
      * @param price
      */
     public void setPrice(double price){ this.price = price;}
 
+    /**
+     *
+     * @return
+     */
     @Override
     public String toString()
     {

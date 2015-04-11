@@ -14,6 +14,12 @@ public class TableItem extends JLabel
     int id;
     Receipt tableReceipt;
 
+    /**
+     * Default Constructor
+     * Calls JLabel to initialize TableItem.
+     * Sets Icon to unoccupied table icon
+     * Initializes table receipt
+     */
     public TableItem()
     {
         super();
@@ -23,14 +29,29 @@ public class TableItem extends JLabel
         tableReceipt = new Receipt();
     }
 
+    /**
+     * Getter for tableReceipt
+     * @return Receipt for the table
+     */
     public Receipt getReceipt() {
         return tableReceipt;
     }
 
+    /**
+     * Getter for table id
+     * @return
+     */
     public int getId() {
         return id;
     }
 
+
+    /**
+     * Create and return ImageIcon of the image
+     * @param path Image location for the icon
+     * @param description Description of the image
+     * @return ImageIcon of the image
+     */
     private ImageIcon createImageIcon(String path, String description)
     {
         return new ImageIcon(path, description);

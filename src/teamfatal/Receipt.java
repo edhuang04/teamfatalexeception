@@ -29,6 +29,10 @@ public class Receipt {
         orderedItems.remove(item);
     }
 
+    /**
+     * Calculates the total price of FoodItems in the Receipt
+     * @return Total Price of FoodItems
+     */
     public double getTotal()
     {
         double total = 0;

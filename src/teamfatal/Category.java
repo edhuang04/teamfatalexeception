@@ -11,7 +11,8 @@ public class Category {
     private String name;
 
     /**
-     * Default Constructores
+     * Default Constructor
+     * Initializes the foodItemList for the Category and the name of the category
      * @param name Name of the category
      */
     public Category(String name)

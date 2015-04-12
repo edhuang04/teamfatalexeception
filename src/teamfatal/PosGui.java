@@ -305,4 +305,6 @@ public class PosGui extends JFrame{
         table5.repaint();
         table5.updateUI();
     }
+
+
 }

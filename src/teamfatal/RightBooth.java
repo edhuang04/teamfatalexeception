@@ -11,5 +11,6 @@ public class RightBooth extends Booth{
         super();
         ImageIcon myImage = super.createImageIcon("Resources/Images/LeftBoothRed.png", "");
         this.setIcon(myImage);
+        this.setVisible(true);
     }
 }

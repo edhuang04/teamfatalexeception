@@ -5,7 +5,7 @@ import javax.swing.*;
 /**
  * Created by trenton on 4/9/15.
  */
-abstract class Booth extends JLabel{
+public class Booth extends JLabel{
     int id;
     Receipt tableReceipt;
     boolean available;

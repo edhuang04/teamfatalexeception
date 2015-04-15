@@ -14,10 +14,10 @@ public class ReceiptGui extends JTable{
 
     public ReceiptGui(Receipt otherReceipt)
     {
-        this.
+        //this.
         super();
         myReceipt = otherReceipt;
-        myItems = new ArrayList<ItemReceiptGui>();
+        //myItems = new ArrayList<ItemReceiptGui>();
     }
 
     private class ItemReceiptGui extends JPanel{

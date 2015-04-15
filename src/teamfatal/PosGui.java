@@ -34,8 +34,6 @@ public class PosGui extends JFrame{
     private JPanel OrderToolsPanel;
     private JPanel OrderMenuPanel;
     private JButton btnPrintReceipt;
-    private JButton btnMerge;
-    private JButton button3;
     private JButton btnAddTable;
     private JButton btnLogin;
     private JPanel FoodItems;
@@ -44,7 +42,6 @@ public class PosGui extends JFrame{
     private JPanel PanelSoups;
     private JPanel PanelDessert;
     private JPanel tablePanel;
-    private JLabel labelTime;
     private JPanel panelTopbar;
     private JTable table5;
     private JButton btnSlice;
@@ -75,9 +72,12 @@ public class PosGui extends JFrame{
     private JButton thinCrustButton;
     private JTabbedPane tabbedPane1;
     private ImagePanel imagePanel1;
-    private JTextField textField1;
-    private JTextField textField2;
     private JLabel imageSmoothie;
+    private JTextField textField1;
+    private JPasswordField passwordField1;
+    private JButton loginButton;
+    private JButton merge;
+    private JButton button1;
     private JButton currentOrderButton;
     private JLabel label2;
 

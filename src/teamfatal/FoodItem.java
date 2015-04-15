@@ -8,6 +8,19 @@ public class FoodItem {
     private String name;
     private String comments;
 
+    public FoodItem()
+    {
+        price = 0;
+        name = "";
+        comments = "";
+    }
+
+    public FoodItem(double price, String name)
+    {
+        this.price = price;
+        this.name = name;
+    }
+
     /**
      * Getter for the FoodItem price
      * @return The price of the food item

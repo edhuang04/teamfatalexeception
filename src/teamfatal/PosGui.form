@@ -300,12 +300,12 @@
                       <text value="Print Receipt"/>
                     </properties>
                   </component>
-                  <component id="b8d1c" class="javax.swing.JButton" binding="button2" default-binding="true">
+                  <component id="b8d1c" class="javax.swing.JButton" binding="btnMerge">
                     <constraints>
                       <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
-                      <text value="Button"/>
+                      <text value="Merge"/>
                     </properties>
                   </component>
                   <component id="a2a93" class="javax.swing.JButton" binding="button3" default-binding="true">
@@ -688,12 +688,16 @@
                                     <properties/>
                                     <border type="none"/>
                                     <children>
-                                      <component id="1135c" class="javax.swing.JLabel">
+                                      <component id="1135c" class="javax.swing.JLabel" binding="imageSmoothie">
                                         <constraints>
                                           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                         </constraints>
                                         <properties>
-                                          <text value="Soft Drinks"/>
+                                          <horizontalTextPosition value="0"/>
+                                          <icon value="Images/Smoothies.jpg"/>
+                                          <text value="Smoothie - $3.50"/>
+                                          <verticalAlignment value="0"/>
+                                          <verticalTextPosition value="3"/>
                                         </properties>
                                       </component>
                                     </children>
@@ -705,7 +709,19 @@
                                     </constraints>
                                     <properties/>
                                     <border type="none"/>
-                                    <children/>
+                                    <children>
+                                      <component id="6e693" class="javax.swing.JLabel">
+                                        <constraints>
+                                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                                        </constraints>
+                                        <properties>
+                                          <horizontalTextPosition value="0"/>
+                                          <icon value="Images/Lettuce Wraps.jpg"/>
+                                          <text value="Lettuce Wrap - $5.00"/>
+                                          <verticalTextPosition value="3"/>
+                                        </properties>
+                                      </component>
+                                    </children>
                                   </grid>
                                   <grid id="9f50b" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                                     <margin top="0" left="0" bottom="0" right="0"/>
@@ -723,7 +739,41 @@
                                     </constraints>
                                     <properties/>
                                     <border type="none"/>
-                                    <children/>
+                                    <children>
+                                      <component id="b39f8" class="javax.swing.JLabel">
+                                        <constraints>
+                                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                                        </constraints>
+                                        <properties>
+                                          <horizontalAlignment value="0"/>
+                                          <horizontalTextPosition value="0"/>
+                                          <icon value="Images/Sangria.jpg"/>
+                                          <text value="Sangria"/>
+                                          <verticalTextPosition value="3"/>
+                                        </properties>
+                                      </component>
+                                    </children>
+                                  </grid>
+                                  <grid id="64490" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                                    <margin top="0" left="0" bottom="0" right="0"/>
+                                    <constraints>
+                                      <tabbedpane title="Signature Pizzas"/>
+                                    </constraints>
+                                    <properties/>
+                                    <border type="none"/>
+                                    <children>
+                                      <component id="b663e" class="javax.swing.JLabel">
+                                        <constraints>
+                                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                                        </constraints>
+                                        <properties>
+                                          <horizontalTextPosition value="0"/>
+                                          <icon value="Images/BBQ Chicken Pizza.jpg"/>
+                                          <text value="BBQ Chicken"/>
+                                          <verticalTextPosition value="3"/>
+                                        </properties>
+                                      </component>
+                                    </children>
                                   </grid>
                                 </children>
                               </tabbedpane>

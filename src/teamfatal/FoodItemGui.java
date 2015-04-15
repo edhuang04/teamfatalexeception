@@ -14,7 +14,6 @@ public class FoodItemGui extends JLabel {
     public FoodItemGui()
     {
         super();
-        setVerticalAlignment();
         image = new ImageIcon("Resources/Images/DefaultFood.png").getImage();
     }
 

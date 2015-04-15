@@ -10,8 +10,6 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 public class PosGui extends JFrame{
     //GUI Items
@@ -87,7 +85,7 @@ public class PosGui extends JFrame{
     private int multiplier = 1;
     List<Category> categories;
     List<FoodItem> foodItems;
-    List<TableItem> tableItems;
+    List<Table> tableItems;
     Receipt currentReceipt;
 
     public PosGui() {
@@ -135,12 +133,12 @@ public class PosGui extends JFrame{
 
     private void addTable()
     {
-        TableItem tableNew = new TableItem();
+        Table tableNew = new Table();
         tablePanel.add(tableNew);
         tableNew.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                tableClicked((TableItem) e.getSource());
+                tableClicked((Table) e.getSource());
             }
         });
         tablePanel.updateUI();
@@ -150,7 +148,7 @@ public class PosGui extends JFrame{
      * When table is clicked, update the displayable receipt with the chosen table
      * @param myTable
      */
-    private void tableClicked(TableItem myTable)
+    private void tableClicked(Table myTable)
     {
         currentReceipt = myTable.getReceipt();
 

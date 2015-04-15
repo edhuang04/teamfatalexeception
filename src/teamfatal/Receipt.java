@@ -24,6 +24,7 @@ public class Receipt {
         orderedItems.add(item);
     }
 
+
     public void removeItem(FoodItem item)
     {
         orderedItems.remove(item);

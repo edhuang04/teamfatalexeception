@@ -9,23 +9,25 @@ import java.awt.event.MouseEvent;
 /**
  * Created by trenton on 4/2/15.
  */
-public class TableItem extends JLabel
+public class Table extends JLabel
 {
     int id;
     Receipt tableReceipt;
+    boolean available;
 
     /**
      * Default Constructor
-     * Calls JLabel to initialize TableItem.
+     * Calls JLabel to initialize Table.
      * Sets Icon to unoccupied table icon
      * Initializes table receipt
      */
-    public TableItem()
+    public Table()
     {
         super();
         ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");//
         this.setIcon(icon);
         this.setVisible(true);
+        available = true;
         tableReceipt = new Receipt();
     }
 
@@ -52,7 +54,7 @@ public class TableItem extends JLabel
      * @param description Description of the image
      * @return ImageIcon of the image
      */
-    private ImageIcon createImageIcon(String path, String description)
+    protected ImageIcon createImageIcon(String path, String description)
     {
         return new ImageIcon(path, description);
     }

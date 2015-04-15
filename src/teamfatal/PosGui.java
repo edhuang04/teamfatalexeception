@@ -236,4 +236,6 @@ public class PosGui extends JFrame{
         table5.updateUI();
         imagePanel1 = new ImagePanel();
     }
+
+
 }

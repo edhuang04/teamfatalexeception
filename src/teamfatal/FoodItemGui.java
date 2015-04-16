@@ -11,15 +11,24 @@ public class FoodItemGui extends JLabel {
     private Image image;
     private FoodItem myFood;
 
-    public FoodItemGui()
-    {
+    public FoodItemGui() {
         super();
-        image = new ImageIcon("Resources/Images/DefaultFood.png").getImage();
     }
 
-    @Override
-    protected void paintComponent(Graphics g) {
-        super.paintComponent(g);
-        g.drawImage(image, 0, 0, image.getWidth(null), image.getHeight(null), null);
+    public Image getImage() {
+        return image;
     }
+
+    public void setImage(Image image) {
+        this.image = image;
+    }
+
+    public FoodItem getMyFood() {
+        return myFood;
+    }
+
+    public void setMyFood(FoodItem myFood) {
+        this.myFood = myFood;
+    }
+
 }

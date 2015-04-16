@@ -8,7 +8,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.ArrayList;
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.*;
 import java.util.List;
 
 public class PosGui extends JFrame{
@@ -73,64 +75,117 @@ public class PosGui extends JFrame{
     private JTabbedPane tabbedPane1;
     private ImagePanel imagePanel1;
     private JLabel imageSmoothie;
-    private JTextField textField1;
-    private JPasswordField passwordField1;
+    private JTextField textFieldUser;
+    private JPasswordField passwordFieldUser;
     private JButton loginButton;
     private JButton merge;
     private JButton button1;
+    private RightBooth rightBooth1;
+    private RightBooth rightBooth2;
+    private RightBooth rightBooth3;
+    private RightBooth rightBooth4;
+    private RightBooth rightBooth5;
+    private RightBooth rightBooth6;
+    private JLabel labelWarning;
+    private JButton toGoButton;
     private JButton currentOrderButton;
     private JLabel label2;
 
     //Other items
-    private int multiplier = 1;
     List<Category> categories;
     List<FoodItem> foodItems;
     List<Table> tableItems;
+    Map<String, String> userGroup;
+    Map<String, String> adminGroup;
     Receipt currentReceipt;
 
     public PosGui() {
+        categories = new ArrayList<Category>();
+        foodItems = new ArrayList<FoodItem>();
+
         setContentPane(rootPanel);
         setTitle("Restaurant POS");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        categories = new ArrayList<Category>();
-        foodItems = new ArrayList<FoodItem>();
         setupButtons();
-//        loadCategoriesButtons();
+        loadLogins();
         this.setUndecorated(true);
         this.setExtendedState(MAXIMIZED_BOTH);
         pack();
         setVisible(true);
-        btnSlice.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                currentReceipt.addItem(new FoodItem("Pizza", 3));
-                model.fireTableDataChanged();
-                table5.repaint();
-            }
-        });
-        CARRYOUTButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-
-            }
-        });
-        btnPlus.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                int temp = Integer.parseInt(QuantityCoutn.getText());
-                ++temp;
-                QuantityCoutn.setText(Integer.toString(temp));
-
-            }
-        });
     }
 
+    /**
+     * Loads the users and passwords from Logins.txt into the userGroup HashMap and the adminGroup HashMap
+     */
+    private void loadLogins()
+    {
+        userGroup = new HashMap<String, String>();
+        adminGroup = new HashMap<String, String>();
+
+        File i = new File("Resources/Data/Logins.txt");
+        try {
+            Scanner myFile = new Scanner(i);
+
+            while(myFile.hasNext())
+            {
+                switch(myFile.nextInt())
+                {
+                    case 1:
+                        userGroup.put(myFile.next(), myFile.next());
+                        break;
+                    case 2:
+                        adminGroup.put(myFile.next(), myFile.next());
+                        break;
+                }
+            }
+
+            myFile.close();
+        }
+
+        catch(Exception e)
+        {
+
+        }
+    }
+
+    /**
+     * Attempt to login using the username textfield and the password textfield
+     */
     private void tryLogin()
     {
-        CardLayout myLayout = (CardLayout) rootPanel.getLayout();
-        myLayout.show(rootPanel, "CardTable");
+        String username = textFieldUser.getText();
+        String password = new String(passwordFieldUser.getPassword());
+
+        if(userGroup.containsKey(username))
+        {
+            if(userGroup.get(username).equals(password))
+            {
+                CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+                myLayout.show(rootPanel, "CardTable");
+                labelWarning.setVisible(false);
+            }
+        }
+        else if(adminGroup.containsKey(username))
+        {
+            if(adminGroup.get(username).equals(password))
+            {
+                CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+                myLayout.show(rootPanel, "CardTable");
+                labelWarning.setVisible(false);
+            }
+        }
+        else
+        {
+            labelWarning.setVisible(true);
+        }
+
+        textFieldUser.setText("");
+        passwordFieldUser.setText("");
     }
 
+    /**
+     * Adds a table to the tablelayout
+     */
     private void addTable()
     {
         Table tableNew = new Table();
@@ -163,7 +218,7 @@ public class PosGui extends JFrame{
     }
 
     /**
-     *
+     *  Currently switches to the login card
      */
     private void logOff()
     {
@@ -171,8 +226,8 @@ public class PosGui extends JFrame{
         myLayout.show(rootPanel, "CardLogin");
     }
 
-    /**lk
-     *
+    /**
+     * Switch card layout to the tablelayout
      */
     private void exitToTables()
     {
@@ -180,6 +235,9 @@ public class PosGui extends JFrame{
         myLayout.show(rootPanel, "CardTable");
     }
 
+    /**
+     * Loads the food items for the FoodMenu.txt
+     */
     private void loadFoodItems()
     {
 
@@ -190,6 +248,35 @@ public class PosGui extends JFrame{
      */
     private void setupButtons()
     {
+        loginButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                tryLogin();
+            }
+        });
+//        btnSlice.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent actionEvent) {
+//                currentReceipt.addItem(new FoodItem("Pizza", 3));
+//                model.fireTableDataChanged();
+//                table5.repaint();
+//            }
+//        });
+        CARRYOUTButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+
+            }
+        });
+        btnPlus.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                int temp = Integer.parseInt(QuantityCoutn.getText());
+                ++temp;
+                QuantityCoutn.setText(Integer.toString(temp));
+
+            }
+        });
 
         btnOrderExit.addActionListener(new ActionListener() {
             @Override
@@ -224,16 +311,11 @@ public class PosGui extends JFrame{
     DefaultTableModel model;
     private void createUIComponents() {
         // TODO: place custom component creation code here
-        model = new DefaultTableModel();
-        String headers[] = new String[]{};
-        model.setColumnIdentifiers(headers);
-        table5 = new JTable();
-        model.addRow(new Object[]{"best", "buds"});
-        table5.setModel(model);
-        table5.repaint();
-        table5.updateUI();
-        imagePanel1 = new ImagePanel();
+        paintLoginScreen();
     }
 
-
+    private void paintLoginScreen()
+    {
+        imagePanel1 = new ImagePanel();
+    }
 }

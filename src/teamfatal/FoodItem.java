@@ -6,13 +6,11 @@ package teamfatal;
 public class FoodItem {
     private double price;
     private String name;
-    private String comments;
 
     public FoodItem()
     {
         price = 0;
         name = "";
-        comments = "";
     }
 
     public FoodItem(double price, String name)
@@ -38,14 +36,6 @@ public class FoodItem {
     }
 
     /**
-     * Getter for the FoodItem comments
-     * @return The comments left on the food item
-     */
-    public String getComments() {
-        return comments;
-    }
-
-    /**
      * Initializes FoodItem with a name and price
      * @param name The name of the food item
      * @param price The price of the food item
@@ -56,13 +46,17 @@ public class FoodItem {
         this.price = price;
     }
 
-    /**
-     * Sets FoodItem comments to param comments
-     * @param comments Comments to add to the food item
-     */
-    public void setComments(String comments)
-    {
-        this.comments = comments;
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof FoodItem)
+        {
+            if(((FoodItem) obj).getName() == name && ((FoodItem) obj).getPrice() == price)
+                return true;
+            else
+                return false;
+        }
+        else
+            return false;
     }
 
     /**
@@ -70,14 +64,4 @@ public class FoodItem {
      * @param price
      */
     public void setPrice(double price){ this.price = price;}
-
-    /**
-     *
-     * @return
-     */
-    @Override
-    public String toString()
-    {
-        return name + " - " + comments;
-    }
 }

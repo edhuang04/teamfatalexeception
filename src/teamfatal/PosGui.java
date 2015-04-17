@@ -3,13 +3,12 @@ package teamfatal; /**
  */
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileWriter;
 import java.util.*;
 import java.util.List;
 
@@ -88,6 +87,7 @@ public class PosGui extends JFrame{
     private RightBooth rightBooth6;
     private JLabel labelWarning;
     private JButton toGoButton;
+    private JTable receiptTable;
     private JButton currentOrderButton;
     private JLabel label2;
 
@@ -95,9 +95,9 @@ public class PosGui extends JFrame{
     List<Category> categories;
     List<FoodItem> foodItems;
     List<Table> tableItems;
+    ReceiptModel model;
     Map<String, String> userGroup;
     Map<String, String> adminGroup;
-    Receipt currentReceipt;
 
     public PosGui() {
         categories = new ArrayList<Category>();
@@ -108,12 +108,25 @@ public class PosGui extends JFrame{
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setupButtons();
         loadLogins();
+        loadTables();
+
         this.setUndecorated(true);
         this.setExtendedState(MAXIMIZED_BOTH);
         pack();
         setVisible(true);
+        imageSmoothie.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Smoothie", 5));
+            }
+        });
     }
 
+    private void myRepaint()
+    {
+        this.repaint();
+    }
     /**
      * Loads the users and passwords from Logins.txt into the userGroup HashMap and the adminGroup HashMap
      */
@@ -184,6 +197,27 @@ public class PosGui extends JFrame{
     }
 
     /**
+     *
+     */
+    private void loadTables()
+    {
+        try {
+            File j = new File("Resources/Data/Tables.txt");
+            Scanner in = new Scanner(j);
+
+            int numTables = in.nextInt();
+            for(int i = 0; i < numTables; ++i)
+                addTable();
+
+            in.close();
+        }
+        catch(Exception e)
+        {
+
+        }
+    }
+
+    /**
      * Adds a table to the tablelayout
      */
     private void addTable()
@@ -197,6 +231,22 @@ public class PosGui extends JFrame{
             }
         });
         tablePanel.updateUI();
+
+        try {
+            File j = new File("Resources/Data/Tables.txt");
+            Scanner in = new Scanner(j);
+
+            int numTables = in.nextInt();
+            ++numTables;
+            FileWriter q = new FileWriter(j);
+            q.write(Integer.toString(numTables));
+            in.close();
+            q.close();
+        }
+        catch(Exception e)
+        {
+
+        }
     }
 
     /**
@@ -205,13 +255,7 @@ public class PosGui extends JFrame{
      */
     private void tableClicked(Table myTable)
     {
-        currentReceipt = myTable.getReceipt();
-
-        List<FoodItem> myFoodItems = currentReceipt.getOrderedItems();
-
-        for (FoodItem myItem : myFoodItems) {
-            model.addRow(new Object[]{myItem.getPrice(), myItem.toString()});
-        }
+        model.loadTable(myTable);
 
         CardLayout myLayout = (CardLayout) rootPanel.getLayout();
         myLayout.show(rootPanel, "CardOrder");
@@ -231,6 +275,7 @@ public class PosGui extends JFrame{
      */
     private void exitToTables()
     {
+        model.clearReceipt();
         CardLayout myLayout = (CardLayout) rootPanel.getLayout();
         myLayout.show(rootPanel, "CardTable");
     }
@@ -308,10 +353,13 @@ public class PosGui extends JFrame{
 //        });
     }
 
-    DefaultTableModel model;
     private void createUIComponents() {
         // TODO: place custom component creation code here
         paintLoginScreen();
+        receiptTable = new JTable();
+        model = new ReceiptModel(1, 3);
+        receiptTable.setModel(model);
+        receiptTable.setShowGrid(false);
     }
 
     private void paintLoginScreen()

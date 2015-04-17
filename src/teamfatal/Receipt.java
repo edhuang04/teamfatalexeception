@@ -1,33 +1,46 @@
 package teamfatal;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Trenton on 3/18/2015.
  */
 public class Receipt {
-    private List<FoodItem> orderedItems;
+    private Map<FoodItem, Integer> orderedItems;
 
     public Receipt()
     {
-        orderedItems = new ArrayList<FoodItem>();
+        orderedItems = new HashMap<FoodItem, Integer>();
     }
 
     public Receipt(Receipt otherReceipt)
     {
-        orderedItems.addAll(otherReceipt.getOrderedItems());
+        orderedItems.putAll(otherReceipt.getOrderedItems());
     }
 
     public void addItem(FoodItem item)
     {
-        orderedItems.add(item);
+        if(orderedItems.containsKey(item))
+        {
+            orderedItems.put(item, orderedItems.get(item) + 1);
+        }
+        else
+        {
+            orderedItems.put(item, 1);
+        }
     }
 
 
     public void removeItem(FoodItem item)
     {
-        orderedItems.remove(item);
+        if(orderedItems.get(item) > 1)
+        {
+            orderedItems.put(item, orderedItems.get(item) - 1);
+        }
+        else
+        {
+            orderedItems.remove(item);
+        }
     }
 
     /**
@@ -38,15 +51,18 @@ public class Receipt {
     {
         double total = 0;
 
-        for(FoodItem item:orderedItems)
+        Iterator<Map.Entry<FoodItem, Integer>> iter = orderedItems.entrySet().iterator();
+
+        while(iter.hasNext())
         {
-            total += item.getPrice();
+            Map.Entry<FoodItem, Integer> entry = iter.next();
+            total += entry.getKey().getPrice() * entry.getValue();
         }
 
         return total;
     }
 
-    public List<FoodItem> getOrderedItems() {
+    public Map<FoodItem, Integer> getOrderedItems() {
         return orderedItems;
     }
 }

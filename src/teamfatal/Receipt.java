@@ -68,6 +68,30 @@ public class Receipt {
 
     public void merge(Receipt otherReceipt)
     {
+        Map<FoodItem, Integer> otherList = otherReceipt.getOrderedItems();
+        Set<Map.Entry<FoodItem, Integer>> otherEntries = otherList.entrySet();
+        Iterator<Map.Entry<FoodItem, Integer>> iter = otherEntries.iterator();
 
+        while(iter.hasNext())
+        {
+            Map.Entry<FoodItem, Integer> entry = iter.next();
+            if(orderedItems.containsKey(entry.getKey()))
+            {
+                int numOtherFood = entry.getValue();
+                int numMyFood = orderedItems.get(entry.getKey());
+                orderedItems.put(entry.getKey(), numMyFood + numOtherFood);
+            }
+            else
+            {
+                orderedItems.put(entry.getKey(), entry.getValue());
+            }
+        }
+
+        otherReceipt.clearReceipt();
+    }
+
+    public void clearReceipt()
+    {
+        orderedItems.clear();
     }
 }

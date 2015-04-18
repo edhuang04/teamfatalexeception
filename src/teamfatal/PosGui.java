@@ -99,6 +99,9 @@ public class PosGui extends JFrame{
     ReceiptModel model;
     Map<String, String> userGroup;
     Map<String, String> adminGroup;
+    Table firstMerge;
+
+    int merging = -1;
 
     public PosGui() {
         categories = new ArrayList<Category>();
@@ -120,6 +123,12 @@ public class PosGui extends JFrame{
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Smoothie", 5));
+            }
+        });
+        merge.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                merging = 0;
             }
         });
     }
@@ -233,7 +242,8 @@ public class PosGui extends JFrame{
         });
         tablePanel.updateUI();
 
-        try {
+        try
+        {
             File j = new File("Resources/Data/Tables.txt");
             Scanner in = new Scanner(j);
 
@@ -256,10 +266,26 @@ public class PosGui extends JFrame{
      */
     private void tableClicked(Table myTable)
     {
-        model.loadTable(myTable);
-
-        CardLayout myLayout = (CardLayout) rootPanel.getLayout();
-        myLayout.show(rootPanel, "CardOrder");
+        if(merging != -1)
+        {
+            model.loadTable(myTable);
+            CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+            myLayout.show(rootPanel, "CardOrder");
+        }
+        else
+        {
+            if(merging == 0)
+            {
+                firstMerge = myTable;
+                merging = 1;
+            }
+            else
+            {
+                tablePanel.add(new MultiTable(firstMerge, myTable));
+                tablePanel.remove(firstMerge);
+                tablePanel.remove(myTable);
+            }
+        }
     }
 
     /**

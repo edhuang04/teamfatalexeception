@@ -65,4 +65,9 @@ public class Receipt {
     public Map<FoodItem, Integer> getOrderedItems() {
         return orderedItems;
     }
+
+    public void merge(Receipt otherReceipt)
+    {
+
+    }
 }

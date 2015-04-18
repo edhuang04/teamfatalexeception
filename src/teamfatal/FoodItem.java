@@ -64,4 +64,9 @@ public class FoodItem {
      * @param price
      */
     public void setPrice(double price){ this.price = price;}
+
+    public int hashCode()
+    {
+        return (int)price;
+    }
 }

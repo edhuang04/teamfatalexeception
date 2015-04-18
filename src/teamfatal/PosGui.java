@@ -88,6 +88,7 @@ public class PosGui extends JFrame{
     private JLabel labelWarning;
     private JButton toGoButton;
     private JTable receiptTable;
+    private JScrollPane scrollPane1;
     private JButton currentOrderButton;
     private JLabel label2;
 
@@ -360,6 +361,7 @@ public class PosGui extends JFrame{
         model = new ReceiptModel(1, 3);
         receiptTable.setModel(model);
         receiptTable.setShowGrid(false);
+        model.setColumnIdentifiers(new Object[] {"Quantity", "Description", "Price"});
     }
 
     private void paintLoginScreen()

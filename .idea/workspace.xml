@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="638b04cb-8866-4b24-8010-753adc8f00a9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/FoodItem.java" afterPath="$PROJECT_DIR$/src/teamfatal/FoodItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/MultiTable.java" afterPath="$PROJECT_DIR$/src/teamfatal/MultiTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.form" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.java" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/Receipt.java" afterPath="$PROJECT_DIR$/src/teamfatal/Receipt.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/ReceiptModel.java" afterPath="$PROJECT_DIR$/src/teamfatal/ReceiptModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Data/Tables.txt" afterPath="$PROJECT_DIR$/Resources/Data/Tables.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RestaurantPOS.iws" />
@@ -82,15 +76,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReceiptModel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReceiptModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60787994">
-              <caret line="54" column="145" selection-start-line="54" selection-start-column="145" selection-end-line="54" selection-end-column="145" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding>
                 <element signature="e#305#306#0" expanded="true" />
                 <element signature="e#331#332#0" expanded="true" />
-                <element signature="e#380#381#0" expanded="true" />
                 <element signature="e#411#412#0" expanded="true" />
                 <element signature="e#444#445#0" expanded="true" />
                 <element signature="e#474#475#0" expanded="true" />
@@ -99,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MultiTable.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MultiTable.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/teamfatal/MultiTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.8442777">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -739,7 +732,7 @@
       <workItem from="1429069252028" duration="2890000" />
       <workItem from="1429137161743" duration="162000" />
       <workItem from="1429137387546" duration="12487000" />
-      <workItem from="1429302844405" duration="14315000" />
+      <workItem from="1429302844405" duration="14963000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1428536651181</created>
@@ -825,11 +818,17 @@
       <option name="project" value="LOCAL" />
       <updated>1429314835174</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Table is almost operational. Still needs to have many changes made on it">
+      <created>1429317554378</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1429317554378</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70503000" />
+    <option name="totallyTimeSpent" value="71151000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1326,16 +1325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/MultiTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1385,15 +1374,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60787994">
-          <caret line="54" column="145" selection-start-line="54" selection-start-column="145" selection-end-line="54" selection-end-column="145" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
             <element signature="e#305#306#0" expanded="true" />
             <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
             <element signature="e#411#412#0" expanded="true" />
             <element signature="e#444#445#0" expanded="true" />
             <element signature="e#474#475#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/MultiTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8442777">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

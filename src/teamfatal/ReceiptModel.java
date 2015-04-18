@@ -27,21 +27,6 @@ public class ReceiptModel extends DefaultTableModel{
 
     public void addFoodItem(FoodItem item)
     {
-//        boolean equaled = false;
-//        Set<FoodItem> itemSet = myTable.getReceipt().getOrderedItems().keySet();
-//        Iterator<FoodItem> iterFood = itemSet.iterator();
-//        FoodItem temp;
-//
-//        while(iterFood.hasNext())
-//        {
-//            temp = iterFood.next();
-//            if(temp.getName() == item.getName() && temp.getPrice() == item.getPrice())
-//            {
-//                equaled = true;
-//                break;
-//            }
-//        }
-
         if(myTable.getReceipt().getOrderedItems().containsKey(item))
         {
             boolean itemFound = false;

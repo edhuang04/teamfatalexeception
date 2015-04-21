@@ -79,9 +79,6 @@ public class PosGui extends JFrame{
     private JButton loginButton;
     private JButton merge;
     private JButton button1;
-    private RightBooth rightBooth1;
-    private RightBooth rightBooth2;
-    private RightBooth rightBooth3;
     private RightBooth rightBooth4;
     private RightBooth rightBooth5;
     private RightBooth rightBooth6;
@@ -89,6 +86,7 @@ public class PosGui extends JFrame{
     private JButton toGoButton;
     private JTable receiptTable;
     private JScrollPane scrollPane1;
+    private JLabel imageSparker;
     private JButton currentOrderButton;
     private JLabel label2;
 
@@ -97,6 +95,7 @@ public class PosGui extends JFrame{
     List<FoodItem> foodItems;
     List<Table> tableItems;
     ReceiptModel model;
+    Table currentTable;
     Map<String, String> userGroup;
     Map<String, String> adminGroup;
     Table firstMerge;
@@ -122,13 +121,38 @@ public class PosGui extends JFrame{
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
-                model.addFoodItem(new FoodItem("Smoothie", 5));
+                model.addFoodItem(new FoodItem("Smoothie", 3.5));
             }
         });
         merge.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 merging = 0;
+            }
+        });
+        btnCheckout.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                Object[] options = {"Credit",
+                        "Cash"};
+                int choice = JOptionPane.showOptionDialog(new Frame(),
+                        "Credit Card or Cash",
+                        "Method of Payment",
+                        JOptionPane.YES_NO_CANCEL_OPTION,
+                        JOptionPane.QUESTION_MESSAGE,
+                        null,
+                        options,
+                        options[1]);
+                currentTable.setOccupied(false);
+                currentTable.checkOut();
+                exitToTables();
+            }
+        });
+        imageSparker.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Berry Sparkler", 5));
             }
         });
     }
@@ -140,8 +164,7 @@ public class PosGui extends JFrame{
     /**
      * Loads the users and passwords from Logins.txt into the userGroup HashMap and the adminGroup HashMap
      */
-    private void loadLogins()
-    {
+    private void loadLogins() {
         userGroup = new HashMap<String, String>();
         adminGroup = new HashMap<String, String>();
 
@@ -149,10 +172,8 @@ public class PosGui extends JFrame{
         try {
             Scanner myFile = new Scanner(i);
 
-            while(myFile.hasNext())
-            {
-                switch(myFile.nextInt())
-                {
+            while(myFile.hasNext()) {
+                switch(myFile.nextInt()) {
                     case 1:
                         userGroup.put(myFile.next(), myFile.next());
                         break;
@@ -161,12 +182,10 @@ public class PosGui extends JFrame{
                         break;
                 }
             }
-
             myFile.close();
         }
 
-        catch(Exception e)
-        {
+        catch(Exception e) {
 
         }
     }
@@ -230,8 +249,7 @@ public class PosGui extends JFrame{
     /**
      * Adds a table to the tablelayout
      */
-    private void addTable()
-    {
+    private void addTable() {
         Table tableNew = new Table();
         tablePanel.add(tableNew);
         tableNew.addMouseListener(new MouseAdapter() {
@@ -241,9 +259,10 @@ public class PosGui extends JFrame{
             }
         });
         tablePanel.updateUI();
+    }
 
-        try
-        {
+    private void incrementTables() {
+        try {
             File j = new File("Resources/Data/Tables.txt");
             Scanner in = new Scanner(j);
 
@@ -254,8 +273,7 @@ public class PosGui extends JFrame{
             in.close();
             q.close();
         }
-        catch(Exception e)
-        {
+        catch(Exception e) {
 
         }
     }
@@ -264,23 +282,20 @@ public class PosGui extends JFrame{
      * When table is clicked, update the displayable receipt with the chosen table
      * @param myTable
      */
-    private void tableClicked(Table myTable)
-    {
-        if(merging != -1)
-        {
+    private void tableClicked(Table myTable) {
+        if(merging == -1) {
             model.loadTable(myTable);
             CardLayout myLayout = (CardLayout) rootPanel.getLayout();
             myLayout.show(rootPanel, "CardOrder");
+            myTable.setOccupied(true);
+            currentTable = myTable;
         }
-        else
-        {
-            if(merging == 0)
-            {
+        else {
+            if(merging == 0) {
                 firstMerge = myTable;
                 merging = 1;
             }
-            else
-            {
+            else {
                 tablePanel.add(new MultiTable(firstMerge, myTable));
                 tablePanel.remove(firstMerge);
                 tablePanel.remove(myTable);
@@ -291,8 +306,7 @@ public class PosGui extends JFrame{
     /**
      *  Currently switches to the login card
      */
-    private void logOff()
-    {
+    private void logOff() {
         CardLayout myLayout = (CardLayout) rootPanel.getLayout();
         myLayout.show(rootPanel, "CardLogin");
     }
@@ -300,8 +314,7 @@ public class PosGui extends JFrame{
     /**
      * Switch card layout to the tablelayout
      */
-    private void exitToTables()
-    {
+    private void exitToTables() {
         model.clearReceipt();
         CardLayout myLayout = (CardLayout) rootPanel.getLayout();
         myLayout.show(rootPanel, "CardTable");
@@ -310,30 +323,20 @@ public class PosGui extends JFrame{
     /**
      * Loads the food items for the FoodMenu.txt
      */
-    private void loadFoodItems()
-    {
+    private void loadFoodItems() {
 
     }
 
     /**
      * Sets up button action listeners
      */
-    private void setupButtons()
-    {
-        loginButton.addActionListener(new ActionListener() {
+    private void setupButtons() {
+        btnLogin.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 tryLogin();
             }
         });
-//        btnSlice.addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent actionEvent) {
-//                currentReceipt.addItem(new FoodItem("Pizza", 3));
-//                model.fireTableDataChanged();
-//                table5.repaint();
-//            }
-//        });
         CARRYOUTButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -346,38 +349,39 @@ public class PosGui extends JFrame{
                 int temp = Integer.parseInt(QuantityCoutn.getText());
                 ++temp;
                 QuantityCoutn.setText(Integer.toString(temp));
-
             }
         });
-
         btnOrderExit.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
+           @Override
+           public void actionPerformed(ActionEvent actionEvent) {
                 exitToTables();
-            }
+           }
         });
-
         btnTableExit.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent actionEvent)
-            {
+            public void actionPerformed(ActionEvent actionEvent) {
                 logOff();
             }
         });
-
         btnAddTable.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 addTable();
+                try {
+                    File j = new File("Resources/Data/Tables.txt");
+                    Scanner in = new Scanner(j);
+
+                    int numTables = in.nextInt();
+                    ++numTables;
+                    FileWriter q = new FileWriter(j);
+                    q.write(Integer.toString(numTables));
+                    in.close();
+                    q.close();
+                }
+                catch (Exception ex) {
+                }
             }
         });
-
-//        btnLogin.addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent actionEvent) {
-//                tryLogin();
-//            }
-//        });
     }
 
     private void createUIComponents() {

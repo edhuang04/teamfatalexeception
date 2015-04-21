@@ -73,6 +73,6 @@ public class ReceiptModel extends DefaultTableModel{
 
     public void clearReceipt() {
         myTable = null;
-        this.setRowCount(0);
+        this.setRowCount(1);
     }
 }

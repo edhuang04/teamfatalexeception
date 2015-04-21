@@ -13,7 +13,7 @@ public class Table extends JLabel
 {
     int id;
     Receipt tableReceipt;
-    boolean available;
+    boolean occupied;
 
     /**
      * Default Constructor
@@ -24,11 +24,35 @@ public class Table extends JLabel
     public Table()
     {
         super();
-        ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");//
+        ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");
         this.setIcon(icon);
         this.setVisible(true);
-        available = true;
+        occupied = true;
         tableReceipt = new Receipt();
+    }
+
+    public void setOccupied(boolean status)
+    {
+        if(status)
+        {
+            occupied = true;
+            ImageIcon icon = createImageIcon("Resources/Images/table-green.png","");
+            this.setIcon(icon);
+        }
+        else
+        {
+            occupied = false;
+            ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");
+            this.setIcon(icon);
+        }
+    }
+
+    public void checkOut()
+    {
+        occupied = false;
+        ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");
+        this.setIcon(icon);
+        tableReceipt.clearReceipt();
     }
 
     /**

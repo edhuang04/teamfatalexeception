@@ -10,6 +10,7 @@ import java.util.*;
  */
 public class ReceiptModel extends DefaultTableModel{
     private Table myTable;
+    private Booth myBooth;
 
     public ReceiptModel()
     {
@@ -27,28 +28,44 @@ public class ReceiptModel extends DefaultTableModel{
 
     public void addFoodItem(FoodItem item)
     {
-        if(myTable.getReceipt().getOrderedItems().containsKey(item))
-        {
-            boolean itemFound = false;
-            int iter = 1;
+        if(myTable != null) {
+            if (myTable.getReceipt().getOrderedItems().containsKey(item)) {
+                boolean itemFound = false;
+                int iter = 1;
 
-            while(!itemFound)
-            {
-                if(this.getValueAt(iter, 1).equals(item.getName()))
-                {
-                    this.setValueAt(Integer.parseInt(this.getValueAt(iter, 0).toString()) + 1, iter, 0);
-                    this.setValueAt("$" + Double.toString(Double.parseDouble(this.getValueAt(iter, 2).toString().substring(1)) + item.getPrice()), iter, 2);
-                    itemFound = true;
+                while (!itemFound) {
+                    if (this.getValueAt(iter, 1).equals(item.getName())) {
+                        this.setValueAt(Integer.parseInt(this.getValueAt(iter, 0).toString()) + 1, iter, 0);
+                        this.setValueAt("$" + Double.toString(Double.parseDouble(this.getValueAt(iter, 2).toString().substring(1)) + item.getPrice()), iter, 2);
+                        itemFound = true;
+                    }
+                    ++iter;
                 }
-                ++iter;
+            } else {
+                this.addRow(new Object[]{"1", item.getName(), "$" + Double.toString(item.getPrice())});
             }
-        }
-        else
-        {
-            this.addRow(new Object[]{"1", item.getName(), "$" + Double.toString(item.getPrice())});
-        }
 
-        myTable.getReceipt().addItem(item);
+            myTable.getReceipt().addItem(item);
+        }
+        else {
+            if (myBooth.getReceipt().getOrderedItems().containsKey(item)) {
+                boolean itemFound = false;
+                int iter = 1;
+
+                while (!itemFound) {
+                    if (this.getValueAt(iter, 1).equals(item.getName())) {
+                        this.setValueAt(Integer.parseInt(this.getValueAt(iter, 0).toString()) + 1, iter, 0);
+                        this.setValueAt("$" + Double.toString(Double.parseDouble(this.getValueAt(iter, 2).toString().substring(1)) + item.getPrice()), iter, 2);
+                        itemFound = true;
+                    }
+                    ++iter;
+                }
+            } else {
+                this.addRow(new Object[]{"1", item.getName(), "$" + Double.toString(item.getPrice())});
+            }
+
+            myBooth.getReceipt().addItem(item);
+        }
     }
 
     public void loadTable(Table otherTable)
@@ -57,22 +74,42 @@ public class ReceiptModel extends DefaultTableModel{
         loadReceipt();
     }
 
+    public void loadBooth(Booth myBooth)
+    {
+        this.myBooth = myBooth;
+        loadReceipt();
+    }
+
     private void loadReceipt()
     {
-        Map<FoodItem, Integer> mapOfFood = myTable.getReceipt().getOrderedItems();
+        if(myTable != null) {
+            Map<FoodItem, Integer> mapOfFood = myTable.getReceipt().getOrderedItems();
 
-        Iterator<Map.Entry<FoodItem, Integer>> iter = mapOfFood.entrySet().iterator();
+            Iterator<Map.Entry<FoodItem, Integer>> iter = mapOfFood.entrySet().iterator();
 
-        while(iter.hasNext())
+            while (iter.hasNext()) {
+                Map.Entry<FoodItem, Integer> entry = iter.next();
+                double total = entry.getKey().getPrice() * entry.getValue();
+                this.addRow(new Object[]{entry.getValue(), entry.getKey().getName(), "$" + Double.toString(total)});
+            }
+        }
+        else
         {
-            Map.Entry<FoodItem, Integer> entry = iter.next();
-            double total = entry.getKey().getPrice() * entry.getValue();
-            this.addRow(new Object[]{entry.getValue(), entry.getKey().getName(), "$" + Double.toString(total)});
+            Map<FoodItem, Integer> mapOfFood = myBooth.getReceipt().getOrderedItems();
+
+            Iterator<Map.Entry<FoodItem, Integer>> iter = mapOfFood.entrySet().iterator();
+
+            while (iter.hasNext()) {
+                Map.Entry<FoodItem, Integer> entry = iter.next();
+                double total = entry.getKey().getPrice() * entry.getValue();
+                this.addRow(new Object[]{entry.getValue(), entry.getKey().getName(), "$" + Double.toString(total)});
+            }
         }
     }
 
     public void clearReceipt() {
         myTable = null;
+        myBooth = null;
         this.setRowCount(1);
     }
 }

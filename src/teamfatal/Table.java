@@ -27,7 +27,7 @@ public class Table extends JLabel
         ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");
         this.setIcon(icon);
         this.setVisible(true);
-        occupied = true;
+        occupied = false;
         tableReceipt = new Receipt();
     }
 

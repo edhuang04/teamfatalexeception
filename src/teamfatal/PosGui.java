@@ -87,6 +87,14 @@ public class PosGui extends JFrame{
     private JPanel rightBoothPanel;
     private JPanel leftBoothPanel;
     private JPanel managerPanel;
+    private RightBooth rightBooth1;
+    private RightBooth rightBooth2;
+    private LeftBooth leftBooth1;
+    private LeftBooth leftBooth2;
+    private LeftBooth leftBooth3;
+    private RightBooth rightBooth3;
+    private ImagePanel BackgroundPanel;
+    private JPanel LoginInputPanel;
     private JButton currentOrderButton;
     private JLabel label2;
 
@@ -96,6 +104,7 @@ public class PosGui extends JFrame{
     List<Table> tableItems;
     ReceiptModel model;
     Table currentTable;
+    Booth currentBooth;
     Map<String, String> userGroup;
     Map<String, String> adminGroup;
     Table firstMerge;
@@ -112,6 +121,7 @@ public class PosGui extends JFrame{
         setupButtons();
         loadLogins();
         loadTables();
+        setupBooths();
 
         this.setUndecorated(true);
         this.setExtendedState(MAXIMIZED_BOTH);
@@ -143,9 +153,25 @@ public class PosGui extends JFrame{
                         null,
                         options,
                         options[1]);
-                currentTable.setOccupied(false);
-                currentTable.checkOut();
-                exitToTables();
+                if(currentTable != null) {
+                    if(choice == 0)
+                    {
+                        CreditCardDialog test = new CreditCardDialog();
+                        test.pack();
+                        test.setVisible(true);
+                    }
+                    currentTable.setOccupied(false);
+                    currentTable.checkOut();
+                    exitToTables();
+                    currentTable = null;
+                }
+                else
+                {
+                    currentBooth.setOccupied(false);
+                    currentBooth.checkOut();
+                    exitToTables();
+                    currentBooth = null;
+                }
             }
         });
         imageSparker.addMouseListener(new MouseAdapter() {
@@ -153,6 +179,12 @@ public class PosGui extends JFrame{
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Berry Sparkler", 5));
+            }
+        });
+        toGoButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                tableClicked(new Table());
             }
         });
     }
@@ -299,6 +331,7 @@ public class PosGui extends JFrame{
                 tablePanel.add(new MultiTable(firstMerge, myTable));
                 tablePanel.remove(firstMerge);
                 tablePanel.remove(myTable);
+                merging = -1;
             }
         }
     }
@@ -328,6 +361,60 @@ public class PosGui extends JFrame{
     }
 
     /**
+     * When table is clicked, update the displayable receipt with the chosen table
+     * @param myBooth
+     */
+    private void boothClicked(Booth myBooth) {
+        if(merging == -1) {
+            model.loadBooth(myBooth);
+            CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+            myLayout.show(rootPanel, "CardOrder");
+            myBooth.setOccupied(true);
+            currentBooth = myBooth;
+        }
+    }
+
+    private void setupBooths()
+    {
+        leftBooth1.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                boothClicked((Booth) e.getSource());
+            }
+        });
+        leftBooth2.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                boothClicked((Booth) e.getSource());
+            }
+        });
+        leftBooth3.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                boothClicked((Booth) e.getSource());
+            }
+        });
+        rightBooth1.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                boothClicked((Booth) e.getSource());
+            }
+        });
+        rightBooth2.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                boothClicked((Booth) e.getSource());
+            }
+        });
+        rightBooth3.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                boothClicked((Booth) e.getSource());
+            }
+        });
+    }
+
+    /**
      * Sets up button action listeners
      */
     private void setupButtons() {
@@ -354,7 +441,9 @@ public class PosGui extends JFrame{
         btnOrderExit.addActionListener(new ActionListener() {
            @Override
            public void actionPerformed(ActionEvent actionEvent) {
-                exitToTables();
+               exitToTables();
+               currentTable = null;
+               currentBooth = null;
            }
         });
         btnTableExit.addActionListener(new ActionListener() {

@@ -1,14 +1,17 @@
 package teamfatal;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 /**
- * Created by trenton on 4/9/15.
+ * Created by trenton on 4/2/15.
  */
-public class Booth extends JLabel{
-    int id;
-    Receipt tableReceipt;
-    boolean available;
+abstract class Booth extends JLabel {
+    Receipt boothReceipt;
+    boolean occupied;
 
     /**
      * Default Constructor
@@ -16,27 +19,22 @@ public class Booth extends JLabel{
      * Sets Icon to unoccupied table icon
      * Initializes table receipt
      */
-    public Booth()
-    {
+    public Booth() {
         super();
-        available = true;
-        tableReceipt = new Receipt();
+        occupied = false;
+        boothReceipt = new Receipt();
     }
+
+    abstract void setOccupied(boolean status);
+
+    abstract void checkOut();
 
     /**
      * Getter for tableReceipt
      * @return Receipt for the table
      */
     public Receipt getReceipt() {
-        return tableReceipt;
-    }
-
-    /**
-     * Getter for table id
-     * @return
-     */
-    public int getId() {
-        return id;
+        return boothReceipt;
     }
 
 

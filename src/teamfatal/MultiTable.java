@@ -2,6 +2,7 @@ package teamfatal;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -14,6 +15,7 @@ public class MultiTable extends JPanel {
     public MultiTable(Table table1, Table table2)
     {
         super();
+        tableList = new ArrayList<Table>();
         this.setLayout(new BorderLayout());
         tableList.add(table1);
         tableReceipt = table1.getReceipt();

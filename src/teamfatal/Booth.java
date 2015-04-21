@@ -19,7 +19,6 @@ public class Booth extends JLabel{
     public Booth()
     {
         super();
-        this.setVisible(true);
         available = true;
         tableReceipt = new Receipt();
     }

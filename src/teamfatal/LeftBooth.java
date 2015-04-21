@@ -5,11 +5,11 @@ import javax.swing.*;
 /**
  * Created by trenton on 4/15/15.
  */
-public class RightBooth extends Booth{
+public class LeftBooth extends Booth{
 
-    public RightBooth() {
+    public LeftBooth() {
         super();
-        ImageIcon myImage = super.createImageIcon("Resources/Images/RightboothRed.jpg", "");
+        ImageIcon myImage = super.createImageIcon("Resources/Images/LeftboothRed.jpg", "");
         this.setIcon(myImage);
         this.setVisible(true);
     }

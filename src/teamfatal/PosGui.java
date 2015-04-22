@@ -111,6 +111,9 @@ public class PosGui extends JFrame{
 
     int merging = -1;
 
+    /**
+     * Initializes the main root Frame with everything loaded onto it.
+     */
     public PosGui() {
         categories = new ArrayList<Category>();
         foodItems = new ArrayList<FoodItem>();
@@ -189,10 +192,14 @@ public class PosGui extends JFrame{
         });
     }
 
+    /**
+     * Let's buttons repaint root
+     */
     private void myRepaint()
     {
         this.repaint();
     }
+
     /**
      * Loads the users and passwords from Logins.txt into the userGroup HashMap and the adminGroup HashMap
      */
@@ -258,7 +265,7 @@ public class PosGui extends JFrame{
     }
 
     /**
-     *
+     *  Loads the tables from the textfile into the GUI
      */
     private void loadTables()
     {
@@ -293,6 +300,9 @@ public class PosGui extends JFrame{
         tablePanel.updateUI();
     }
 
+    /**
+     * Increases the table count
+     */
     private void incrementTables() {
         try {
             File j = new File("Resources/Data/Tables.txt");
@@ -422,12 +432,6 @@ public class PosGui extends JFrame{
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 tryLogin();
-            }
-        });
-        CARRYOUTButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-
             }
         });
         btnPlus.addActionListener(new ActionListener() {

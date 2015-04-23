@@ -65,6 +65,12 @@ public class FoodItem {
      */
     public void setPrice(double price){ this.price = price;}
 
+    /**
+     * Sets FoodItem price to param price
+     * @param name
+     */
+    public void setName(String name){ this.name = name;}
+
     public int hashCode()
     {
         return (int)price;

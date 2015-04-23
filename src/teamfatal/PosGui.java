@@ -39,9 +39,6 @@ public class PosGui extends JFrame{
     private JButton btnLogin;
     private JPanel FoodItems;
     private JPanel PanelBeverages;
-    private JPanel PanelSalads;
-    private JPanel PanelSoups;
-    private JPanel PanelDessert;
     private JPanel tablePanel;
     private JPanel panelTopbar;
     private JTable table5;
@@ -50,27 +47,7 @@ public class PosGui extends JFrame{
     private JButton DINEINButton;
     private JButton CARRYOUTButton;
     private JButton btnPlus;
-    private JButton btnMinus;
     private JTextField QuantityCoutn;
-    private JButton baconButton;
-    private JButton btnMarinara;
-    private JButton button7;
-    private JButton button8;
-    private JButton button9;
-    private JButton button10;
-    private JButton button11;
-    private JButton button12;
-    private JButton button13;
-    private JButton button14;
-    private JButton button15;
-    private JButton button16;
-    private JButton smallButton;
-    private JButton extraLargeButton;
-    private JButton mediumButton;
-    private JButton largeButton;
-    private JButton deepDishButton;
-    private JButton originalButton;
-    private JButton thinCrustButton;
     private JTabbedPane tabbedPane1;
     private ImagePanel imagePanel1;
     private JLabel imageSmoothie;
@@ -84,8 +61,6 @@ public class PosGui extends JFrame{
     private JTable receiptTable;
     private JScrollPane scrollPane1;
     private JLabel imageSparker;
-    private JPanel rightBoothPanel;
-    private JPanel leftBoothPanel;
     private JPanel managerPanel;
     private RightBooth rightBooth1;
     private RightBooth rightBooth2;
@@ -95,6 +70,20 @@ public class PosGui extends JFrame{
     private RightBooth rightBooth3;
     private ImagePanel BackgroundPanel;
     private JPanel LoginInputPanel;
+    private JPanel leftBoothPanel;
+    private JPanel rightBoothPanel;
+    private JPanel RestLayout;
+    private JPanel togoPanel;
+    private JToggleButton smallToggleButton;
+    private JButton btnAddPizza;
+    private JToggleButton btnMarinara;
+    private JToggleButton toggleOriginal;
+    private JToggleButton toggleThin;
+    private JToggleButton toggleDeep;
+    private JToggleButton mediumToggleButton;
+    private JToggleButton largeToggleButton;
+    private JToggleButton extraLargeToggleButton;
+    private JTextField totalText;
     private JButton currentOrderButton;
     private JLabel label2;
 
@@ -125,7 +114,6 @@ public class PosGui extends JFrame{
         loadLogins();
         loadTables();
         setupBooths();
-
         this.setUndecorated(true);
         this.setExtendedState(MAXIMIZED_BOTH);
         pack();
@@ -135,6 +123,7 @@ public class PosGui extends JFrame{
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Smoothie", 3.5));
+                totalText.setText(Double.toString(currentTable.getReceipt().getTotal()));
             }
         });
         merge.addActionListener(new ActionListener() {
@@ -156,9 +145,8 @@ public class PosGui extends JFrame{
                         null,
                         options,
                         options[1]);
-                if(currentTable != null) {
-                    if(choice == 0)
-                    {
+                if (currentTable != null) {
+                    if (choice == 0) {
                         CreditCardDialog test = new CreditCardDialog();
                         test.pack();
                         test.setVisible(true);
@@ -167,9 +155,7 @@ public class PosGui extends JFrame{
                     currentTable.checkOut();
                     exitToTables();
                     currentTable = null;
-                }
-                else
-                {
+                } else {
                     currentBooth.setOccupied(false);
                     currentBooth.checkOut();
                     exitToTables();
@@ -182,12 +168,94 @@ public class PosGui extends JFrame{
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Berry Sparkler", 5));
+                totalText.setText(Double.toString(currentTable.getReceipt().getTotal()));
             }
         });
         toGoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                tableClicked(new Table());
+                CardLayout myLayout = (CardLayout) RestLayout.getLayout();
+                myLayout.show(RestLayout, "CardTogo");
+            }
+        });
+        DINEINButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                CardLayout myLayout = (CardLayout) RestLayout.getLayout();
+                myLayout.show(RestLayout, "CardDinein");
+            }
+        });
+        btnAddPizza.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                int size;
+                if(smallToggleButton.isSelected())
+                {
+                    size = 0;
+                    smallToggleButton.setSelected(false);
+                }
+                else if(mediumToggleButton.isSelected())
+                {
+                    size = 1;
+                    mediumToggleButton.setSelected(false);
+                }
+                else if(largeToggleButton.isSelected())
+                {
+                    size = 2;
+                    largeToggleButton.setSelected(false);
+                }
+                else if(extraLargeToggleButton.isSelected())
+                {
+                    size = 3;
+                    extraLargeToggleButton.setSelected(false);
+                }
+                else
+                {
+                    size = -1;
+                }
+
+                if(size != -1) {
+                    String crust;
+                    if(toggleOriginal.isSelected())
+                    {
+                        crust = "Original";
+                        toggleOriginal.setSelected(false);
+                    }
+                    else if(toggleThin.isSelected())
+                    {
+                        crust = "Thin";
+                        toggleThin.setSelected(false);
+                    }
+                    else if(toggleDeep.isSelected())
+                    {
+                        crust = "Deep Dish";
+                        toggleDeep.setSelected(false);
+                    }
+                    else
+                    {
+                        crust = "-1";
+                    }
+
+                    if(!crust.equals("-1")) {
+                        List<String> toppings = new LinkedList<String>();
+
+                        Pizza myPizza = new Pizza(size);
+                        model.addFoodItem(myPizza);
+                        totalText.setText(Double.toString(currentTable.getReceipt().getTotal()));
+                    }
+                }
+            }
+        });
+        receiptTable.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                JTable target = (JTable)e.getSource();
+                int row = target.getSelectedRow();
+                int column = target.getSelectedColumn();
+                if(model.getValueAt(row, column) != "")
+                {
+
+                }
             }
         });
     }
@@ -424,6 +492,8 @@ public class PosGui extends JFrame{
         });
     }
 
+
+
     /**
      * Sets up button action listeners
      */
@@ -432,14 +502,6 @@ public class PosGui extends JFrame{
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 tryLogin();
-            }
-        });
-        btnPlus.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                int temp = Integer.parseInt(QuantityCoutn.getText());
-                ++temp;
-                QuantityCoutn.setText(Integer.toString(temp));
             }
         });
         btnOrderExit.addActionListener(new ActionListener() {

@@ -275,8 +275,7 @@ public class PosGui extends JFrame{
                     }
                 });
                 togoPanel.add(myOrder);
-                togoPanel.repaint();
-                myRepaint();
+                togoPanel.updateUI();
             }
         });
     }

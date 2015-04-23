@@ -55,7 +55,6 @@ public class PosGui extends JFrame{
     private JPasswordField passwordFieldUser;
     private JButton loginButton;
     private JButton merge;
-    private JButton button1;
     private JLabel labelWarning;
     private JButton toGoButton;
     private JTable receiptTable;
@@ -84,6 +83,9 @@ public class PosGui extends JFrame{
     private JToggleButton largeToggleButton;
     private JToggleButton extraLargeToggleButton;
     private JTextField totalText;
+    private JButton addOrderButton;
+    private ButtonGroup Size;
+    private ButtonGroup Crust;
     private JButton currentOrderButton;
     private JLabel label2;
 
@@ -176,6 +178,8 @@ public class PosGui extends JFrame{
             public void actionPerformed(ActionEvent actionEvent) {
                 CardLayout myLayout = (CardLayout) RestLayout.getLayout();
                 myLayout.show(RestLayout, "CardTogo");
+                merge.setVisible(false);
+                addOrderButton.setVisible(true);
             }
         });
         DINEINButton.addActionListener(new ActionListener() {
@@ -183,6 +187,8 @@ public class PosGui extends JFrame{
             public void actionPerformed(ActionEvent actionEvent) {
                 CardLayout myLayout = (CardLayout) RestLayout.getLayout();
                 myLayout.show(RestLayout, "CardDinein");
+                merge.setVisible(true);
+                addOrderButton.setVisible(false);
             }
         });
         btnAddPizza.addActionListener(new ActionListener() {
@@ -256,6 +262,21 @@ public class PosGui extends JFrame{
                 {
 
                 }
+            }
+        });
+        addOrderButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                ToGoOrder myOrder = new ToGoOrder("test");
+                myOrder.addMouseListener(new MouseAdapter() {
+                    @Override
+                    public void mouseClicked(MouseEvent e) {
+
+                    }
+                });
+                togoPanel.add(myOrder);
+                togoPanel.repaint();
+                myRepaint();
             }
         });
     }

@@ -20,7 +20,6 @@ public class PosGui extends JFrame{
     private JButton btnOrderExit;
     private JPanel LoginMenu;
     private JButton btnTableExit;
-    private JButton btnServer;
     private JButton btnManager;
     private JButton btnCheckout;
     private JButton btn9x;
@@ -84,8 +83,19 @@ public class PosGui extends JFrame{
     private JToggleButton extraLargeToggleButton;
     private JTextField totalText;
     private JButton addOrderButton;
-    private ButtonGroup Size;
+    private JToggleButton btnBacon;
+    private JToggleButton btnMozzarella;
+    private JToggleButton btnMushrooms;
+    private JToggleButton btnPepperoni;
+    private JToggleButton btnBlackOlives;
+    private JToggleButton btnItalianSausage;
+    private JToggleButton btnTomatoes;
+    private JToggleButton btnChicken;
+    private JToggleButton btnPineapple;
+    private JToggleButton btnHam;
+    private JToggleButton btnRedOnion;
     private ButtonGroup Crust;
+    private ButtonGroup Size;
     private JButton currentOrderButton;
     private JLabel label2;
 
@@ -134,6 +144,7 @@ public class PosGui extends JFrame{
                 merging = 0;
             }
         });
+
         btnCheckout.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -245,6 +256,26 @@ public class PosGui extends JFrame{
                     if(!crust.equals("-1")) {
                         List<String> toppings = new LinkedList<String>();
 
+                        if(btnBacon.isSelected())
+                            toppings.add("Bacon");
+                        if(btnBlackOlives.isSelected())
+                            toppings.add("Black Olives");
+                        if(btnChicken.isSelected())
+                            toppings.add("Chicken");
+                        if(btnHam.isSelected())
+                            toppings.add("Ham");
+                        if(btnItalianSausage.isSelected())
+                            toppings.add("Italian Sausage");
+                        if(btnMarinara.isSelected())
+                            toppings.add("Marinara Sauce");
+                        if(btnMozzarella.isSelected())
+                            toppings.add("Mozzarella Cheese");
+                        if(btnMushrooms.isSelected())
+                            toppings.add("Mushrooms");
+                        if(btnPepperoni.isSelected())
+                            toppings.add("Pepperoni");
+                        if(btnPineapple.isSelected())
+                            toppings.add("Pineapple");
                         Pizza myPizza = new Pizza(size);
                         model.addFoodItem(myPizza);
                         totalText.setText(Double.toString(currentTable.getReceipt().getTotal()));

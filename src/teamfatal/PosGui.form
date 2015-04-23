@@ -234,16 +234,6 @@
                 </properties>
                 <border type="none"/>
                 <children>
-                  <component id="918d0" class="javax.swing.JButton" binding="btnServer">
-                    <constraints>
-                      <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <horizontalAlignment value="2"/>
-                      <margin top="10" left="14" bottom="10" right="14"/>
-                      <text value="Server"/>
-                    </properties>
-                  </component>
                   <component id="cba1e" class="javax.swing.JButton" binding="btnManager">
                     <constraints>
                       <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -271,6 +261,15 @@
                       <foreground color="-16777216"/>
                       <horizontalAlignment value="2"/>
                       <text value="Log Off"/>
+                    </properties>
+                  </component>
+                  <component id="e1c19" class="javax.swing.JButton">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="2"/>
+                      <text value="Remove Table"/>
                     </properties>
                   </component>
                 </children>
@@ -397,7 +396,7 @@
                                     </properties>
                                     <border type="line" title="Toppings" title-justification="2"/>
                                     <children>
-                                      <component id="4b132" class="javax.swing.JToggleButton" default-binding="true">
+                                      <component id="4b132" class="javax.swing.JToggleButton" binding="btnBacon">
                                         <constraints>
                                           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
@@ -413,7 +412,7 @@
                                           <text value="Marinara Sauce"/>
                                         </properties>
                                       </component>
-                                      <component id="5f3d8" class="javax.swing.JToggleButton" default-binding="true">
+                                      <component id="5f3d8" class="javax.swing.JToggleButton" binding="btnMozzarella">
                                         <constraints>
                                           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
@@ -421,7 +420,7 @@
                                           <text value="Mozzarella Cheese"/>
                                         </properties>
                                       </component>
-                                      <component id="a35fd" class="javax.swing.JToggleButton" default-binding="true">
+                                      <component id="a35fd" class="javax.swing.JToggleButton" binding="btnMushrooms">
                                         <constraints>
                                           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
@@ -429,7 +428,7 @@
                                           <text value="Mushrooms"/>
                                         </properties>
                                       </component>
-                                      <component id="8b783" class="javax.swing.JToggleButton" default-binding="true">
+                                      <component id="8b783" class="javax.swing.JToggleButton" binding="btnPepperoni">
                                         <constraints>
                                           <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
@@ -437,7 +436,7 @@
                                           <text value="Pepperoni"/>
                                         </properties>
                                       </component>
-                                      <component id="cc045" class="javax.swing.JToggleButton" default-binding="true">
+                                      <component id="cc045" class="javax.swing.JToggleButton" binding="btnBlackOlives">
                                         <constraints>
                                           <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
@@ -445,7 +444,7 @@
                                           <text value="Black Olives"/>
                                         </properties>
                                       </component>
-                                      <component id="1a283" class="javax.swing.JToggleButton" default-binding="true">
+                                      <component id="1a283" class="javax.swing.JToggleButton" binding="btnItalianSausage">
                                         <constraints>
                                           <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
@@ -453,7 +452,7 @@
                                           <text value="Italian Sausage"/>
                                         </properties>
                                       </component>
-                                      <component id="def4e" class="javax.swing.JToggleButton" default-binding="true">
+                                      <component id="def4e" class="javax.swing.JToggleButton" binding="btnTomatoes">
                                         <constraints>
                                           <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
@@ -461,7 +460,7 @@
                                           <text value="Tomatoes"/>
                                         </properties>
                                       </component>
-                                      <component id="3dfb" class="javax.swing.JToggleButton" default-binding="true">
+                                      <component id="3dfb" class="javax.swing.JToggleButton" binding="btnChicken">
                                         <constraints>
                                           <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
@@ -469,7 +468,7 @@
                                           <text value="Chicken"/>
                                         </properties>
                                       </component>
-                                      <component id="4f465" class="javax.swing.JToggleButton" default-binding="true">
+                                      <component id="4f465" class="javax.swing.JToggleButton" binding="btnPineapple">
                                         <constraints>
                                           <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
@@ -477,7 +476,7 @@
                                           <text value="Pineapple"/>
                                         </properties>
                                       </component>
-                                      <component id="f73aa" class="javax.swing.JToggleButton" default-binding="true">
+                                      <component id="f73aa" class="javax.swing.JToggleButton" binding="btnRedOnion">
                                         <constraints>
                                           <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
@@ -485,7 +484,7 @@
                                           <text value="Red Onion"/>
                                         </properties>
                                       </component>
-                                      <component id="9d12a" class="javax.swing.JToggleButton" default-binding="true">
+                                      <component id="9d12a" class="javax.swing.JToggleButton" binding="btnHam">
                                         <constraints>
                                           <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>

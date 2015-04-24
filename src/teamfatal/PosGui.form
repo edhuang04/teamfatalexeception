@@ -536,7 +536,10 @@
                                           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
                                         <properties>
+                                          <horizontalTextPosition value="0"/>
+                                          <icon value="Images/smallpizza.png"/>
                                           <text value="Small"/>
+                                          <verticalTextPosition value="3"/>
                                         </properties>
                                       </component>
                                       <component id="2bc36" class="javax.swing.JToggleButton" binding="mediumToggleButton">
@@ -544,7 +547,11 @@
                                           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
                                         <properties>
+                                          <horizontalTextPosition value="0"/>
+                                          <icon value="Images/mediumpizza.png"/>
                                           <text value="Medium"/>
+                                          <verticalAlignment value="0"/>
+                                          <verticalTextPosition value="3"/>
                                         </properties>
                                       </component>
                                       <component id="cafb5" class="javax.swing.JToggleButton" binding="largeToggleButton">
@@ -552,7 +559,11 @@
                                           <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
                                         <properties>
+                                          <hideActionText value="false"/>
+                                          <horizontalTextPosition value="0"/>
+                                          <icon value="Images/largepizza.png"/>
                                           <text value="Large"/>
+                                          <verticalTextPosition value="3"/>
                                         </properties>
                                       </component>
                                       <component id="7efa8" class="javax.swing.JToggleButton" binding="extraLargeToggleButton">
@@ -593,6 +604,7 @@
                                 </constraints>
                                 <properties>
                                   <text value="Thin Crust"/>
+                                  <verticalAlignment value="0"/>
                                 </properties>
                               </component>
                               <component id="cab1e" class="javax.swing.JToggleButton" binding="toggleDeep">

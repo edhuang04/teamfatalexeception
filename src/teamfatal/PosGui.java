@@ -94,6 +94,7 @@ public class PosGui extends JFrame{
     private JToggleButton btnPineapple;
     private JToggleButton btnHam;
     private JToggleButton btnRedOnion;
+    private JButton btnRemoveTable;
     private ButtonGroup Crust;
     private ButtonGroup Size;
     private JButton currentOrderButton;
@@ -111,6 +112,7 @@ public class PosGui extends JFrame{
     Table firstMerge;
 
     int merging = -1;
+    int removing = -1;
 
     /**
      * Initializes the main root Frame with everything loaded onto it.
@@ -309,6 +311,12 @@ public class PosGui extends JFrame{
                 togoPanel.updateUI();
             }
         });
+        btnRemoveTable.addMouseListener(new MouseAdapter() {
+           @Override
+            public void mouseClicked(MouseEvent e) {
+                removing = -1;
+           }
+        });
     }
 
     /**
@@ -317,6 +325,11 @@ public class PosGui extends JFrame{
     private void myRepaint()
     {
         this.repaint();
+    }
+
+    private void removeTable()
+    {
+
     }
 
     /**
@@ -444,7 +457,11 @@ public class PosGui extends JFrame{
      * @param myTable
      */
     private void tableClicked(Table myTable) {
-        if(merging == -1) {
+        if(removing == -1) {
+            tablePanel.remove(myTable);
+            removing = 1;
+        }
+        else if(merging == -1) {
             model.loadTable(myTable);
             CardLayout myLayout = (CardLayout) rootPanel.getLayout();
             myLayout.show(rootPanel, "CardOrder");

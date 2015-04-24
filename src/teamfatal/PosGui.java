@@ -2,12 +2,9 @@ package teamfatal; /**
  * Created by Trenton on 3/6/2015.
  */
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.util.*;
 import java.util.List;
@@ -95,6 +92,8 @@ public class PosGui extends JFrame{
     private JToggleButton btnHam;
     private JToggleButton btnRedOnion;
     private JButton btnRemoveTable;
+    private JSplitPane tableAdminSplit;
+    private JSplitPane split2;
     private ButtonGroup Crust;
     private ButtonGroup Size;
     private JButton currentOrderButton;
@@ -327,9 +326,12 @@ public class PosGui extends JFrame{
         this.repaint();
     }
 
-    private void removeTable()
+    private void removeTable(Table myTable)
     {
-
+        tablePanel.remove(myTable);
+        decrementTables();
+        tablePanel.updateUI();
+        removing = 1;
     }
 
     /**
@@ -369,26 +371,21 @@ public class PosGui extends JFrame{
         String username = textFieldUser.getText();
         String password = new String(passwordFieldUser.getPassword());
 
-        if(userGroup.containsKey(username))
-        {
-            if(userGroup.get(username).equals(password))
-            {
+        if(userGroup.containsKey(username)) {
+            if(userGroup.get(username).equals(password)) {
                 CardLayout myLayout = (CardLayout) rootPanel.getLayout();
                 myLayout.show(rootPanel, "CardTable");
                 labelWarning.setVisible(false);
             }
         }
-        else if(adminGroup.containsKey(username))
-        {
-            if(adminGroup.get(username).equals(password))
-            {
+        else if(adminGroup.containsKey(username)) {
+            if(adminGroup.get(username).equals(password)) {
                 CardLayout myLayout = (CardLayout) rootPanel.getLayout();
                 myLayout.show(rootPanel, "CardTable");
                 labelWarning.setVisible(false);
             }
         }
-        else
-        {
+        else {
             labelWarning.setVisible(true);
         }
 
@@ -411,9 +408,8 @@ public class PosGui extends JFrame{
 
             in.close();
         }
-        catch(Exception e)
-        {
-
+        catch(Exception e) {
+            JOptionPane.showMessageDialog(new Frame(), "Tables.txt could not be properly loaded.");
         }
     }
 
@@ -448,18 +444,33 @@ public class PosGui extends JFrame{
             q.close();
         }
         catch(Exception e) {
-
+            JOptionPane.showMessageDialog(new Frame(), "Tables.txt could not be properly loaded.");
         }
     }
 
+    private void decrementTables(){
+        try{
+            File j = new File("Resources/Data/Tables.txt");
+            Scanner in = new Scanner(j);
+
+            int numTables = in.nextInt();
+            --numTables;
+            FileWriter q = new FileWriter(j);
+            q.write(Integer.toString(numTables));
+            in.close();
+            q.close();
+        }
+        catch(Exception e){
+            JOptionPane.showMessageDialog(new Frame(), "Tables.txt could not be properly loaded.");
+        }
+    }
     /**
      * When table is clicked, update the displayable receipt with the chosen table
      * @param myTable
      */
     private void tableClicked(Table myTable) {
         if(removing == -1) {
-            tablePanel.remove(myTable);
-            removing = 1;
+            removeTable(myTable);
         }
         else if(merging == -1) {
             model.loadTable(myTable);
@@ -497,6 +508,8 @@ public class PosGui extends JFrame{
         model.clearReceipt();
         CardLayout myLayout = (CardLayout) rootPanel.getLayout();
         myLayout.show(rootPanel, "CardTable");
+        tableAdminSplit.setDividerLocation(1800);
+        split2.setDividerLocation(1650);
     }
 
     /**
@@ -560,8 +573,6 @@ public class PosGui extends JFrame{
         });
     }
 
-
-
     /**
      * Sets up button action listeners
      */
@@ -590,19 +601,7 @@ public class PosGui extends JFrame{
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 addTable();
-                try {
-                    File j = new File("Resources/Data/Tables.txt");
-                    Scanner in = new Scanner(j);
-
-                    int numTables = in.nextInt();
-                    ++numTables;
-                    FileWriter q = new FileWriter(j);
-                    q.write(Integer.toString(numTables));
-                    in.close();
-                    q.close();
-                }
-                catch (Exception ex) {
-                }
+                incrementTables();
             }
         });
     }

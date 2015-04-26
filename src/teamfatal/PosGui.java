@@ -94,6 +94,8 @@ public class PosGui extends JFrame{
     private JButton btnRemoveTable;
     private JSplitPane tableAdminSplit;
     private JSplitPane split2;
+    private JLabel imageBerryFizz;
+    private JPanel Salads;
     private ButtonGroup Crust;
     private ButtonGroup Size;
     private JButton currentOrderButton;

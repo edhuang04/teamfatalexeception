@@ -2,85 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ff9c25a-82b0-4dec-b907-14f59c669f1a" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Asparagus arugula salad.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Salad-AsparagusArugula.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Avocado Club Egg Rolls.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_AvocadoClubEggRolls.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\BBQ Chicken Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_BBQChicken.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\BBQ Chicken Salad.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Salad-BBQChicken.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Belgian Chocolate Souffle Cake.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Dess_BelgianChocolateSouffleCake.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Berry Sparkler.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Bev_BerrySparkler.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Bianco Flatbread.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_BiancoFlatbread.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\BlackBerry Fizz.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Bev_BlackBerryFizz.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\California Club.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_CaliforniaClub.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\California Cobb.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Salad_CaliforniaCobb.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\California Veggie Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_CaliforniaVeggiePizza.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Caramelized Peach Salad.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Salad_CaramelizedPeach.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Cedar Plank Salmon.jpg" afterPath="$PROJECT_DIR$/Resources/Images/MP_CedarPlankSalmon.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Chinese Chicken.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Salad_ChineseChicken.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Deep dish.jpg" afterPath="$PROJECT_DIR$/Resources/Images/BT_Crust_DeepDish.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Key Lime Pie.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Dess_KeyLimePie.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Margerita Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_Margerita.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Meat Cravers Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_MeatCravers.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Mushroom Pepperoni Sausage Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_MushroomPepperoniSausage.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Mushroom Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_Mushroom.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Pear and Gorgonzola Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_PearAndGorgonzola.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Pepperoni Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_Pepperoni.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Petite Wedge.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_PetiteWedge.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Quinoa Arugila Salad.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Salad_QuinoaArugila.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Red Velvet Cake.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Dess_RedVelvetCake.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Regular slice.jpg" afterPath="$PROJECT_DIR$/Resources/Images/BT_Crust_Regular.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Roasted Artichoke Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_RoastedArtichoke.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Roasted Veggie Salad.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Salad_RoastedVeggie.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Sangria.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Alc_Sangria.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Sedona Tortilla Soup.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_SedonaTortillaSoup.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Sesane Ginger Chicken Dumplings.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_SesaneGingerChickenDumplings.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Shaved Mushroom Spinach.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_ShavedMushroomSpinach.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Shrimp Scampi fettuccine.jpg" afterPath="$PROJECT_DIR$/Resources/Images/MP_Shrimp Scampi fettuccine.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Sicillian Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_Sicillian.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Smoothies.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Bev_Smoothies.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Spicy Chipotle Chicken Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_SpicyChipotleChicken.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Spicy Fennel Sausage.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_SpicyFennelSausage.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Spinach Artichoke Dip.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_SpinachArtichokeDip.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Thai Chicken.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_ThaiChicken.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\The Works Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_TheWorksPizza.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Thincrust.jpg" afterPath="$PROJECT_DIR$/Resources/Images/BT_Crust_Thincrust.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Tiramisu.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Dess_Tiramisu.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Tortilla Spring Rolls.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_Tortilla Spring Rolls.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Tostado Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_Tostado.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Two In a bowl.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_Two In a bowl.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Wheat Whole Grain Crust.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_Wheat Whole Grain Crust.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\White Corn Guacamole plus chips.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_White Corn Guacamole plus chips.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\White Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_White Pizza.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_cheese_Mozzarella.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Cheese_Mozzarella.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_drizzle_BBQ.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Sauce_BBQ.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_sauce_Marinara.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Sauce_Marinara.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Bacon.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Bacon.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_BananaPepper.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_BananaPepper.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Beef.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Beef.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_CherryPepper.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_CherryPepper.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_GreenBellPepper.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_GreenBellPepper.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Ham.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Ham.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_ItalianSausage.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_ItalianSausage.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Jalapeno.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Jalapeno.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Meatball.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Meatball.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Mushroom.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Mushroom.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Olive_black.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Olive_black.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Onion_Red.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Onion_Red.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Pepperoni.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Pepperoni.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Pineapple.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Pineapple.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Pork.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Pork.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Salami.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Salami.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Spinach_fresh.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Spinach_fresh.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Tomato.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Tomato.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\largepizza.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Size_LargePizza.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\mediumpizza.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Size_MediumPizza.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\salted_caramel_pudding.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Dess_SaltedCaramelPudding.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\smallpizza.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Size_SmallPizza.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\spicy chicken quesadilla.jpg" afterPath="$PROJECT_DIR$/Resources/Images/MP_SpicyChickenQuesadilla.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\tuscan hummus.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_Tuscan hummus.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.form" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.java" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestaurantPOS.iml" afterPath="$PROJECT_DIR$/RestaurantPOS.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RestaurantPOS.iws" />
@@ -104,72 +26,9 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PosGui.form" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PosGui.form" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
           <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App_ShavedMushroomSpinach.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/App_ShavedMushroomSpinach.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MP_Shrimp Scampi fettuccine.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/MP_Shrimp Scampi fettuccine.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App_SpicyFennelSausage.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/App_SpicyFennelSausage.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App_SpinachArtichokeDip.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/App_SpinachArtichokeDip.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pizza_ThaiChicken.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/Pizza_ThaiChicken.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dess_Tiramisu.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/Dess_Tiramisu.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App_Two In a bowl.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/App_Two In a bowl.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pizza_Wheat Whole Grain Crust.jpg" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/Pizza_Wheat Whole Grain Crust.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Alc_Sangria.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/Alc_Sangria.jpg">
-          <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
@@ -343,24 +202,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RestaurantPOS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="teamfatalexeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -681,7 +522,7 @@
       <workItem from="1429571901156" duration="6554000" />
       <workItem from="1429599239122" duration="670000" />
       <workItem from="1429657726036" duration="2296000" />
-      <workItem from="1429997797061" duration="7211000" />
+      <workItem from="1429997797061" duration="7586000" />
     </task>
     <task id="LOCAL-00001" summary="Much progress made - Trenton">
       <created>1429574412147</created>
@@ -701,11 +542,17 @@
       <option name="project" value="LOCAL" />
       <updated>1429575419717</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactored image icons to make it easier to navigate through them.  Added 2 new tabs.  One for Salads and another for Main Course meals that aren't pizza">
+      <created>1430012134035</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1430012134035</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22175000" />
+    <option name="totallyTimeSpent" value="22550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -777,7 +624,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Much progress made - Trenton" />
     <MESSAGE value="&#10;More Stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;More Stuff" />
+    <MESSAGE value="Refactored image icons to make it easier to navigate through them.  Added 2 new tabs.  One for Salads and another for Main Course meals that aren't pizza" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored image icons to make it easier to navigate through them.  Added 2 new tabs.  One for Salads and another for Main Course meals that aren't pizza" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1265,43 +1113,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Images/App_ShavedMushroomSpinach.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Images/MP_Shrimp Scampi fettuccine.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Images/App_SpicyFennelSausage.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Images/App_SpinachArtichokeDip.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Images/Pizza_ThaiChicken.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Images/Dess_Tiramisu.jpg">
+    <entry file="file://$PROJECT_DIR$/Resources/Images/Pizza_Wheat Whole Grain Crust.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1311,9 +1123,45 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Images/Pizza_Wheat Whole Grain Crust.jpg">
+    <entry file="file://$PROJECT_DIR$/Resources/Images/Dess_Tiramisu.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Images/Pizza_ThaiChicken.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Images/App_SpinachArtichokeDip.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Images/App_SpicyFennelSausage.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Images/MP_Shrimp Scampi fettuccine.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Images/App_ShavedMushroomSpinach.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

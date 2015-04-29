@@ -2,85 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ff9c25a-82b0-4dec-b907-14f59c669f1a" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Asparagus arugula salad.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Salad-AsparagusArugula.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Avocado Club Egg Rolls.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_AvocadoClubEggRolls.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\BBQ Chicken Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_BBQChicken.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\BBQ Chicken Salad.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Salad-BBQChicken.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Belgian Chocolate Souffle Cake.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Dess_BelgianChocolateSouffleCake.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Berry Sparkler.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Bev_BerrySparkler.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Bianco Flatbread.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_BiancoFlatbread.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\BlackBerry Fizz.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Bev_BlackBerryFizz.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\California Club.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_CaliforniaClub.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\California Cobb.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Salad_CaliforniaCobb.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\California Veggie Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_CaliforniaVeggiePizza.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Caramelized Peach Salad.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Salad_CaramelizedPeach.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Cedar Plank Salmon.jpg" afterPath="$PROJECT_DIR$/Resources/Images/MP_CedarPlankSalmon.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Chinese Chicken.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Salad_ChineseChicken.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Deep dish.jpg" afterPath="$PROJECT_DIR$/Resources/Images/BT_Crust_DeepDish.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Key Lime Pie.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Dess_KeyLimePie.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Margerita Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_Margerita.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Meat Cravers Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_MeatCravers.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Mushroom Pepperoni Sausage Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_MushroomPepperoniSausage.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Mushroom Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_Mushroom.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Pear and Gorgonzola Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_PearAndGorgonzola.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Pepperoni Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_Pepperoni.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Petite Wedge.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_PetiteWedge.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Quinoa Arugila Salad.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Salad_QuinoaArugila.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Red Velvet Cake.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Dess_RedVelvetCake.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Regular slice.jpg" afterPath="$PROJECT_DIR$/Resources/Images/BT_Crust_Regular.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Roasted Artichoke Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_RoastedArtichoke.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Roasted Veggie Salad.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Salad_RoastedVeggie.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Sangria.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Alc_Sangria.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Sedona Tortilla Soup.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_SedonaTortillaSoup.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Sesane Ginger Chicken Dumplings.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_SesaneGingerChickenDumplings.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Shaved Mushroom Spinach.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_ShavedMushroomSpinach.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Shrimp Scampi fettuccine.jpg" afterPath="$PROJECT_DIR$/Resources/Images/MP_Shrimp Scampi fettuccine.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Sicillian Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_Sicillian.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Smoothies.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Bev_Smoothies.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Spicy Chipotle Chicken Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_SpicyChipotleChicken.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Spicy Fennel Sausage.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_SpicyFennelSausage.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Spinach Artichoke Dip.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_SpinachArtichokeDip.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Thai Chicken.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_ThaiChicken.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\The Works Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_TheWorksPizza.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Thincrust.jpg" afterPath="$PROJECT_DIR$/Resources/Images/BT_Crust_Thincrust.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Tiramisu.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Dess_Tiramisu.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Tortilla Spring Rolls.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_Tortilla Spring Rolls.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Tostado Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_Tostado.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Two In a bowl.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_Two In a bowl.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\Wheat Whole Grain Crust.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_Wheat Whole Grain Crust.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\White Corn Guacamole plus chips.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_White Corn Guacamole plus chips.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\White Pizza.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Pizza_White Pizza.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_cheese_Mozzarella.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Cheese_Mozzarella.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_drizzle_BBQ.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Sauce_BBQ.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_sauce_Marinara.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Sauce_Marinara.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Bacon.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Bacon.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_BananaPepper.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_BananaPepper.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Beef.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Beef.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_CherryPepper.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_CherryPepper.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_GreenBellPepper.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_GreenBellPepper.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Ham.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Ham.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_ItalianSausage.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_ItalianSausage.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Jalapeno.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Jalapeno.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Meatball.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Meatball.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Mushroom.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Mushroom.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Olive_black.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Olive_black.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Onion_Red.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Onion_Red.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Pepperoni.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Pepperoni.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Pineapple.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Pineapple.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Pork.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Pork.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Salami.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Salami.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Spinach_fresh.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Spinach_fresh.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\icon_topping_Tomato.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Topping_Tomato.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\largepizza.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Size_LargePizza.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\mediumpizza.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Size_MediumPizza.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\salted_caramel_pudding.jpg" afterPath="$PROJECT_DIR$/Resources/Images/Dess_SaltedCaramelPudding.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\smallpizza.png" afterPath="$PROJECT_DIR$/Resources/Images/BT_Size_SmallPizza.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\spicy chicken quesadilla.jpg" afterPath="$PROJECT_DIR$/Resources/Images/MP_SpicyChickenQuesadilla.jpg" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\tuscan hummus.jpg" afterPath="$PROJECT_DIR$/Resources/Images/App_Tuscan hummus.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.form" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.java" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RestaurantPOS.iml" afterPath="$PROJECT_DIR$/RestaurantPOS.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RestaurantPOS.iws" />
@@ -98,79 +19,137 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="RestaurantPOS" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PosGui.form" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PosGui.form" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App_ShavedMushroomSpinach.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/App_ShavedMushroomSpinach.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="MultiTable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/teamfatal/MultiTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="765">
+              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#672#673#0" expanded="false" />
+                <element signature="e#713#714#0" expanded="false" />
+                <element signature="e#960#961#0" expanded="false" />
+                <element signature="e#995#996#0" expanded="false" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MP_Shrimp Scampi fettuccine.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/MP_Shrimp Scampi fettuccine.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="NameDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/teamfatal/NameDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="748">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App_SpicyFennelSausage.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/App_SpicyFennelSausage.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="CreditCardDialog.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/teamfatal/CreditCardDialog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="833">
+              <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App_SpinachArtichokeDip.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/App_SpinachArtichokeDip.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="PosGui.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="9003" max-vertical-offset="10999">
+              <caret line="713" column="26" selection-start-line="713" selection-start-column="26" selection-end-line="713" selection-end-column="26" />
+              <folding>
+                <element signature="e#22505#22668#0" expanded="true" />
+                <element signature="e#22667#22668#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pizza_ThaiChicken.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/Pizza_ThaiChicken.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="FoodItemGui.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/teamfatal/FoodItemGui.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="867">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#236#237#0" expanded="false" />
+                <element signature="e#259#260#0" expanded="false" />
+                <element signature="e#631#632#0" expanded="false" />
+                <element signature="e#660#661#0" expanded="false" />
+                <element signature="e#774#775#0" expanded="false" />
+                <element signature="e#810#811#0" expanded="false" />
+                <element signature="e#1090#1091#0" expanded="false" />
+                <element signature="e#1145#1146#0" expanded="false" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dess_Tiramisu.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/Dess_Tiramisu.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="ImagePanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/teamfatal/ImagePanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="408">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#205#206#0" expanded="false" />
+                <element signature="e#288#289#0" expanded="false" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App_Two In a bowl.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/App_Two In a bowl.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="LeftBooth.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/teamfatal/LeftBooth.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="782">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pizza_Wheat Whole Grain Crust.jpg" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/Pizza_Wheat Whole Grain Crust.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="LoginPane.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/teamfatal/LoginPane.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="560" max-vertical-offset="1105">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Alc_Sangria.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/Alc_Sangria.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/teamfatal/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="238">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="e#130#131#0" expanded="false" />
+                <element signature="e#158#159#0" expanded="false" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -184,12 +163,8 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -198,11 +173,13 @@
         <option value="$PROJECT_DIR$/src/teamfatal/FoodItemGui.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/Table.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/Booth.java" />
-        <option value="$PROJECT_DIR$/src/teamfatal/LeftBooth.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/RightBooth.java" />
-        <option value="$PROJECT_DIR$/src/teamfatal/MultiTable.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/ReceiptModel.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/CreditCardDialog.form" />
+        <option value="$PROJECT_DIR$/src/teamfatal/ImagePanel.java" />
+        <option value="$PROJECT_DIR$/src/teamfatal/LeftBooth.java" />
+        <option value="$PROJECT_DIR$/src/teamfatal/Main.java" />
+        <option value="$PROJECT_DIR$/src/teamfatal/MultiTable.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
       </list>
@@ -219,14 +196,11 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="NamedScopeManager">
-    <order />
-  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1034" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -235,6 +209,8 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
@@ -252,6 +228,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -267,6 +244,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="teamfatalexeception" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestaurantPOS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="teamfatalexeception" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="teamfatal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -310,7 +305,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CreditCardDialog" />
+              <option name="myItemId" value="NameDialog" />
               <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -331,19 +326,9 @@
               <option name="myItemId" value="teamfatal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="RestaurantPOS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="teamfatalexeception" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="CreditCardDialog" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -357,16 +342,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -375,7 +355,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
@@ -405,170 +385,14 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="RestaurantPOS" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
-      <module name="" />
-      <option name="ACTIVITY_CLASS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="DEPLOY" value="true" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
-      <option name="BCName" value="" />
-      <option name="IOSSimulatorSdkPath" value="" />
-      <option name="adlOptions" value="" />
-      <option name="airProgramParameters" value="" />
-      <option name="appDescriptorForEmulator" value="Android" />
-      <option name="debugTransport" value="USB" />
-      <option name="debuggerSdkRaw" value="BC SDK" />
-      <option name="emulator" value="NexusOne" />
-      <option name="emulatorAdlOptions" value="" />
-      <option name="fastPackaging" value="true" />
-      <option name="fullScreenHeight" value="0" />
-      <option name="fullScreenWidth" value="0" />
-      <option name="launchUrl" value="false" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
-        </LauncherParameters>
-      </option>
-      <option name="mobileRunTarget" value="Emulator" />
-      <option name="moduleName" value="" />
-      <option name="overriddenMainClass" value="" />
-      <option name="overriddenOutputFileName" value="" />
-      <option name="overrideMainClass" value="false" />
-      <option name="runTrusted" value="true" />
-      <option name="screenDpi" value="0" />
-      <option name="screenHeight" value="0" />
-      <option name="screenWidth" value="0" />
-      <option name="url" value="http://" />
-      <option name="usbDebugPort" value="7936" />
-      <method />
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
-      <option name="BCName" value="" />
-      <option name="launcherParameters">
-        <LauncherParameters>
-          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-          <option name="launcherType" value="OSDefault" />
-          <option name="newPlayerInstance" value="false" />
-          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
-        </LauncherParameters>
-      </option>
-      <option name="moduleName" value="" />
-      <option name="trusted" value="true" />
-      <method />
-    </configuration>
-    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <module name="" />
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="depsClasspath" value="false" />
-      <setting name="passParentEnv" value="true" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <setting name="launchBrowser" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -592,14 +416,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -608,8 +424,58 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
       <method />
@@ -651,10 +517,125 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/usr/bin/flashplayerdebugger" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
       <method />
     </configuration>
     <list size="1">
@@ -682,6 +663,9 @@
       <workItem from="1429599239122" duration="670000" />
       <workItem from="1429657726036" duration="2296000" />
       <workItem from="1429997797061" duration="7211000" />
+      <workItem from="1430276953514" duration="840000" />
+      <workItem from="1430277805518" duration="7095000" />
+      <workItem from="1430288386630" duration="4997000" />
     </task>
     <task id="LOCAL-00001" summary="Much progress made - Trenton">
       <created>1429574412147</created>
@@ -701,40 +685,69 @@
       <option name="project" value="LOCAL" />
       <updated>1429575419717</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="yada yada">
+      <created>1430293599687</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1430293599687</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22175000" />
+    <option name="totallyTimeSpent" value="35107000" />
+  </component>
+  <component name="TodoView" selected-index="0">
+    <todo-panel id="selected-file">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="default-changelist">
+      <are-packages-shown value="false" />
+      <are-modules-shown value="false" />
+      <flatten-packages value="false" />
+      <is-autoscroll-to-source value="false" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1034" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869378" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10086768" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27283105" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32762557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1578125" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15778251" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09652928" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20498915" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20319635" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09652928" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -775,9 +788,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
     <MESSAGE value="Much progress made - Trenton" />
     <MESSAGE value="&#10;More Stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;More Stuff" />
+    <MESSAGE value="yada yada" />
+    <option name="LAST_COMMIT_MESSAGE" value="yada yada" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -788,16 +805,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Resources/Data/Tables.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/Table.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -815,7 +825,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/Data/Tables.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
         </state>
       </provider>
@@ -827,25 +837,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/Booth.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#777#778#0" expanded="false" />
-            <element signature="e#812#813#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/RightBooth.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.119205296">
+        <state vertical-scroll-proportion="0.119205296" vertical-offset="0" max-vertical-offset="0">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/Table.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="75" column="8" selection-start-line="75" selection-start-column="8" selection-end-line="78" selection-end-column="36" />
           <folding />
         </state>
@@ -874,18 +880,18 @@
           <ID>JAVA</ID>
           <OriginalElement>teamfatal.PosGui</OriginalElement>
           <nodes>
-            <node x="" y="">java.awt.Window</node>
-            <node x="" y="">teamfatal.PosGui</node>
-            <node x="" y="">javax.accessibility.Accessible</node>
             <node x="" y="">java.awt.Frame</node>
+            <node x="" y="">java.awt.Window</node>
             <node x="" y="">java.awt.MenuContainer</node>
-            <node x="" y="">java.awt.image.ImageObserver</node>
-            <node x="" y="">javax.swing.JFrame</node>
-            <node x="" y="">java.awt.Component</node>
             <node x="" y="">javax.swing.TransferHandler.HasGetTransferHandler</node>
-            <node x="" y="">java.io.Serializable</node>
-            <node x="" y="">java.awt.Container</node>
             <node x="" y="">javax.swing.RootPaneContainer</node>
+            <node x="" y="">javax.accessibility.Accessible</node>
+            <node x="" y="">java.awt.Component</node>
+            <node x="" y="">java.awt.image.ImageObserver</node>
+            <node x="" y="">java.io.Serializable</node>
+            <node x="" y="">teamfatal.PosGui</node>
+            <node x="" y="">java.awt.Container</node>
+            <node x="" y="">javax.swing.JFrame</node>
             <node x="" y="">javax.swing.WindowConstants</node>
           </nodes>
           <notes />
@@ -904,23 +910,23 @@
           <ID>JAVA</ID>
           <OriginalElement>teamfatal</OriginalElement>
           <nodes>
+            <node x="0.0" y="1366.0">teamfatal.LoginPane</node>
+            <node x="859.9366096866096" y="423.0">teamfatal.Table</node>
+            <node x="10.5" y="228.0">teamfatal.FoodItemGui</node>
+            <node x="886.8816239316238" y="1268.0">teamfatal.Main</node>
+            <node x="336.25498575498574" y="0.0">teamfatal.FoodItem</node>
+            <node x="264.49999999999994" y="652.5">teamfatal.LeftBooth</node>
+            <node x="676.2549857549857" y="205.0">teamfatal.Receipt</node>
+            <node x="218.0" y="1366.0">teamfatal.CategoryParser</node>
+            <node x="440.25498575498574" y="274.0">teamfatal.Pizza</node>
+            <node x="505.49999999999994" y="652.5">teamfatal.RightBooth</node>
             <node x="1579.25" y="992.5">teamfatal.CategoryButton</node>
             <node x="751.8816239316238" y="843.0">teamfatal.PosGui</node>
-            <node x="746.5" y="641.0">teamfatal.MultiTable</node>
             <node x="1510.5" y="652.5">teamfatal.Category</node>
-            <node x="505.49999999999994" y="652.5">teamfatal.RightBooth</node>
-            <node x="676.2549857549857" y="205.0">teamfatal.Receipt</node>
-            <node x="886.8816239316238" y="1268.0">teamfatal.Main</node>
-            <node x="859.9366096866096" y="423.0">teamfatal.Table</node>
             <node x="372.63660968660963" y="434.5">teamfatal.Booth</node>
-            <node x="10.5" y="228.0">teamfatal.FoodItemGui</node>
-            <node x="0.0" y="1366.0">teamfatal.LoginPane</node>
+            <node x="746.5" y="641.0">teamfatal.MultiTable</node>
             <node x="999.5" y="618.0">teamfatal.ReceiptModel</node>
-            <node x="264.49999999999994" y="652.5">teamfatal.LeftBooth</node>
-            <node x="336.25498575498574" y="0.0">teamfatal.FoodItem</node>
-            <node x="218.0" y="1366.0">teamfatal.CategoryParser</node>
             <node x="1260.5" y="664.0">teamfatal.ImagePanel</node>
-            <node x="440.25498575498574" y="274.0">teamfatal.Pizza</node>
           </nodes>
           <notes />
           <edges>
@@ -1063,57 +1069,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/LeftBooth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/CreditCardDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/CreditCardDialog.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/MultiTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="e#672#673#0" expanded="false" />
-            <element signature="e#713#714#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/LoginPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/Receipt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="false" />
@@ -1123,7 +1093,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/FoodItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
@@ -1131,7 +1101,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/Pizza.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
@@ -1139,51 +1109,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/CategoryParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/CategoryButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/ImagePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/FoodItemGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1195,14 +1129,6 @@
     <entry file="file://$PROJECT_DIR$/Resources/Images/Salad-AsparagusArugula.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="181" column="16" selection-start-line="181" selection-start-column="16" selection-end-line="181" selection-end-column="16" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/Images/App_AvocadoClubEggRolls.jpg">
@@ -1265,17 +1191,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resources/Images/App_ShavedMushroomSpinach.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1314,6 +1229,124 @@
     <entry file="file://$PROJECT_DIR$/Resources/Images/Pizza_Wheat Whole Grain Crust.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/CategoryButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/CreditCardDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="833">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/FoodItemGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="867">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#236#237#0" expanded="false" />
+            <element signature="e#259#260#0" expanded="false" />
+            <element signature="e#631#632#0" expanded="false" />
+            <element signature="e#660#661#0" expanded="false" />
+            <element signature="e#774#775#0" expanded="false" />
+            <element signature="e#810#811#0" expanded="false" />
+            <element signature="e#1090#1091#0" expanded="false" />
+            <element signature="e#1145#1146#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/ImagePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#205#206#0" expanded="false" />
+            <element signature="e#288#289#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/LeftBooth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="782">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/LoginPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="560" max-vertical-offset="1105">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#130#131#0" expanded="false" />
+            <element signature="e#158#159#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/MultiTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="765">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#672#673#0" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
+            <element signature="e#960#961#0" expanded="false" />
+            <element signature="e#995#996#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/NameDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="748">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9003" max-vertical-offset="10999">
+          <caret line="713" column="26" selection-start-line="713" selection-start-column="26" selection-end-line="713" selection-end-column="26" />
+          <folding>
+            <element signature="e#22505#22668#0" expanded="true" />
+            <element signature="e#22667#22668#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
@@ -1373,7 +1406,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1381,7 +1413,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>json-simple-1.1.1</last-edited>
+          <last-edited>javax.mail</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

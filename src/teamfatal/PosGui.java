@@ -109,6 +109,7 @@ public class PosGui extends JFrame{
     ReceiptModel model;
     Table currentTable;
     Booth currentBooth;
+    ToGoOrder currentOrder;
     Map<String, String> userGroup;
     Map<String, String> adminGroup;
     Table firstMerge;
@@ -179,11 +180,12 @@ public class PosGui extends JFrame{
         addOrderButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
+
                 ToGoOrder myOrder = new ToGoOrder("test");
                 myOrder.addMouseListener(new MouseAdapter() {
                     @Override
                     public void mouseClicked(MouseEvent e) {
-
+                        togoClicked((ToGoOrder)e.getSource());
                     }
                 });
                 togoPanel.add(myOrder);
@@ -280,22 +282,6 @@ public class PosGui extends JFrame{
     }
 
     /**
-     * Let's buttons repaint root
-     */
-    private void myRepaint()
-    {
-        this.repaint();
-    }
-
-    private void removeTable(Table myTable)
-    {
-        tablePanel.remove(myTable);
-        decrementTables();
-        tablePanel.updateUI();
-        removing = 1;
-    }
-
-    /**
      * Loads the users and passwords from Logins.txt into the userGroup HashMap and the adminGroup HashMap
      */
     private void loadLogins() {
@@ -322,6 +308,22 @@ public class PosGui extends JFrame{
         catch(Exception e) {
 
         }
+    }
+
+    /**
+     * Let's buttons repaint root
+     */
+    private void myRepaint()
+    {
+        this.repaint();
+    }
+
+    private void removeTable(Table myTable)
+    {
+        tablePanel.remove(myTable);
+        decrementTables();
+        tablePanel.updateUI();
+        removing = 1;
     }
 
     /**
@@ -487,6 +489,14 @@ public class PosGui extends JFrame{
         }
     }
 
+    private void togoClicked(ToGoOrder order) {
+        totalText.setText("$0.00");
+        model.loadToGo(order);
+        CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+        myLayout.show(rootPanel, "CardOrder");
+        currentOrder = order;
+    }
+
     /**
      *  Currently switches to the login card
      */
@@ -515,7 +525,13 @@ public class PosGui extends JFrame{
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Berry Sparkler", 5));
-                totalText.setText(Double.toString(currentTable.getReceipt().getTotal()));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if(currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if(currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageSmoothie.addMouseListener(new MouseAdapter() {
@@ -524,13 +540,25 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Smoothie", 3.5));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                if(currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if(currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         btnAddPizza.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 addPizza();
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if(currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if(currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
     }

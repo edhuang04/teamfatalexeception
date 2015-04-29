@@ -11,6 +11,7 @@ import java.util.*;
 public class ReceiptModel extends DefaultTableModel{
     private Table myTable;
     private Booth myBooth;
+    private ToGoOrder myOrder;
 
     public ReceiptModel()
     {
@@ -48,7 +49,7 @@ public class ReceiptModel extends DefaultTableModel{
             myTable.getReceipt().addItem(item);
         }
         else {
-            if (myBooth.getReceipt().getOrderedItems().containsKey(item)) {
+            if (myOrder.getReceipt().getOrderedItems().containsKey(item)) {
                 boolean itemFound = false;
                 int iter = 1;
 
@@ -64,13 +65,19 @@ public class ReceiptModel extends DefaultTableModel{
                 this.addRow(new Object[]{"1", item.getName(), "$" + Double.toString(item.getPrice())});
             }
 
-            myBooth.getReceipt().addItem(item);
+            myOrder.getReceipt().addItem(item);
         }
     }
 
     public void loadTable(Table otherTable)
     {
         myTable = otherTable;
+        loadReceipt();
+    }
+
+    public void loadToGo(ToGoOrder order)
+    {
+        myOrder = order;
         loadReceipt();
     }
 
@@ -93,9 +100,21 @@ public class ReceiptModel extends DefaultTableModel{
                 this.addRow(new Object[]{entry.getValue(), entry.getKey().getName(), "$" + Double.toString(total)});
             }
         }
-        else
+        else if(myBooth != null)
         {
             Map<FoodItem, Integer> mapOfFood = myBooth.getReceipt().getOrderedItems();
+
+            Iterator<Map.Entry<FoodItem, Integer>> iter = mapOfFood.entrySet().iterator();
+
+            while (iter.hasNext()) {
+                Map.Entry<FoodItem, Integer> entry = iter.next();
+                double total = entry.getKey().getPrice() * entry.getValue();
+                this.addRow(new Object[]{entry.getValue(), entry.getKey().getName(), "$" + Double.toString(total)});
+            }
+        }
+        else
+        {
+            Map<FoodItem, Integer> mapOfFood = myOrder.getReceipt().getOrderedItems();
 
             Iterator<Map.Entry<FoodItem, Integer>> iter = mapOfFood.entrySet().iterator();
 
@@ -110,6 +129,7 @@ public class ReceiptModel extends DefaultTableModel{
     public void clearReceipt() {
         myTable = null;
         myBooth = null;
+        myOrder = null;
         this.setRowCount(1);
     }
 }

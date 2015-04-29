@@ -95,7 +95,6 @@ public class PosGui extends JFrame{
     private JButton btnRemoveTable;
     private JSplitPane tableAdminSplit;
     private JSplitPane split2;
-    private JLabel imageBerryFizz;
     private JPanel Salads;
     private ButtonGroup Crust;
     private ButtonGroup Size;
@@ -389,17 +388,46 @@ public class PosGui extends JFrame{
             currentTable.setOccupied(false);
             currentTable.checkOut();
             currentTable = null;
-        } else {
+
+            ReceiptPrintout printout = new ReceiptPrintout();
+            //printout.loadReceipt(currentTable.getReceipt());
+            printout.pack();
+            printout.setVisible(true);
+            exitToTables();
+        }
+        else if(currentBooth != null)
+        {
             currentBooth.setOccupied(false);
             currentBooth.checkOut();
             currentBooth = null;
-        }
 
-        ReceiptPrintout printout = new ReceiptPrintout();
-        //printout.loadReceipt(currentTable.getReceipt());
-        printout.pack();
-        printout.setVisible(true);
-        exitToTables();
+            ReceiptPrintout printout = new ReceiptPrintout();
+            //printout.loadReceipt(currentTable.getReceipt());
+            printout.pack();
+            printout.setVisible(true);
+            exitToTables();
+        }
+        else
+        {
+            if(choice == 0) {
+                CreditCardDialog test = new CreditCardDialog();
+                test.pack();
+                test.setVisible(true);
+                currentOrder.checkOut(1);
+
+                ReceiptPrintout printout = new ReceiptPrintout();
+                //printout.loadReceipt(currentTable.getReceipt());
+                printout.pack();
+                printout.setVisible(true);
+            }
+            else {
+                currentOrder.checkOut(2);
+
+            }
+            currentOrder = null;
+
+            exitToTogo();
+        }
     }
     /**
      * Adds a table to the tablelayout
@@ -507,6 +535,15 @@ public class PosGui extends JFrame{
         myLayout.show(rootPanel, "CardTable");
         tableAdminSplit.setDividerLocation(1800);
         split2.setDividerLocation(1650);
+    }
+
+    /**
+     * Switch card layout to the togoLayout
+     */
+    private void exitToTogo() {
+        model.clearReceipt();
+        CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+        myLayout.show(rootPanel, "CardTable");
     }
 
     /**

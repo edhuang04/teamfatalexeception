@@ -43,7 +43,7 @@ public class ToGoOrder extends JLabel {
         }
     }
 
-    public void checkOut()
+    public void checkOut(int status)
     {
 
     }

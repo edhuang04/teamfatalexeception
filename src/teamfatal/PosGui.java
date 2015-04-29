@@ -154,6 +154,7 @@ public class PosGui extends JFrame{
                 myLayout.show(RestLayout, "CardTogo");
                 merge.setVisible(false);
                 addOrderButton.setVisible(true);
+                currentOrder = (ToGoOrder) actionEvent.getSource();
             }
         });
         DINEINButton.addActionListener(new ActionListener() {
@@ -385,26 +386,35 @@ public class PosGui extends JFrame{
                 test.pack();
                 test.setVisible(true);
             }
-            currentTable.setOccupied(false);
-            currentTable.checkOut();
-            currentTable = null;
 
             ReceiptPrintout printout = new ReceiptPrintout();
+            printout.loadReceipt(currentTable.getReceipt());
             //printout.loadReceipt(currentTable.getReceipt());
             printout.pack();
             printout.setVisible(true);
+
+            currentTable.setOccupied(false);
+            currentTable.checkOut();
+            currentTable = null;
             exitToTables();
         }
         else if(currentBooth != null)
         {
-            currentBooth.setOccupied(false);
-            currentBooth.checkOut();
-            currentBooth = null;
+            if (choice == 0) {
+                CreditCardDialog test = new CreditCardDialog();
+                test.pack();
+                test.setVisible(true);
+            }
 
             ReceiptPrintout printout = new ReceiptPrintout();
+            printout.loadReceipt(currentBooth.getReceipt());
             //printout.loadReceipt(currentTable.getReceipt());
             printout.pack();
             printout.setVisible(true);
+
+            currentBooth.setOccupied(false);
+            currentBooth.checkOut();
+            currentBooth = null;
             exitToTables();
         }
         else
@@ -416,13 +426,13 @@ public class PosGui extends JFrame{
                 currentOrder.checkOut(1);
 
                 ReceiptPrintout printout = new ReceiptPrintout();
+                printout.loadReceipt(currentOrder.getReceipt());
                 //printout.loadReceipt(currentTable.getReceipt());
                 printout.pack();
                 printout.setVisible(true);
             }
             else {
                 currentOrder.checkOut(2);
-
             }
             currentOrder = null;
 

@@ -1,5 +1,7 @@
 package teamfatal;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Properties;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -15,12 +17,16 @@ public class ReceiptPrintout extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
+    private JLabel labelDate;
+    private JLabel labelOrdNum;
+    private Receipt myReceipt;
 
     public ReceiptPrintout() {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
-
+        String timestamp = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss").format(Calendar.getInstance().getTime());
+        labelDate.setText(timestamp);
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onOK();
@@ -51,19 +57,13 @@ public class ReceiptPrintout extends JDialog {
 
     public void loadReceipt(Receipt myReceipt)
     {
+        this.myReceipt = myReceipt;
+
 
     }
 
     private void onOK() {
 // add your code here
-        try {
-            onEmail();
-        }
-        catch(Exception e)
-        {
-
-        }
-
         dispose();
     }
 
@@ -72,7 +72,7 @@ public class ReceiptPrintout extends JDialog {
         dispose();
     }
 
-    private void onEmail() throws AddressException, MessagingException {
+    private void onEmail(String email) throws AddressException, MessagingException {
         //Step1
         Properties mailServerProperties = System.getProperties();
         mailServerProperties.put("mail.smtp.port", "587");
@@ -82,8 +82,7 @@ public class ReceiptPrintout extends JDialog {
 //Step2
         Session getMailSession = Session.getDefaultInstance(mailServerProperties, null);
         MimeMessage generateMailMessage = new MimeMessage(getMailSession);
-        generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("edhuang04@gmail.com"));
-        generateMailMessage.addRecipient(Message.RecipientType.CC, new InternetAddress("alanduncan3@gmail.com"));
+        generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("9494395860@tmomail.net"));
         generateMailMessage.setSubject("Team Fatal Pizzeria Receipt");
         String emailBody = "Hello, this is an automated test." + "<br><br> Regards, <br>Team Fatal Pizzeria";
         generateMailMessage.setContent(emailBody, "text/html");
@@ -95,5 +94,9 @@ public class ReceiptPrintout extends JDialog {
         transport.connect("smtp.gmail.com", "teamfatalpizza", "teamfatal");
         transport.sendMessage(generateMailMessage, generateMailMessage.getAllRecipients());
         transport.close();
+    }
+
+    private void onText() throws AddressException, MessagingException {
+
     }
 }

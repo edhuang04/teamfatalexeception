@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ff9c25a-82b0-4dec-b907-14f59c669f1a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.form" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.java" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RestaurantPOS.iws" />
@@ -27,133 +29,110 @@
     <favorites_list name="RestaurantPOS" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="PosGui.form" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MultiTable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/MultiTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="765">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#672#673#0" expanded="false" />
-                <element signature="e#713#714#0" expanded="false" />
-                <element signature="e#960#961#0" expanded="false" />
-                <element signature="e#995#996#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NameDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/NameDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="748">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreditCardDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/CreditCardDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="833">
-              <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PosGui.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="9003" max-vertical-offset="10999">
-              <caret line="713" column="26" selection-start-line="713" selection-start-column="26" selection-end-line="713" selection-end-column="26" />
-              <folding>
-                <element signature="e#22505#22668#0" expanded="true" />
-                <element signature="e#22667#22668#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FoodItemGui.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/FoodItemGui.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="867">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#236#237#0" expanded="false" />
-                <element signature="e#259#260#0" expanded="false" />
-                <element signature="e#631#632#0" expanded="false" />
-                <element signature="e#660#661#0" expanded="false" />
-                <element signature="e#774#775#0" expanded="false" />
-                <element signature="e#810#811#0" expanded="false" />
-                <element signature="e#1090#1091#0" expanded="false" />
-                <element signature="e#1145#1146#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImagePanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/ImagePanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="408">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#205#206#0" expanded="false" />
-                <element signature="e#288#289#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LeftBooth.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/LeftBooth.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="782">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginPane.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/LoginPane.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="560" max-vertical-offset="1105">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="238">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding>
-                <element signature="e#130#131#0" expanded="false" />
-                <element signature="e#158#159#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.47341773">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="MultiTable.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/teamfatal/MultiTable.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="765">
+                  <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="NameDialog.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/teamfatal/NameDialog.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="748">
+                  <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CreditCardDialog.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/teamfatal/CreditCardDialog.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="833">
+                  <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PosGui.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.2648402" vertical-offset="11199" max-vertical-offset="14076">
+                  <caret line="748" column="21" selection-start-line="748" selection-start-column="21" selection-end-line="748" selection-end-column="21" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FoodItemGui.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/teamfatal/FoodItemGui.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="867">
+                  <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ImagePanel.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/teamfatal/ImagePanel.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="408">
+                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LeftBooth.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/teamfatal/LeftBooth.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="782">
+                  <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PosGui.form" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
+              <provider selected="true" editor-type-id="ui-designer">
+                <state />
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LoginPane.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/teamfatal/LoginPane.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1105">
+                  <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="PosGui.form" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
+              <provider selected="true" editor-type-id="ui-designer">
+                <state />
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -180,8 +159,8 @@
         <option value="$PROJECT_DIR$/src/teamfatal/LeftBooth.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/Main.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/MultiTable.java" />
-        <option value="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
+        <option value="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
       </list>
     </option>
   </component>
@@ -665,7 +644,8 @@
       <workItem from="1429997797061" duration="7211000" />
       <workItem from="1430276953514" duration="840000" />
       <workItem from="1430277805518" duration="7095000" />
-      <workItem from="1430288386630" duration="4997000" />
+      <workItem from="1430288386630" duration="5611000" />
+      <workItem from="1430342258187" duration="2505000" />
     </task>
     <task id="LOCAL-00001" summary="Much progress made - Trenton">
       <created>1429574412147</created>
@@ -691,11 +671,17 @@
       <option name="project" value="LOCAL" />
       <updated>1430293599687</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="yada yada">
+      <created>1430293621847</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1430293621847</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35107000" />
+    <option name="totallyTimeSpent" value="38226000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1250,17 +1236,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="867">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#236#237#0" expanded="false" />
-            <element signature="e#259#260#0" expanded="false" />
-            <element signature="e#631#632#0" expanded="false" />
-            <element signature="e#660#661#0" expanded="false" />
-            <element signature="e#774#775#0" expanded="false" />
-            <element signature="e#810#811#0" expanded="false" />
-            <element signature="e#1090#1091#0" expanded="false" />
-            <element signature="e#1145#1146#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1268,11 +1244,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#205#206#0" expanded="false" />
-            <element signature="e#288#289#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1284,38 +1256,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/LoginPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="560" max-vertical-offset="1105">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#130#131#0" expanded="false" />
-            <element signature="e#158#159#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/MultiTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="765">
           <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#672#673#0" expanded="false" />
-            <element signature="e#713#714#0" expanded="false" />
-            <element signature="e#960#961#0" expanded="false" />
-            <element signature="e#995#996#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1327,14 +1272,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9003" max-vertical-offset="10999">
-          <caret line="713" column="26" selection-start-line="713" selection-start-column="26" selection-end-line="713" selection-end-column="26" />
-          <folding>
-            <element signature="e#22505#22668#0" expanded="true" />
-            <element signature="e#22667#22668#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.32692307" vertical-offset="0" max-vertical-offset="260">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/LoginPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1105">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1345,6 +1295,14 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2648402" vertical-offset="11199" max-vertical-offset="14076">
+          <caret line="748" column="21" selection-start-line="748" selection-start-column="21" selection-end-line="748" selection-end-column="21" />
           <folding />
         </state>
       </provider>

@@ -102,7 +102,6 @@ public class PosGui extends JFrame{
     private JLabel imageKeyLime;
     private JLabel imageRedVelvet;
     private JLabel imageTiramisu;
-    private JLabel imageSparkler;
     private JLabel imageBerryFizz;
     private JLabel imageWrap;
     private JLabel imageEggRolls;
@@ -598,6 +597,244 @@ public class PosGui extends JFrame{
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Smoothie", 3.5));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if (currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if (currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        imageBerryFizz.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Berry Fizz", 5));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if (currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if (currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        imageWrap.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Lettuce Wrap", 6));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if (currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if (currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        imageEggRolls.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Avocado Club Egg Rolls", 4));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if (currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if (currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        imageFlatBread.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Bianco Flatbread", 7));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if (currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if (currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        imageWedge.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Petite Wedge", 2));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if (currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if (currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        imageSedona.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Sedona Tortilla Soup", 6));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if (currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if (currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        imageSouffleCake.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Belgian Chocolate Souffle Cake", 15));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if (currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if (currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        imageRedVelvet.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Red Velvet Cake", 25));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if (currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if (currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        imageCaramelPudding.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Salted Caramel Pudding", 12));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if (currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if (currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        imageKeyLime.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Key Lime Pie", 12));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if (currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if (currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        imageTiramisu.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Tiramisu", 14));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if (currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if (currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        imageSangria.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Sangria", 7));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if (currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if (currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        imageBBQ.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("BBQ Pizza", 12));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if (currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if (currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        imageCalifornia.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("California Club", 14));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if (currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if (currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        imageCaVeggie.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("California  Veggie", 14));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if (currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if (currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        imageAsparagus.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Asparagus Arugula", 8));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                if (currentTable != null)
+                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+                else if (currentBooth != null)
+                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
+                else
+                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        imageSalmon.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Cedar Plank Salmon", 16));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
                 if (currentTable != null)
                     totalText.setText(nf.format(currentTable.getReceipt().getTotal()));

@@ -696,7 +696,7 @@
                                             <properties/>
                                             <border type="none"/>
                                             <children>
-                                              <component id="23df7" class="javax.swing.JLabel" binding="imageSparkler">
+                                              <component id="23df7" class="javax.swing.JLabel" binding="imageSparker">
                                                 <constraints>
                                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
@@ -704,7 +704,7 @@
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Bev_BerrySparkler.jpg"/>
-                                                  <text value="Berry Sparkler - $3.50"/>
+                                                  <text value="Berry Sparkler - $5.00"/>
                                                   <verticalAlignment value="1"/>
                                                   <verticalTextPosition value="1"/>
                                                 </properties>
@@ -717,7 +717,7 @@
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Bev_Smoothies.jpg"/>
-                                                  <text value="Smoothie - $5.00"/>
+                                                  <text value="Smoothie - $3.5"/>
                                                   <verticalAlignment value="1"/>
                                                   <verticalTextPosition value="1"/>
                                                 </properties>
@@ -798,7 +798,7 @@
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/App_BiancoFlatbread.jpg"/>
-                                                  <text value="Bianco Flatbread - "/>
+                                                  <text value="Bianco Flatbread - $7"/>
                                                   <verticalAlignment value="1"/>
                                                   <verticalTextPosition value="1"/>
                                                 </properties>
@@ -821,8 +821,10 @@
                                                   <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <horizontalTextPosition value="0"/>
                                                   <icon value="Images/App_SedonaTortillaSoup.jpg"/>
                                                   <text value="Sedona Tortilla Soup - $6.00"/>
+                                                  <verticalTextPosition value="1"/>
                                                 </properties>
                                               </component>
                                             </children>

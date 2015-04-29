@@ -23,45 +23,83 @@ public class ReceiptModel extends DefaultTableModel{
         super(row, col);
     }
 
-    public Table getMyTable() {
+    public Table getMyTable()
+    {
         return myTable;
     }
 
     public void addFoodItem(FoodItem item)
     {
-        if(myTable != null) {
-            if (myTable.getReceipt().getOrderedItems().containsKey(item)) {
+        if(myTable != null)
+        {
+            if (myTable.getReceipt().getOrderedItems().containsKey(item))
+            {
                 boolean itemFound = false;
                 int iter = 1;
 
-                while (!itemFound) {
-                    if (this.getValueAt(iter, 1).equals(item.getName())) {
+                while (!itemFound)
+                {
+                    if (this.getValueAt(iter, 1).equals(item.getName()))
+                    {
                         this.setValueAt(Integer.parseInt(this.getValueAt(iter, 0).toString()) + 1, iter, 0);
                         this.setValueAt("$" + Double.toString(Double.parseDouble(this.getValueAt(iter, 2).toString().substring(1)) + item.getPrice()), iter, 2);
                         itemFound = true;
                     }
                     ++iter;
                 }
-            } else {
+            }
+            else
+            {
                 this.addRow(new Object[]{"1", item.getName(), "$" + Double.toString(item.getPrice())});
             }
 
             myTable.getReceipt().addItem(item);
         }
-        else {
-            if (myOrder.getReceipt().getOrderedItems().containsKey(item)) {
+        else if(myBooth != null)
+        {
+            if (myBooth.getReceipt().getOrderedItems().containsKey(item))
+            {
                 boolean itemFound = false;
                 int iter = 1;
 
-                while (!itemFound) {
-                    if (this.getValueAt(iter, 1).equals(item.getName())) {
+                while (!itemFound)
+                {
+                    if (this.getValueAt(iter, 1).equals(item.getName()))
+                    {
                         this.setValueAt(Integer.parseInt(this.getValueAt(iter, 0).toString()) + 1, iter, 0);
                         this.setValueAt("$" + Double.toString(Double.parseDouble(this.getValueAt(iter, 2).toString().substring(1)) + item.getPrice()), iter, 2);
                         itemFound = true;
                     }
                     ++iter;
                 }
-            } else {
+            }
+            else
+            {
+                this.addRow(new Object[]{"1", item.getName(), "$" + Double.toString(item.getPrice())});
+            }
+
+            myBooth.getReceipt().addItem(item);
+        }
+        else
+        {
+            if (myOrder.getReceipt().getOrderedItems().containsKey(item))
+            {
+                boolean itemFound = false;
+                int iter = 1;
+
+                while (!itemFound)
+                {
+                    if (this.getValueAt(iter, 1).equals(item.getName()))
+                    {
+                        this.setValueAt(Integer.parseInt(this.getValueAt(iter, 0).toString()) + 1, iter, 0);
+                        this.setValueAt("$" + Double.toString(Double.parseDouble(this.getValueAt(iter, 2).toString().substring(1)) + item.getPrice()), iter, 2);
+                        itemFound = true;
+                    }
+                    ++iter;
+                }
+            }
+            else
+            {
                 this.addRow(new Object[]{"1", item.getName(), "$" + Double.toString(item.getPrice())});
             }
 

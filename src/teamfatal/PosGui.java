@@ -201,53 +201,54 @@ public class PosGui extends JFrame{
         loadFoodItems();
     }
 
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+        paintLoginScreen();
+        receiptTable = new JTable();
+        model = new ReceiptModel(1, 3);
+        receiptTable.setModel(model);
+        receiptTable.setShowGrid(false);
+        model.setColumnIdentifiers(new Object[]{"Quantity", "Description", "Price"});
+    }
+
     private void addPizza()
     {
         int size;
-        if(smallToggleButton.isSelected())
-        {
+        if(smallToggleButton.isSelected()) {
             size = 0;
             smallToggleButton.setSelected(false);
         }
-        else if(mediumToggleButton.isSelected())
-        {
+        else if(mediumToggleButton.isSelected()) {
             size = 1;
             mediumToggleButton.setSelected(false);
         }
-        else if(largeToggleButton.isSelected())
-        {
+        else if(largeToggleButton.isSelected()) {
             size = 2;
             largeToggleButton.setSelected(false);
         }
-        else if(extraLargeToggleButton.isSelected())
-        {
+        else if(extraLargeToggleButton.isSelected()) {
             size = 3;
             extraLargeToggleButton.setSelected(false);
         }
-        else
-        {
+        else {
             size = -1;
         }
 
         if(size != -1) {
             String crust;
-            if(toggleOriginal.isSelected())
-            {
+            if(toggleOriginal.isSelected()) {
                 crust = "Original";
                 toggleOriginal.setSelected(false);
             }
-            else if(toggleThin.isSelected())
-            {
+            else if(toggleThin.isSelected()) {
                 crust = "Thin";
                 toggleThin.setSelected(false);
             }
-            else if(toggleDeep.isSelected())
-            {
+            else if(toggleDeep.isSelected()) {
                 crust = "Deep Dish";
                 toggleDeep.setSelected(false);
             }
-            else
-            {
+            else {
                 crust = "-1";
             }
 
@@ -280,6 +281,7 @@ public class PosGui extends JFrame{
             }
         }
     }
+
 
     /**
      * Loads the users and passwords from Logins.txt into the userGroup HashMap and the adminGroup HashMap
@@ -318,19 +320,10 @@ public class PosGui extends JFrame{
         this.repaint();
     }
 
-    private void removeTable(Table myTable)
-    {
-        tablePanel.remove(myTable);
-        decrementTables();
-        tablePanel.updateUI();
-        removing = 1;
-    }
-
     /**
      * Attempt to login using the username textfield and the password textfield
      */
-    private void tryLogin()
-    {
+    private void tryLogin() {
         String username = textFieldUser.getText();
         String password = new String(passwordFieldUser.getPassword());
 
@@ -359,8 +352,7 @@ public class PosGui extends JFrame{
     /**
      *  Loads the tables from the textfile into the GUI
      */
-    private void loadTables()
-    {
+    private void loadTables() {
         try {
             File j = new File("Resources/Data/Tables.txt");
             Scanner in = new Scanner(j);
@@ -469,6 +461,7 @@ public class PosGui extends JFrame{
             removeTable(myTable);
         }
         else if(merging == -1) {
+            totalText.setText("$0.00");
             model.loadTable(myTable);
             CardLayout myLayout = (CardLayout) rootPanel.getLayout();
             myLayout.show(rootPanel, "CardOrder");
@@ -526,9 +519,9 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Berry Sparkler", 5));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if(currentTable != null)
+                if (currentTable != null)
                     totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if(currentBooth != null)
+                else if (currentBooth != null)
                     totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
                 else
                     totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
@@ -540,9 +533,9 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Smoothie", 3.5));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if(currentTable != null)
+                if (currentTable != null)
                     totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if(currentBooth != null)
+                else if (currentBooth != null)
                     totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
                 else
                     totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
@@ -553,9 +546,9 @@ public class PosGui extends JFrame{
             public void actionPerformed(ActionEvent actionEvent) {
                 addPizza();
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if(currentTable != null)
+                if (currentTable != null)
                     totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if(currentBooth != null)
+                else if (currentBooth != null)
                     totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
                 else
                     totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
@@ -628,12 +621,12 @@ public class PosGui extends JFrame{
             }
         });
         btnOrderExit.addActionListener(new ActionListener() {
-           @Override
-           public void actionPerformed(ActionEvent actionEvent) {
-               exitToTables();
-               currentTable = null;
-               currentBooth = null;
-           }
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                exitToTables();
+                currentTable = null;
+                currentBooth = null;
+            }
         });
         btnTableExit.addActionListener(new ActionListener() {
             @Override
@@ -650,14 +643,11 @@ public class PosGui extends JFrame{
         });
     }
 
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
-        paintLoginScreen();
-        receiptTable = new JTable();
-        model = new ReceiptModel(1, 3);
-        receiptTable.setModel(model);
-        receiptTable.setShowGrid(false);
-        model.setColumnIdentifiers(new Object[]{"Quantity", "Description", "Price"});
+    private void removeTable(Table myTable) {
+        tablePanel.remove(myTable);
+        decrementTables();
+        tablePanel.updateUI();
+        removing = 1;
     }
 
     private void paintLoginScreen()

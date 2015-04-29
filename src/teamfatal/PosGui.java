@@ -96,6 +96,25 @@ public class PosGui extends JFrame{
     private JSplitPane tableAdminSplit;
     private JSplitPane split2;
     private JPanel Salads;
+    private JScrollBar scrollBar1;
+    private JLabel imageSouffleCake;
+    private JLabel imageCaramelPudding;
+    private JLabel imageKeyLime;
+    private JLabel imageRedVelvet;
+    private JLabel imageTiramisu;
+    private JLabel imageSparkler;
+    private JLabel imageBerryFizz;
+    private JLabel imageWrap;
+    private JLabel imageEggRolls;
+    private JLabel imageWedge;
+    private JLabel imageFlatBread;
+    private JLabel imageSedona;
+    private JLabel imageSangria;
+    private JLabel imageCalifornia;
+    private JLabel imageBBQ;
+    private JLabel imageCaVeggie;
+    private JLabel imageSalmon;
+    private JLabel imageAsparagus;
     private ButtonGroup Crust;
     private ButtonGroup Size;
     private JButton currentOrderButton;
@@ -701,4 +720,9 @@ public class PosGui extends JFrame{
     {
         imagePanel1 = new ImagePanel();
     }
+
+    private JScrollPane scrollPane1(){
+        return scrollPane1;
+    }
+
 }

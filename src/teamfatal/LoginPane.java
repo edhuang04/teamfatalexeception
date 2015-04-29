@@ -13,7 +13,7 @@ public class LoginPane extends JDialog implements ActionListener {
     String itsPassword = "";
     boolean itsFirst = true;
     boolean itsKeep = false;
-    JTextField itsUserField = new JTextField(15);
+    JTextField itsUserField = new JTextField(15); //
     JPasswordField itsPassField = new JPasswordField(15);
     JCheckBox itsKeepBox = new JCheckBox("Save details:", false);
     boolean itsInit = false;

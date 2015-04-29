@@ -6,6 +6,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 import java.io.FileWriter;
+import java.text.NumberFormat;
 import java.util.*;
 import java.util.List;
 
@@ -133,60 +134,19 @@ public class PosGui extends JFrame{
         this.setExtendedState(MAXIMIZED_BOTH);
         pack();
         setVisible(true);
-        imageSmoothie.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
-                model.addFoodItem(new FoodItem("Smoothie", 3.5));
-                totalText.setText(Double.toString(currentTable.getReceipt().getTotal()));
-            }
-        });
         merge.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 merging = 0;
             }
         });
-
         btnCheckout.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                Object[] options = {"Credit",
-                        "Cash"};
-                int choice = JOptionPane.showOptionDialog(new Frame(),
-                        "Credit Card or Cash",
-                        "Method of Payment",
-                        JOptionPane.YES_NO_CANCEL_OPTION,
-                        JOptionPane.QUESTION_MESSAGE,
-                        null,
-                        options,
-                        options[1]);
-                if (currentTable != null) {
-                    if (choice == 0) {
-                        CreditCardDialog test = new CreditCardDialog();
-                        test.pack();
-                        test.setVisible(true);
-                    }
-                    currentTable.setOccupied(false);
-                    currentTable.checkOut();
-                    exitToTables();
-                    currentTable = null;
-                } else {
-                    currentBooth.setOccupied(false);
-                    currentBooth.checkOut();
-                    exitToTables();
-                    currentBooth = null;
-                }
+                checkout();
             }
         });
-        imageSparker.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
-                model.addFoodItem(new FoodItem("Berry Sparkler", 5));
-                totalText.setText(Double.toString(currentTable.getReceipt().getTotal()));
-            }
-        });
+
         toGoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -205,95 +165,13 @@ public class PosGui extends JFrame{
                 addOrderButton.setVisible(false);
             }
         });
-        btnAddPizza.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                int size;
-                if(smallToggleButton.isSelected())
-                {
-                    size = 0;
-                    smallToggleButton.setSelected(false);
-                }
-                else if(mediumToggleButton.isSelected())
-                {
-                    size = 1;
-                    mediumToggleButton.setSelected(false);
-                }
-                else if(largeToggleButton.isSelected())
-                {
-                    size = 2;
-                    largeToggleButton.setSelected(false);
-                }
-                else if(extraLargeToggleButton.isSelected())
-                {
-                    size = 3;
-                    extraLargeToggleButton.setSelected(false);
-                }
-                else
-                {
-                    size = -1;
-                }
-
-                if(size != -1) {
-                    String crust;
-                    if(toggleOriginal.isSelected())
-                    {
-                        crust = "Original";
-                        toggleOriginal.setSelected(false);
-                    }
-                    else if(toggleThin.isSelected())
-                    {
-                        crust = "Thin";
-                        toggleThin.setSelected(false);
-                    }
-                    else if(toggleDeep.isSelected())
-                    {
-                        crust = "Deep Dish";
-                        toggleDeep.setSelected(false);
-                    }
-                    else
-                    {
-                        crust = "-1";
-                    }
-
-                    if(!crust.equals("-1")) {
-                        List<String> toppings = new LinkedList<String>();
-
-                        if(btnBacon.isSelected())
-                            toppings.add("Bacon");
-                        if(btnBlackOlives.isSelected())
-                            toppings.add("Black Olives");
-                        if(btnChicken.isSelected())
-                            toppings.add("Chicken");
-                        if(btnHam.isSelected())
-                            toppings.add("Ham");
-                        if(btnItalianSausage.isSelected())
-                            toppings.add("Italian Sausage");
-                        if(btnMarinara.isSelected())
-                            toppings.add("Marinara Sauce");
-                        if(btnMozzarella.isSelected())
-                            toppings.add("Mozzarella Cheese");
-                        if(btnMushrooms.isSelected())
-                            toppings.add("Mushrooms");
-                        if(btnPepperoni.isSelected())
-                            toppings.add("Pepperoni");
-                        if(btnPineapple.isSelected())
-                            toppings.add("Pineapple");
-                        Pizza myPizza = new Pizza(size);
-                        model.addFoodItem(myPizza);
-                        totalText.setText(Double.toString(currentTable.getReceipt().getTotal()));
-                    }
-                }
-            }
-        });
         receiptTable.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                JTable target = (JTable)e.getSource();
+                JTable target = (JTable) e.getSource();
                 int row = target.getSelectedRow();
                 int column = target.getSelectedColumn();
-                if(model.getValueAt(row, column) != "")
-                {
+                if (model.getValueAt(row, column) != "") {
 
                 }
             }
@@ -313,11 +191,92 @@ public class PosGui extends JFrame{
             }
         });
         btnRemoveTable.addMouseListener(new MouseAdapter() {
-           @Override
+            @Override
             public void mouseClicked(MouseEvent e) {
-                removing = -1;
-           }
+                removing = 1;
+            }
         });
+        loadFoodItems();
+    }
+
+    private void addPizza()
+    {
+        int size;
+        if(smallToggleButton.isSelected())
+        {
+            size = 0;
+            smallToggleButton.setSelected(false);
+        }
+        else if(mediumToggleButton.isSelected())
+        {
+            size = 1;
+            mediumToggleButton.setSelected(false);
+        }
+        else if(largeToggleButton.isSelected())
+        {
+            size = 2;
+            largeToggleButton.setSelected(false);
+        }
+        else if(extraLargeToggleButton.isSelected())
+        {
+            size = 3;
+            extraLargeToggleButton.setSelected(false);
+        }
+        else
+        {
+            size = -1;
+        }
+
+        if(size != -1) {
+            String crust;
+            if(toggleOriginal.isSelected())
+            {
+                crust = "Original";
+                toggleOriginal.setSelected(false);
+            }
+            else if(toggleThin.isSelected())
+            {
+                crust = "Thin";
+                toggleThin.setSelected(false);
+            }
+            else if(toggleDeep.isSelected())
+            {
+                crust = "Deep Dish";
+                toggleDeep.setSelected(false);
+            }
+            else
+            {
+                crust = "-1";
+            }
+
+            if(!crust.equals("-1")) {
+                List<String> toppings = new LinkedList<String>();
+
+                if(btnBacon.isSelected())
+                    toppings.add("Bacon");
+                if(btnBlackOlives.isSelected())
+                    toppings.add("Black Olives");
+                if(btnChicken.isSelected())
+                    toppings.add("Chicken");
+                if(btnHam.isSelected())
+                    toppings.add("Ham");
+                if(btnItalianSausage.isSelected())
+                    toppings.add("Italian Sausage");
+                if(btnMarinara.isSelected())
+                    toppings.add("Marinara Sauce");
+                if(btnMozzarella.isSelected())
+                    toppings.add("Mozzarella Cheese");
+                if(btnMushrooms.isSelected())
+                    toppings.add("Mushrooms");
+                if(btnPepperoni.isSelected())
+                    toppings.add("Pepperoni");
+                if(btnPineapple.isSelected())
+                    toppings.add("Pineapple");
+                Pizza myPizza = new Pizza(size);
+                model.addFoodItem(myPizza);
+                totalText.setText(Double.toString(currentTable.getReceipt().getTotal()));
+            }
+        }
     }
 
     /**
@@ -415,6 +374,39 @@ public class PosGui extends JFrame{
         }
     }
 
+    private void checkout()
+    {
+        Object[] options = {"Credit",
+                "Cash"};
+        int choice = JOptionPane.showOptionDialog(new Frame(),
+                "Credit Card or Cash",
+                "Method of Payment",
+                JOptionPane.YES_NO_CANCEL_OPTION,
+                JOptionPane.QUESTION_MESSAGE,
+                null,
+                options,
+                options[1]);
+        if (currentTable != null) {
+            if (choice == 0) {
+                CreditCardDialog test = new CreditCardDialog();
+                test.pack();
+                test.setVisible(true);
+            }
+            currentTable.setOccupied(false);
+            currentTable.checkOut();
+            currentTable = null;
+        } else {
+            currentBooth.setOccupied(false);
+            currentBooth.checkOut();
+            currentBooth = null;
+        }
+
+        ReceiptPrintout printout = new ReceiptPrintout();
+        //printout.loadReceipt(currentTable.getReceipt());
+        printout.pack();
+        printout.setVisible(true);
+        exitToTables();
+    }
     /**
      * Adds a table to the tablelayout
      */
@@ -471,7 +463,7 @@ public class PosGui extends JFrame{
      * @param myTable
      */
     private void tableClicked(Table myTable) {
-        if(removing == -1) {
+        if(removing == 1) {
             removeTable(myTable);
         }
         else if(merging == -1) {
@@ -518,7 +510,29 @@ public class PosGui extends JFrame{
      * Loads the food items for the FoodMenu.txt
      */
     private void loadFoodItems() {
-
+        imageSparker.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Berry Sparkler", 5));
+                totalText.setText(Double.toString(currentTable.getReceipt().getTotal()));
+            }
+        });
+        imageSmoothie.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Smoothie", 3.5));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
+            }
+        });
+        btnAddPizza.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                addPizza();
+            }
+        });
     }
 
     /**

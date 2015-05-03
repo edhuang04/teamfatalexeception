@@ -20,7 +20,7 @@ public class ToGoOrder extends JLabel {
     {
         super();
         this.name = name;
-        ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");
+        ImageIcon icon = createImageIcon("Resources/Images/Togo.jpg", "");
         this.setIcon(icon);
         this.setVisible(true);
         paid = false;
@@ -43,7 +43,7 @@ public class ToGoOrder extends JLabel {
         }
     }
 
-    public void checkOut()
+    public void checkOut(int status)
     {
 
     }

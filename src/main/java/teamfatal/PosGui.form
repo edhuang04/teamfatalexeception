@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="teamfatal.PosGui">
-  <grid id="27dc6" binding="rootPanel" layout-manager="CardLayout" hgap="0" vgap="0" show="929bb">
+  <grid id="27dc6" binding="rootPanel" layout-manager="CardLayout" hgap="0" vgap="0" show="56921">
     <constraints>
       <xy x="20" y="20" width="1962" height="1329"/>
     </constraints>

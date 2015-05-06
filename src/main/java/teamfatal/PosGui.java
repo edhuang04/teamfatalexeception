@@ -975,5 +975,4 @@ public class PosGui extends JFrame{
     private JScrollPane scrollPane1(){
         return scrollPane1;
     }
-
 }

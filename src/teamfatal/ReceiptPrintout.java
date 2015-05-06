@@ -1,5 +1,7 @@
 package teamfatal;
 
+import java.awt.*;
+import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Properties;
@@ -10,32 +12,45 @@ import javax.mail.Transport;
 import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import javax.smartcardio.Card;
 import javax.swing.*;
 import java.awt.event.*;
 
 public class ReceiptPrintout extends JDialog {
     private JPanel contentPane;
-    private JButton buttonOK;
-    private JButton buttonCancel;
+    private JButton btnPrint;
+    private JButton btnEmail;
     private JLabel labelDate;
+    private JButton btnText;
     private JLabel labelOrdNum;
+    private JTable table1;
+    private JButton btnEmailCancel;
+    private JButton btnEmailOk;
+    private JTextField textFieldEmail;
+    private JPanel emailPane;
+    private JComboBox comboBoxProv;
+    private JPanel textPane;
+    private JButton btnTextOk;
+    private JButton btnTextCancel;
+    private JPanel CardPanel;
+    private JTextField textFieldPhone;
+    private JLabel labelTotal;
+    private JLabel labelTax;
+    private JLabel labelPercentFifth;
+    private JLabel labelPercentEighth;
+    private JLabel labelPercentTwenty;
     private Receipt myReceipt;
+    private final double TAX = 0.0875;
 
     public ReceiptPrintout() {
-        setContentPane(contentPane);
+        setContentPane(CardPanel);
         setModal(true);
-        getRootPane().setDefaultButton(buttonOK);
+        getRootPane().setDefaultButton(btnPrint);
         String timestamp = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss").format(Calendar.getInstance().getTime());
         labelDate.setText(timestamp);
-        buttonOK.addActionListener(new ActionListener() {
+        btnPrint.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onOK();
-            }
-        });
-
-        buttonCancel.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onCancel();
             }
         });
 
@@ -53,17 +68,97 @@ public class ReceiptPrintout extends JDialog {
                 onCancel();
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        btnText.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                CardLayout myLayout = (CardLayout) CardPanel.getLayout();
+                myLayout.show(CardPanel, "CardText");
+            }
+        });
+        btnEmail.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                CardLayout myLayout = (CardLayout) CardPanel.getLayout();
+                myLayout.show(CardPanel, "CardEmail");
+            }
+        });
+        btnEmailOk.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                String email = textFieldEmail.getText();
+                try {
+                    onEmail(email);
+                }
+                catch(Exception e)
+                {
+                    System.out.println(e.getLocalizedMessage());
+                }
+                dispose();
+            }
+        });
+        btnTextOk.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                String phoneNumber = textFieldPhone.getText();
+                int provider = comboBoxProv.getSelectedIndex() + 1;
+
+                try {
+                    onText(phoneNumber, provider);
+                }
+                catch(Exception e) {
+                    System.out.println(e.getLocalizedMessage());
+                }
+                dispose();
+            }
+        });
+        btnEmailCancel.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                CardLayout myLayout = (CardLayout) CardPanel.getLayout();
+                myLayout.show(CardPanel, "CardMain");
+            }
+        });
+        btnTextCancel.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+
+            }
+        });
     }
 
     public void loadReceipt(Receipt myReceipt)
     {
         this.myReceipt = myReceipt;
+        setTax(myReceipt.getTotal());
+        setTotal(myReceipt.getTotal());
+        setTips(myReceipt.getTotal());
 
+        ReceiptModel model = new ReceiptModel(myReceipt);
+    }
 
+    private void setTax(double amount)
+    {
+        NumberFormat nf = NumberFormat.getCurrencyInstance();
+        labelTax.setText(nf.format(amount * TAX));
+    }
+
+    private void setTotal(double amount)
+    {
+        NumberFormat nf = NumberFormat.getCurrencyInstance();
+        labelTotal.setText(nf.format(amount * (1+TAX)));
+    }
+
+    private void setTips(double amount)
+    {
+        NumberFormat nf = NumberFormat.getCurrencyInstance();
+        labelPercentFifth.setText(labelPercentFifth.getText() + nf.format(amount*.15));
+        labelPercentEighth.setText(labelPercentEighth.getText() + nf.format(amount*.18));
+        labelPercentTwenty.setText(labelPercentTwenty.getText() + nf.format(amount*.20));
     }
 
     private void onOK() {
 // add your code here
+
         dispose();
     }
 
@@ -78,11 +173,48 @@ public class ReceiptPrintout extends JDialog {
         mailServerProperties.put("mail.smtp.port", "587");
         mailServerProperties.put("mail.smtp.auth", "true");
         mailServerProperties.put("mail.smtp.starttls.enable", "true");
-
 //Step2
         Session getMailSession = Session.getDefaultInstance(mailServerProperties, null);
         MimeMessage generateMailMessage = new MimeMessage(getMailSession);
-        generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress("9494395860@tmomail.net"));
+        generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress(email));
+        generateMailMessage.setSubject("Team Fatal Pizzeria Receipt");
+        NumberFormat nf = NumberFormat.getCurrencyInstance();
+        String emailBody = "Total - " + nf.format(myReceipt.getTotal());
+        generateMailMessage.setContent(emailBody, "text/html");
+
+//Step3
+        Transport transport = getMailSession.getTransport("smtp");
+        transport.connect("smtp.gmail.com", "teamfatalpizza", "teamfatal");
+        transport.sendMessage(generateMailMessage, generateMailMessage.getAllRecipients());
+        transport.close();
+    }
+
+    private void onText(String number, int provider) throws AddressException, MessagingException {
+        //Step1
+        Properties mailServerProperties = System.getProperties();
+        mailServerProperties.put("mail.smtp.port", "587");
+        mailServerProperties.put("mail.smtp.auth", "true");
+        mailServerProperties.put("mail.smtp.starttls.enable", "true");
+
+//Step2
+        String email = "";
+        switch(provider) { //1 = AT&T, 2 = T-Mobile, 3 = Sprint, 4 = Verizon
+            case 1:
+                email = number + "@txt.att.net";
+                break;
+            case 2:
+                email = number + "@tmomail.net";
+                break;
+            case 3:
+                email = number + "@sprintpaging.net";
+                break;
+            case 4:
+                email = number + "@vtext.com";
+        }
+
+        Session getMailSession = Session.getDefaultInstance(mailServerProperties, null);
+        MimeMessage generateMailMessage = new MimeMessage(getMailSession);
+        generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress(email));
         generateMailMessage.setSubject("Team Fatal Pizzeria Receipt");
         String emailBody = "Hello, this is an automated test." + "<br><br> Regards, <br>Team Fatal Pizzeria";
         generateMailMessage.setContent(emailBody, "text/html");
@@ -94,9 +226,5 @@ public class ReceiptPrintout extends JDialog {
         transport.connect("smtp.gmail.com", "teamfatalpizza", "teamfatal");
         transport.sendMessage(generateMailMessage, generateMailMessage.getAllRecipients());
         transport.close();
-    }
-
-    private void onText() throws AddressException, MessagingException {
-
     }
 }

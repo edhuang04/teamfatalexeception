@@ -41,8 +41,9 @@
                   <splitpane position="left"/>
                 </constraints>
                 <properties>
-                  <dividerLocation value="37"/>
-                  <dividerSize value="2"/>
+                  <dividerLocation value="50"/>
+                  <dividerSize value="5"/>
+                  <lastDividerLocation value="50"/>
                   <maximumSize width="-1" height="-1"/>
                   <orientation value="0"/>
                 </properties>
@@ -1143,12 +1144,20 @@
                                 <constraints>
                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                 </constraints>
-                                <properties/>
+                                <properties>
+                                  <focusTraversalPolicyProvider value="false"/>
+                                  <font size="24"/>
+                                </properties>
                                 <border type="none"/>
                                 <children>
-                                  <component id="15ab6" class="javax.swing.JTable" binding="receiptTable" custom-create="true">
+                                  <component id="15ab6" class="javax.swing.JTable" binding="receiptTable">
                                     <constraints/>
-                                    <properties/>
+                                    <properties>
+                                      <fillsViewportHeight value="false"/>
+                                      <font size="24"/>
+                                      <intercellSpacing width="1" height="1"/>
+                                      <rowMargin value="1"/>
+                                    </properties>
                                   </component>
                                 </children>
                               </scrollpane>

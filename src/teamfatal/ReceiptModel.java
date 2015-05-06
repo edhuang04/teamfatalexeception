@@ -18,6 +18,13 @@ public class ReceiptModel extends DefaultTableModel{
         super(0,3);
     }
 
+    public ReceiptModel(Receipt receipt)
+    {
+        super(0,3);
+        myTable = new Table();
+        loadReceipt();
+    }
+
     public ReceiptModel(int row, int col)
     {
         super(row, col);

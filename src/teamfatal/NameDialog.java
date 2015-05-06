@@ -7,6 +7,8 @@ public class NameDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
+    private JTextField textFieldName;
+    private boolean responded;
 
     public NameDialog() {
         setContentPane(contentPane);
@@ -41,13 +43,25 @@ public class NameDialog extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
+    public String getName()
+    {
+        return textFieldName.getText();
+    }
+
+    public boolean response()
+    {
+        return responded;
+    }
+
     private void onOK() {
 // add your code here
+        responded = true;
         dispose();
     }
 
     private void onCancel() {
 // add your code here if necessary
+        responded = false;
         dispose();
     }
 }

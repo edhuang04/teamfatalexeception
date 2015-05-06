@@ -31,6 +31,16 @@ public class Table extends JLabel
         tableReceipt = new Receipt();
     }
 
+    public Table(Receipt receipt)
+    {
+        super();
+        ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");
+        this.setIcon(icon);
+        this.setVisible(true);
+        occupied = false;
+        tableReceipt = receipt;
+    }
+
     public void setOccupied(boolean status)
     {
         if(status)

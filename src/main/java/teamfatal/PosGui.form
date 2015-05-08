@@ -445,6 +445,8 @@
                                         </constraints>
                                         <properties>
                                           <font name="Comic Neue"/>
+                                          <horizontalTextPosition value="0"/>
+                                          <icon value="Images/BT_Topping_Cheese.png"/>
                                           <text value="Mozzarella Cheese"/>
                                           <verticalTextPosition value="3"/>
                                         </properties>
@@ -515,6 +517,8 @@
                                         </constraints>
                                         <properties>
                                           <font name="Comic Neue"/>
+                                          <horizontalTextPosition value="0"/>
+                                          <icon value="Images/BT_Topping_Chicken.png"/>
                                           <text value="Chicken"/>
                                           <verticalTextPosition value="3"/>
                                         </properties>

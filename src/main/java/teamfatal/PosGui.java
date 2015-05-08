@@ -172,7 +172,6 @@ public class PosGui extends JFrame{
                 myLayout.show(RestLayout, "CardTogo");
                 merge.setVisible(false);
                 addOrderButton.setVisible(true);
-                currentOrder = (ToGoOrder) actionEvent.getSource();
             }
         });
         DINEINButton.addActionListener(new ActionListener() {
@@ -203,9 +202,21 @@ public class PosGui extends JFrame{
                 myOrder.addMouseListener(new MouseAdapter() {
                     @Override
                     public void mouseClicked(MouseEvent e) {
-                        togoClicked((ToGoOrder)e.getSource());
+                        togoClicked((ToGoOrder) e.getSource());
                     }
                 });
+                NameDialog tempDialog = new NameDialog();
+                tempDialog.pack();
+                tempDialog.setLocation(960 - tempDialog.getWidth()/2, 540 - tempDialog.getHeight()/2);
+                System.out.println(tempDialog.getWidth());
+                tempDialog.setVisible(true);
+                if(tempDialog.response() == true)
+                {
+                    String name = tempDialog.getName();
+                    myOrder.setText(name);
+                    myOrder.setHorizontalTextPosition(2);
+                    myOrder.setVerticalAlignment(3);
+                }
                 togoPanel.add(myOrder);
                 togoPanel.updateUI();
             }
@@ -217,15 +228,17 @@ public class PosGui extends JFrame{
             }
         });
         loadFoodItems();
+        setupReceipt();
     }
 
-    private void createUIComponents() {
+    private void setupReceipt() {
         // TODO: place custom component creation code here
         paintLoginScreen();
-        receiptTable = new JTable();
         model = new ReceiptModel(1, 3);
         receiptTable.setModel(model);
         receiptTable.setShowGrid(false);
+        receiptTable.setRowHeight(24);
+        
         model.setColumnIdentifiers(new Object[]{"Quantity", "Description", "Price"});
     }
 
@@ -443,6 +456,7 @@ public class PosGui extends JFrame{
                 test.setVisible(true);
                 currentOrder.checkOut(1);
 
+                togoPanel.remove(currentOrder);
                 ReceiptPrintout printout = new ReceiptPrintout();
                 printout.loadReceipt(currentOrder.getReceipt());
                 //printout.loadReceipt(currentTable.getReceipt());
@@ -961,5 +975,4 @@ public class PosGui extends JFrame{
     private JScrollPane scrollPane1(){
         return scrollPane1;
     }
-
 }

@@ -31,7 +31,7 @@ public class PosGui extends JFrame{
     private JButton btn10x;
     private JPanel OrderToolsPanel;
     private JPanel OrderMenuPanel;
-    private JButton btnPrintReceipt;
+    private JButton btnDiscount;
     private JButton btnAddTable;
     private JButton btnLogin;
     private JPanel FoodItems;
@@ -96,7 +96,6 @@ public class PosGui extends JFrame{
     private JSplitPane tableAdminSplit;
     private JSplitPane split2;
     private JPanel Salads;
-    private JScrollBar scrollBar1;
     private JLabel imageSouffleCake;
     private JLabel imageCaramelPudding;
     private JLabel imageKeyLime;
@@ -114,6 +113,12 @@ public class PosGui extends JFrame{
     private JLabel imageCaVeggie;
     private JLabel imageSalmon;
     private JLabel imageAsparagus;
+    private JButton btnWaitlist;
+    private JPanel WaitlistMenu;
+    private JButton removeEntryButton;
+    private JButton addEntryButton;
+    private JButton exitButtonWaitlist;
+    private JTable tableWaitlist;
     private ButtonGroup Crust;
     private ButtonGroup Size;
     private JButton currentOrderButton;
@@ -122,7 +127,7 @@ public class PosGui extends JFrame{
     //Other items
     List<Category> categories;
     List<FoodItem> foodItems;
-    List<Table> tableItems;
+    Map<Integer,Table> tableItems;
     ReceiptModel model;
     Table currentTable;
     Booth currentBooth;
@@ -138,9 +143,15 @@ public class PosGui extends JFrame{
      * Initializes the main root Frame with everything loaded onto it.
      */
     public PosGui() {
+        leftBoothPanel.setOpaque(true);
+        leftBoothPanel.setBackground(Color.DARK_GRAY);
+        leftBoothPanel.repaint();
+        rightBoothPanel.setOpaque(true);
+        rightBoothPanel.setBackground(Color.DARK_GRAY);
+        rightBoothPanel.repaint();
         categories = new ArrayList<Category>();
         foodItems = new ArrayList<FoodItem>();
-
+        tableItems = new HashMap<Integer, Table>();
         setContentPane(rootPanel);
         setTitle("Restaurant POS");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -229,6 +240,33 @@ public class PosGui extends JFrame{
         });
         loadFoodItems();
         setupReceipt();
+        btnWaitlist.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+                myLayout.show(rootPanel, "CardWaitlist");
+            }
+        });
+        exitButtonWaitlist.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+                myLayout.show(rootPanel, "CardTable");
+            }
+        });
+        createWaitlist();
+        addEntryButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+
+            }
+        });
+        passwordFieldUser.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                tryLogin();
+            }
+        });
     }
 
     private void setupReceipt() {
@@ -237,9 +275,18 @@ public class PosGui extends JFrame{
         model = new ReceiptModel(1, 3);
         receiptTable.setModel(model);
         receiptTable.setShowGrid(false);
-        receiptTable.setRowHeight(24);
+        receiptTable.setRowHeight(30);
         
         model.setColumnIdentifiers(new Object[]{"Quantity", "Description", "Price"});
+    }
+
+    private void createWaitlist() {
+        tableWaitlist.setModel(new WaitlistModel());
+    }
+
+
+    private void openWaitlist() {
+
     }
 
     private void addPizza()
@@ -475,7 +522,7 @@ public class PosGui extends JFrame{
      * Adds a table to the tablelayout
      */
     private void addTable() {
-        Table tableNew = new Table();
+        Table tableNew = new Table(tableItems.size());
         tablePanel.add(tableNew);
         tableNew.addMouseListener(new MouseAdapter() {
             @Override
@@ -484,6 +531,7 @@ public class PosGui extends JFrame{
             }
         });
         tablePanel.updateUI();
+        tableItems.put(tableNew.getId(), tableNew);
     }
 
     /**
@@ -544,12 +592,29 @@ public class PosGui extends JFrame{
                 merging = 1;
             }
             else {
-                tablePanel.add(new MultiTable(firstMerge, myTable));
+                final MultiTable multiTable = new MultiTable(firstMerge, myTable);
+                multiTable.addMouseListener(new MouseAdapter() {
+                    @Override
+                    public void mouseClicked(MouseEvent e) {
+                        tableClicked(multiTable);
+                    }
+                });
+                tablePanel.add(multiTable);
+
                 tablePanel.remove(firstMerge);
                 tablePanel.remove(myTable);
                 merging = -1;
             }
         }
+    }
+
+    private void tableClicked(MultiTable multiTable) {
+        totalText.setText("$0.00");
+        model.loadTable(multiTable.getTable());
+        CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+        myLayout.show(rootPanel, "CardOrder");
+        multiTable.setOccupied(true);
+        currentTable = multiTable.getTable();
     }
 
     private void togoClicked(ToGoOrder order) {

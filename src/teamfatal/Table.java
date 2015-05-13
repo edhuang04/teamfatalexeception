@@ -1,6 +1,7 @@
 package teamfatal;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -21,7 +22,7 @@ public class Table extends JLabel
      * Sets Icon to unoccupied table icon
      * Initializes table receipt
      */
-    public Table()
+    public Table(int otherId)
     {
         super();
         ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");
@@ -29,6 +30,13 @@ public class Table extends JLabel
         this.setVisible(true);
         occupied = false;
         tableReceipt = new Receipt();
+        id = otherId;
+        this.setText(Integer.toString(id));
+        this.setVerticalTextPosition(BOTTOM);
+        this.setHorizontalTextPosition(CENTER);
+        Font font = new Font("Verdana", Font.BOLD, 14);
+        this.setFont(font);
+        this.setForeground(Color.WHITE);
     }
 
     public Table(Receipt receipt)

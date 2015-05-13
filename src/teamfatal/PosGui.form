@@ -5,7 +5,8 @@
       <xy x="20" y="20" width="1962" height="1329"/>
     </constraints>
     <properties>
-      <foreground color="-5738752"/>
+      <background color="-12829636"/>
+      <foreground color="-12828863"/>
       <maximumSize width="-1" height="-1"/>
     </properties>
     <border type="none"/>
@@ -16,7 +17,8 @@
           <card name="CardTable"/>
         </constraints>
         <properties>
-          <foreground color="-16734808"/>
+          <background color="-12829636"/>
+          <foreground color="-12829636"/>
           <maximumSize width="1920" height="1080"/>
         </properties>
         <border type="none"/>
@@ -29,7 +31,7 @@
             </constraints>
             <properties>
               <continuousLayout value="true"/>
-              <dividerLocation value="1800"/>
+              <dividerLocation value="1775"/>
               <dividerSize value="0"/>
               <foreground color="-9605779"/>
               <resizeWeight value="1.0"/>
@@ -41,9 +43,9 @@
                   <splitpane position="left"/>
                 </constraints>
                 <properties>
-                  <dividerLocation value="50"/>
-                  <dividerSize value="5"/>
-                  <lastDividerLocation value="50"/>
+                  <dividerLocation value="80"/>
+                  <dividerSize value="0"/>
+                  <lastDividerLocation value="75"/>
                   <maximumSize width="-1" height="-1"/>
                   <orientation value="0"/>
                 </properties>
@@ -54,7 +56,10 @@
                     <constraints>
                       <splitpane position="left"/>
                     </constraints>
-                    <properties/>
+                    <properties>
+                      <background color="-12829636"/>
+                      <foreground color="-12829636"/>
+                    </properties>
                     <border type="none"/>
                     <children>
                       <component id="efc48" class="javax.swing.JButton" binding="DINEINButton" default-binding="true">
@@ -63,6 +68,7 @@
                         </constraints>
                         <properties>
                           <background color="-16727354"/>
+                          <font size="24"/>
                           <foreground color="-16777216"/>
                           <text value="DINE-IN"/>
                         </properties>
@@ -73,6 +79,7 @@
                         </constraints>
                         <properties>
                           <background color="-256"/>
+                          <font size="24"/>
                           <foreground color="-16777216"/>
                           <text value="Merge"/>
                         </properties>
@@ -84,6 +91,7 @@
                         <properties>
                           <background color="-29688"/>
                           <focusTraversalPolicyProvider value="false"/>
+                          <font size="24"/>
                           <foreground color="-16777216"/>
                           <text value="ToGo"/>
                         </properties>
@@ -93,6 +101,9 @@
                           <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                         </constraints>
                         <properties>
+                          <background color="-256"/>
+                          <font size="24"/>
+                          <foreground color="-16777216"/>
                           <text value="Add Order"/>
                           <visible value="false"/>
                         </properties>
@@ -103,7 +114,10 @@
                     <constraints>
                       <splitpane position="right"/>
                     </constraints>
-                    <properties/>
+                    <properties>
+                      <background color="-12829636"/>
+                      <foreground color="-12829636"/>
+                    </properties>
                     <border type="none"/>
                     <children>
                       <splitpane id="d913" binding="split2">
@@ -111,11 +125,12 @@
                           <card name="CardDinein"/>
                         </constraints>
                         <properties>
-                          <dividerLocation value="1650"/>
-                          <dividerSize value="4"/>
+                          <dividerLocation value="1625"/>
+                          <dividerSize value="0"/>
                           <enabled value="true"/>
+                          <foreground color="-16777216"/>
                           <inheritsPopupMenu value="false"/>
-                          <lastDividerLocation value="-1"/>
+                          <lastDividerLocation value="1575"/>
                           <maximumSize width="1700" height="1700"/>
                         </properties>
                         <border type="none"/>
@@ -125,11 +140,12 @@
                               <splitpane position="left"/>
                             </constraints>
                             <properties>
-                              <dividerLocation value="121"/>
-                              <dividerSize value="4"/>
+                              <background color="-12829636"/>
+                              <dividerLocation value="150"/>
+                              <dividerSize value="0"/>
                               <enabled value="true"/>
                               <foreground color="-5738752"/>
-                              <lastDividerLocation value="-1"/>
+                              <lastDividerLocation value="200"/>
                               <visible value="true"/>
                             </properties>
                             <border type="none"/>
@@ -140,6 +156,7 @@
                                 </constraints>
                                 <properties>
                                   <background color="-11578282"/>
+                                  <foreground color="-11578282"/>
                                   <maximumSize width="1000" height="1000"/>
                                 </properties>
                                 <border type="none"/>
@@ -152,6 +169,7 @@
                                 </constraints>
                                 <properties>
                                   <foreground color="-12828863"/>
+                                  <name value="leftBooths"/>
                                   <opaque value="true"/>
                                 </properties>
                                 <border type="none"/>
@@ -160,19 +178,30 @@
                                     <constraints>
                                       <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                                     </constraints>
-                                    <properties/>
+                                    <properties>
+                                      <foreground color="-1"/>
+                                      <horizontalAlignment value="0"/>
+                                      <opaque value="false"/>
+                                      <text value="0"/>
+                                      <verticalAlignment value="3"/>
+                                      <verticalTextPosition value="3"/>
+                                    </properties>
                                   </component>
                                   <component id="6e5ea" class="teamfatal.LeftBooth" binding="leftBooth2" default-binding="true">
                                     <constraints>
                                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                                     </constraints>
-                                    <properties/>
+                                    <properties>
+                                      <foreground color="-16777216"/>
+                                    </properties>
                                   </component>
                                   <component id="b864e" class="teamfatal.LeftBooth" binding="leftBooth3" default-binding="true">
                                     <constraints>
                                       <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                                     </constraints>
-                                    <properties/>
+                                    <properties>
+                                      <foreground color="-12828863"/>
+                                    </properties>
                                   </component>
                                 </children>
                               </grid>
@@ -214,7 +243,9 @@
                         <constraints>
                           <card name="CardTogo"/>
                         </constraints>
-                        <properties/>
+                        <properties>
+                          <foreground color="-12829636"/>
+                        </properties>
                         <border type="none"/>
                         <children/>
                       </grid>
@@ -222,7 +253,7 @@
                   </grid>
                 </children>
               </splitpane>
-              <grid id="89f8" binding="managerPanel" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="89f8" binding="managerPanel" layout-manager="GridLayoutManager" row-count="5" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="0" left="0" bottom="0" right="0"/>
                 <constraints>
                   <splitpane position="right"/>
@@ -232,14 +263,18 @@
                   <enabled value="true"/>
                   <foreground color="-14145496"/>
                   <maximumSize width="100" height="2147483647"/>
+                  <minimumSize width="100" height="269"/>
+                  <requestFocusEnabled value="true"/>
                 </properties>
                 <border type="none"/>
                 <children>
                   <component id="cba1e" class="javax.swing.JButton" binding="btnManager">
                     <constraints>
-                      <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                      <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
+                      <background color="-6776676"/>
+                      <font size="20"/>
                       <horizontalAlignment value="2"/>
                       <text value="Manager"/>
                     </properties>
@@ -249,6 +284,9 @@
                       <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
+                      <background color="-6776676"/>
+                      <font size="20"/>
+                      <foreground color="-16777216"/>
                       <horizontalAlignment value="2"/>
                       <text value="Add Table"/>
                     </properties>
@@ -259,6 +297,7 @@
                     </constraints>
                     <properties>
                       <background color="-1572846"/>
+                      <font size="20"/>
                       <foreground color="-16777216"/>
                       <horizontalAlignment value="2"/>
                       <text value="Log Off"/>
@@ -269,8 +308,23 @@
                       <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
+                      <background color="-6776676"/>
+                      <font size="20"/>
+                      <foreground color="-16777216"/>
                       <horizontalAlignment value="2"/>
                       <text value="Remove Table"/>
+                    </properties>
+                  </component>
+                  <component id="403c7" class="javax.swing.JButton" binding="btnWaitlist">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-6776676"/>
+                      <font size="20"/>
+                      <foreground color="-16777216"/>
+                      <horizontalAlignment value="2"/>
+                      <text value="Waitlist"/>
                     </properties>
                   </component>
                 </children>
@@ -284,7 +338,9 @@
         <constraints>
           <card name="CardOrder"/>
         </constraints>
-        <properties/>
+        <properties>
+          <foreground color="-12829636"/>
+        </properties>
         <border type="none"/>
         <children>
           <splitpane id="82662">
@@ -294,7 +350,8 @@
               </grid>
             </constraints>
             <properties>
-              <dividerSize value="2"/>
+              <dividerLocation value="80"/>
+              <dividerSize value="0"/>
               <orientation value="0"/>
               <resizeWeight value="0.0"/>
             </properties>
@@ -305,7 +362,9 @@
                 <constraints>
                   <splitpane position="left"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <background color="-12829636"/>
+                </properties>
                 <border type="none"/>
                 <children>
                   <component id="e5d5f" class="javax.swing.JButton" binding="btnOrderExit">
@@ -315,6 +374,7 @@
                     <properties>
                       <background color="-1572846"/>
                       <enabled value="true"/>
+                      <font size="24"/>
                       <foreground color="-16777216"/>
                       <text value="Exit"/>
                     </properties>
@@ -327,15 +387,21 @@
                       <autoscrolls value="true"/>
                       <background color="-16216064"/>
                       <borderPainted value="false"/>
+                      <font size="24"/>
+                      <foreground color="-16777216"/>
                       <text value="Checkout"/>
                     </properties>
                   </component>
-                  <component id="eea1e" class="javax.swing.JButton" binding="btnPrintReceipt">
+                  <component id="eea1e" class="javax.swing.JButton" binding="btnDiscount">
                     <constraints>
                       <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
-                      <text value="Print Receipt"/>
+                      <background color="-16758330"/>
+                      <focusTraversalPolicyProvider value="false"/>
+                      <font size="24"/>
+                      <foreground color="-16777216"/>
+                      <text value="Discount"/>
                     </properties>
                   </component>
                 </children>
@@ -345,7 +411,9 @@
                 <constraints>
                   <splitpane position="right"/>
                 </constraints>
-                <properties/>
+                <properties>
+                  <foreground color="-12829636"/>
+                </properties>
                 <border type="none"/>
                 <children>
                   <splitpane id="22e5a">
@@ -368,6 +436,8 @@
                           <splitpane position="right"/>
                         </constraints>
                         <properties>
+                          <background color="-14474461"/>
+                          <foreground color="-12829636"/>
                           <maximumSize width="-1" height="-1"/>
                           <minimumSize width="1495" height="1003"/>
                         </properties>
@@ -379,6 +449,7 @@
                               <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                             </constraints>
                             <properties>
+                              <background color="-12829636"/>
                               <foreground color="-13355980"/>
                             </properties>
                             <border type="none"/>
@@ -388,7 +459,10 @@
                                 <constraints>
                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                 </constraints>
-                                <properties/>
+                                <properties>
+                                  <background color="-12829636"/>
+                                  <foreground color="-12829636"/>
+                                </properties>
                                 <border type="none"/>
                                 <children>
                                   <grid id="35634" layout-manager="GridLayoutManager" row-count="2" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -397,7 +471,9 @@
                                       <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                     </constraints>
                                     <properties>
+                                      <background color="-14474461"/>
                                       <enabled value="true"/>
+                                      <foreground color="-1"/>
                                       <maximumSize width="437" height="2147483647"/>
                                     </properties>
                                     <border type="line" title="Toppings" title-justification="2"/>
@@ -407,6 +483,8 @@
                                           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
                                         <properties>
+                                          <background color="-12829636"/>
+                                          <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_Bacon.png"/>
                                           <text value="Bacon"/>
@@ -418,6 +496,8 @@
                                           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
                                         <properties>
+                                          <background color="-12828864"/>
+                                          <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Sauce_Marinara.png"/>
                                           <text value="Marinara Sauce"/>
@@ -429,6 +509,8 @@
                                           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
                                         <properties>
+                                          <background color="-12828864"/>
+                                          <foreground color="-1"/>
                                           <text value="Mozzarella Cheese"/>
                                           <verticalTextPosition value="3"/>
                                         </properties>
@@ -438,6 +520,8 @@
                                           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
                                         <properties>
+                                          <background color="-12828864"/>
+                                          <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_Mushroom.png"/>
                                           <text value="Mushrooms"/>
@@ -449,6 +533,8 @@
                                           <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
                                         <properties>
+                                          <background color="-12828864"/>
+                                          <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_Pepperoni.png"/>
                                           <text value="Pepperoni"/>
@@ -460,6 +546,8 @@
                                           <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
                                         <properties>
+                                          <background color="-12828864"/>
+                                          <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_Olive_black.png"/>
                                           <text value="Black Olives"/>
@@ -471,6 +559,8 @@
                                           <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
                                         <properties>
+                                          <background color="-12828864"/>
+                                          <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_ItalianSausage.png"/>
                                           <text value="Italian Sausage"/>
@@ -482,6 +572,8 @@
                                           <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
                                         <properties>
+                                          <background color="-12828864"/>
+                                          <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_Tomato.png"/>
                                           <text value="Tomatoes"/>
@@ -493,6 +585,8 @@
                                           <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
                                         <properties>
+                                          <background color="-12828864"/>
+                                          <foreground color="-1"/>
                                           <text value="Chicken"/>
                                           <verticalTextPosition value="3"/>
                                         </properties>
@@ -502,6 +596,8 @@
                                           <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
                                         <properties>
+                                          <background color="-12828864"/>
+                                          <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_Pineapple.png"/>
                                           <text value="Pineapple"/>
@@ -513,6 +609,8 @@
                                           <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
                                         <properties>
+                                          <background color="-12828864"/>
+                                          <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_Onion_Red.png"/>
                                           <text value="Red Onion"/>
@@ -524,6 +622,8 @@
                                           <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
                                         <properties>
+                                          <background color="-12828864"/>
+                                          <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_Ham.png"/>
                                           <text value="Ham"/>
@@ -537,6 +637,10 @@
                                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                     </constraints>
                                     <properties>
+                                      <background color="-2769920"/>
+                                      <borderPainted value="false"/>
+                                      <font size="24"/>
+                                      <foreground color="-16777216"/>
                                       <text value="Add Pizza"/>
                                     </properties>
                                   </component>
@@ -557,6 +661,7 @@
                                   <card name="Card1"/>
                                 </constraints>
                                 <properties>
+                                  <background color="-14474461"/>
                                   <maximumSize width="2147483647" height="100"/>
                                 </properties>
                                 <border type="line" title="Size" title-justification="2"/>
@@ -566,6 +671,8 @@
                                       <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                     </constraints>
                                     <properties>
+                                      <background color="-12829636"/>
+                                      <foreground color="-1"/>
                                       <horizontalTextPosition value="0"/>
                                       <icon value="Images/BT_Size_MediumPizza.png"/>
                                       <text value="Medium"/>
@@ -578,6 +685,8 @@
                                       <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                     </constraints>
                                     <properties>
+                                      <background color="-12829636"/>
+                                      <foreground color="-1"/>
                                       <hideActionText value="false"/>
                                       <horizontalTextPosition value="0"/>
                                       <icon value="Images/BT_Size_LargePizza.png"/>
@@ -590,6 +699,8 @@
                                       <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                     </constraints>
                                     <properties>
+                                      <background color="-12829636"/>
+                                      <foreground color="-1"/>
                                       <text value="Extra Large"/>
                                     </properties>
                                   </component>
@@ -598,6 +709,8 @@
                                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                     </constraints>
                                     <properties>
+                                      <background color="-12829636"/>
+                                      <foreground color="-1"/>
                                       <horizontalTextPosition value="0"/>
                                       <icon value="Images/BT_Size_SmallPizza.png"/>
                                       <text value="Small"/>
@@ -613,7 +726,10 @@
                             <constraints>
                               <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                             </constraints>
-                            <properties/>
+                            <properties>
+                              <background color="-14474461"/>
+                              <foreground color="-1"/>
+                            </properties>
                             <border type="line" title="Crust" title-justification="2">
                               <font/>
                             </border>
@@ -623,6 +739,7 @@
                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                 </constraints>
                                 <properties>
+                                  <background color="-12829636"/>
                                   <horizontalTextPosition value="0"/>
                                   <icon value="Images/BT_Crust_Regular.jpg"/>
                                   <text value="Original"/>
@@ -634,6 +751,7 @@
                                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                 </constraints>
                                 <properties>
+                                  <background color="-12829636"/>
                                   <horizontalTextPosition value="0"/>
                                   <icon value="Images/BT_Crust_Thincrust.jpg"/>
                                   <text value="Thin Crust"/>
@@ -646,6 +764,7 @@
                                   <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                 </constraints>
                                 <properties>
+                                  <background color="-12829636"/>
                                   <horizontalTextPosition value="0"/>
                                   <icon value="Images/BT_Crust_DeepDish.jpg"/>
                                   <text value="Deep Dish"/>
@@ -659,7 +778,10 @@
                             <constraints>
                               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                             </constraints>
-                            <properties/>
+                            <properties>
+                              <background color="-12829636"/>
+                              <foreground color="-12828863"/>
+                            </properties>
                             <border type="none"/>
                             <children>
                               <vspacer id="27240">
@@ -673,7 +795,12 @@
                                     <preferred-size width="200" height="200"/>
                                   </grid>
                                 </constraints>
-                                <properties/>
+                                <properties>
+                                  <background color="-12829636"/>
+                                  <font size="16"/>
+                                  <foreground color="-1"/>
+                                  <tabLayoutPolicy value="0"/>
+                                </properties>
                                 <border type="none"/>
                                 <children>
                                   <grid id="f73f4" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -681,20 +808,29 @@
                                     <constraints>
                                       <tabbedpane title="Beverages"/>
                                     </constraints>
-                                    <properties/>
+                                    <properties>
+                                      <background color="-12829636"/>
+                                      <foreground color="-12829636"/>
+                                    </properties>
                                     <border type="none"/>
                                     <children>
                                       <scrollpane id="53c92">
                                         <constraints>
                                           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
-                                        <properties/>
+                                        <properties>
+                                          <foreground color="-12829636"/>
+                                        </properties>
                                         <border type="none"/>
                                         <children>
                                           <grid id="6edf2" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                                             <margin top="0" left="0" bottom="0" right="0"/>
                                             <constraints/>
-                                            <properties/>
+                                            <properties>
+                                              <background color="-12829636"/>
+                                              <foreground color="-12829636"/>
+                                              <inheritsPopupMenu value="false"/>
+                                            </properties>
                                             <border type="none"/>
                                             <children>
                                               <component id="23df7" class="javax.swing.JLabel" binding="imageSparker">
@@ -702,9 +838,12 @@
                                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font size="14"/>
+                                                  <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Bev_BerrySparkler.jpg"/>
+                                                  <opaque value="false"/>
                                                   <text value="Berry Sparkler - $5.00"/>
                                                   <verticalAlignment value="1"/>
                                                   <verticalTextPosition value="1"/>
@@ -715,9 +854,12 @@
                                                   <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font size="14"/>
+                                                  <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Bev_Smoothies.jpg"/>
+                                                  <opaque value="false"/>
                                                   <text value="Smoothie - $3.5"/>
                                                   <verticalAlignment value="1"/>
                                                   <verticalTextPosition value="1"/>
@@ -728,9 +870,12 @@
                                                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font size="14"/>
+                                                  <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Bev_BlackBerryFizz.jpg"/>
+                                                  <opaque value="false"/>
                                                   <text value="Black Berry Fizz - $5.00"/>
                                                   <verticalAlignment value="1"/>
                                                   <verticalTextPosition value="1"/>
@@ -747,20 +892,30 @@
                                     <constraints>
                                       <tabbedpane title="Appetizers"/>
                                     </constraints>
-                                    <properties/>
+                                    <properties>
+                                      <background color="-12829636"/>
+                                      <foreground color="-12829636"/>
+                                      <opaque value="false"/>
+                                    </properties>
                                     <border type="none"/>
                                     <children>
                                       <scrollpane id="be1cf">
                                         <constraints>
                                           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
-                                        <properties/>
+                                        <properties>
+                                          <background color="-12829636"/>
+                                          <foreground color="-12829636"/>
+                                        </properties>
                                         <border type="none"/>
                                         <children>
                                           <grid id="2457e" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                                             <margin top="0" left="0" bottom="0" right="0"/>
                                             <constraints/>
-                                            <properties/>
+                                            <properties>
+                                              <background color="-12829636"/>
+                                              <foreground color="-12829636"/>
+                                            </properties>
                                             <border type="none"/>
                                             <children>
                                               <component id="992c2" class="javax.swing.JLabel" binding="imageWrap">
@@ -768,6 +923,7 @@
                                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Lettuce Wraps.jpg"/>
@@ -782,6 +938,7 @@
                                                   <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/App_AvocadoClubEggRolls.jpg"/>
@@ -796,6 +953,7 @@
                                                   <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/App_BiancoFlatbread.jpg"/>
@@ -809,6 +967,7 @@
                                                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/App_PetiteWedge.jpg"/>
@@ -822,6 +981,7 @@
                                                   <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <foreground color="-1"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/App_SedonaTortillaSoup.jpg"/>
                                                   <text value="Sedona Tortilla Soup - $6.00"/>
@@ -839,7 +999,10 @@
                                     <constraints>
                                       <tabbedpane title="Dessert"/>
                                     </constraints>
-                                    <properties/>
+                                    <properties>
+                                      <background color="-12829636"/>
+                                      <foreground color="-12829636"/>
+                                    </properties>
                                     <border type="none"/>
                                     <children>
                                       <scrollpane id="cca">
@@ -847,17 +1010,19 @@
                                           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
                                         <properties>
-                                          <horizontalScrollBar value="b15c7"/>
                                           <horizontalScrollBarPolicy value="32"/>
                                           <verticalScrollBar value=""/>
                                           <verticalScrollBarPolicy value="21"/>
                                         </properties>
                                         <border type="none"/>
                                         <children>
-                                          <grid id="3232b" layout-manager="GridLayoutManager" row-count="2" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                                          <grid id="3232b" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                                             <margin top="5" left="0" bottom="0" right="0"/>
                                             <constraints/>
-                                            <properties/>
+                                            <properties>
+                                              <background color="-12829636"/>
+                                              <foreground color="-12829636"/>
+                                            </properties>
                                             <border type="etched"/>
                                             <children>
                                               <component id="b0e24" class="javax.swing.JLabel" binding="imageSouffleCake">
@@ -865,6 +1030,7 @@
                                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Dess_BelgianChocolateSouffleCake.jpg"/>
@@ -878,6 +1044,7 @@
                                                   <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Dess_RedVelvetCake.jpg"/>
@@ -886,20 +1053,12 @@
                                                   <verticalTextPosition value="1"/>
                                                 </properties>
                                               </component>
-                                              <component id="b15c7" class="javax.swing.JScrollBar" binding="scrollBar1" default-binding="true">
-                                                <constraints>
-                                                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="0" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
-                                                </constraints>
-                                                <properties>
-                                                  <maximum value="500"/>
-                                                  <orientation value="0"/>
-                                                </properties>
-                                              </component>
                                               <component id="f8c70" class="javax.swing.JLabel" binding="imageCaramelPudding">
                                                 <constraints>
                                                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Dess_SaltedCaramelPudding.jpg"/>
@@ -913,6 +1072,7 @@
                                                   <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Dess_KeyLimePie.jpg"/>
@@ -926,6 +1086,7 @@
                                                   <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Dess_Tiramisu.jpg"/>
@@ -945,7 +1106,10 @@
                                     <constraints>
                                       <tabbedpane title="Alcohol"/>
                                     </constraints>
-                                    <properties/>
+                                    <properties>
+                                      <background color="-12829636"/>
+                                      <foreground color="-12829636"/>
+                                    </properties>
                                     <border type="none"/>
                                     <children>
                                       <scrollpane id="9eea9">
@@ -958,7 +1122,10 @@
                                           <grid id="adec5" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                                             <margin top="0" left="0" bottom="0" right="0"/>
                                             <constraints/>
-                                            <properties/>
+                                            <properties>
+                                              <background color="-12829636"/>
+                                              <foreground color="-12829636"/>
+                                            </properties>
                                             <border type="none"/>
                                             <children>
                                               <component id="43f9d" class="javax.swing.JLabel" binding="imageSangria">
@@ -966,6 +1133,7 @@
                                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Alc_Sangria.jpg"/>
@@ -986,6 +1154,8 @@
                                       <tabbedpane title="Signature Pizzas"/>
                                     </constraints>
                                     <properties>
+                                      <background color="-12829636"/>
+                                      <foreground color="-12829636"/>
                                       <minimumSize width="499" height="399"/>
                                     </properties>
                                     <border type="none"/>
@@ -1000,7 +1170,10 @@
                                           <grid id="d186f" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                                             <margin top="0" left="0" bottom="0" right="0"/>
                                             <constraints/>
-                                            <properties/>
+                                            <properties>
+                                              <background color="-12829636"/>
+                                              <foreground color="-12829636"/>
+                                            </properties>
                                             <border type="none"/>
                                             <children>
                                               <component id="61651" class="javax.swing.JLabel" binding="imageBBQ">
@@ -1008,6 +1181,7 @@
                                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <foreground color="-1"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Pizza_BBQChicken.jpg"/>
                                                   <text value="BBQ Chicken - $12.00"/>
@@ -1019,6 +1193,7 @@
                                                   <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <foreground color="-1"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Pizza_CaliforniaClub.jpg"/>
                                                   <text value="California Club - $14.00"/>
@@ -1030,6 +1205,7 @@
                                                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <foreground color="-1"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Pizza_CaliforniaVeggiePizza.jpg"/>
                                                   <text value="California Veggie - $14.00"/>
@@ -1047,20 +1223,30 @@
                                     <constraints>
                                       <tabbedpane title="Salads"/>
                                     </constraints>
-                                    <properties/>
+                                    <properties>
+                                      <background color="-12829636"/>
+                                      <foreground color="-12829636"/>
+                                      <inheritsPopupMenu value="false"/>
+                                    </properties>
                                     <border type="none"/>
                                     <children>
                                       <scrollpane id="2f8ef">
                                         <constraints>
                                           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                         </constraints>
-                                        <properties/>
+                                        <properties>
+                                          <background color="-12829636"/>
+                                          <foreground color="-12829636"/>
+                                        </properties>
                                         <border type="none"/>
                                         <children>
                                           <grid id="1e4e6" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                                             <margin top="0" left="0" bottom="0" right="0"/>
                                             <constraints/>
-                                            <properties/>
+                                            <properties>
+                                              <background color="-12829636"/>
+                                              <foreground color="-12829636"/>
+                                            </properties>
                                             <border type="none"/>
                                             <children>
                                               <component id="8f2b7" class="javax.swing.JLabel" binding="imageAsparagus">
@@ -1068,6 +1254,7 @@
                                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <foreground color="-1"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Salad-AsparagusArugula.jpg"/>
                                                   <text value="Asparagus Arugula - $8.00"/>
@@ -1085,7 +1272,9 @@
                                     <constraints>
                                       <tabbedpane title="Main Plates"/>
                                     </constraints>
-                                    <properties/>
+                                    <properties>
+                                      <background color="-12829636"/>
+                                    </properties>
                                     <border type="none"/>
                                     <children>
                                       <scrollpane id="2c6e5">
@@ -1098,7 +1287,10 @@
                                           <grid id="abc80" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                                             <margin top="0" left="0" bottom="0" right="0"/>
                                             <constraints/>
-                                            <properties/>
+                                            <properties>
+                                              <background color="-12829636"/>
+                                              <foreground color="-12829636"/>
+                                            </properties>
                                             <border type="none"/>
                                             <children>
                                               <component id="2fc4b" class="javax.swing.JLabel" binding="imageSalmon">
@@ -1106,6 +1298,7 @@
                                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <foreground color="-1"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/MP_CedarPlankSalmon.jpg"/>
                                                   <text value="Cedar Plank Salmon - $16.00"/>
@@ -1129,7 +1322,10 @@
                         <constraints>
                           <splitpane position="left"/>
                         </constraints>
-                        <properties/>
+                        <properties>
+                          <background color="-12829636"/>
+                          <foreground color="-12829636"/>
+                        </properties>
                         <border type="none"/>
                         <children>
                           <grid id="6d008" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -1137,7 +1333,10 @@
                             <constraints>
                               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                             </constraints>
-                            <properties/>
+                            <properties>
+                              <background color="-12829636"/>
+                              <foreground color="-12829636"/>
+                            </properties>
                             <border type="none"/>
                             <children>
                               <scrollpane id="4b925" binding="scrollPane1">
@@ -1145,18 +1344,23 @@
                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                 </constraints>
                                 <properties>
+                                  <background color="-12829636"/>
                                   <focusTraversalPolicyProvider value="false"/>
                                   <font size="24"/>
+                                  <foreground color="-12829636"/>
                                 </properties>
                                 <border type="none"/>
                                 <children>
                                   <component id="15ab6" class="javax.swing.JTable" binding="receiptTable">
                                     <constraints/>
                                     <properties>
+                                      <background color="-12829636"/>
                                       <fillsViewportHeight value="false"/>
                                       <font size="24"/>
+                                      <foreground color="-1"/>
                                       <intercellSpacing width="1" height="1"/>
                                       <rowMargin value="1"/>
+                                      <selectionForeground color="-1"/>
                                     </properties>
                                   </component>
                                 </children>
@@ -1171,19 +1375,23 @@
                             <properties/>
                             <border type="none"/>
                             <children>
-                              <grid id="30b1e" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                              <grid id="30b1e" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                                 <margin top="0" left="0" bottom="0" right="0"/>
                                 <constraints>
                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                                 </constraints>
-                                <properties/>
+                                <properties>
+                                  <background color="-12829636"/>
+                                </properties>
                                 <border type="none"/>
                                 <children>
                                   <component id="4bfdb" class="javax.swing.JLabel">
                                     <constraints>
-                                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+                                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
                                     </constraints>
                                     <properties>
+                                      <font size="16"/>
+                                      <foreground color="-1376257"/>
                                       <text value="Total"/>
                                       <verticalAlignment value="0"/>
                                       <verticalTextPosition value="0"/>
@@ -1191,18 +1399,31 @@
                                   </component>
                                   <component id="b962d" class="javax.swing.JTextField" binding="totalText">
                                     <constraints>
-                                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="3" indent="0" use-parent-layout="false">
+                                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="3" indent="0" use-parent-layout="false">
                                         <preferred-size width="150" height="-1"/>
                                       </grid>
                                     </constraints>
                                     <properties>
+                                      <background color="-16119029"/>
                                       <caretColor color="-1"/>
                                       <editable value="false"/>
                                       <font size="36"/>
+                                      <foreground color="-1376257"/>
                                       <horizontalAlignment value="0"/>
                                       <text value="0.00"/>
                                     </properties>
                                   </component>
+                                  <grid id="f805" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                                    <margin top="0" left="0" bottom="0" right="0"/>
+                                    <constraints>
+                                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                                    </constraints>
+                                    <properties>
+                                      <background color="-12829636"/>
+                                    </properties>
+                                    <border type="none"/>
+                                    <children/>
+                                  </grid>
                                 </children>
                               </grid>
                             </children>
@@ -1226,7 +1447,7 @@
         <border type="none"/>
         <children>
           <grid id="5398f" class="teamfatal.ImagePanel" binding="BackgroundPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-            <margin top="400" left="0" bottom="0" right="0"/>
+            <margin top="500" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -1248,7 +1469,7 @@
                       <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
-                      <font size="24"/>
+                      <font size="36"/>
                       <foreground color="-1"/>
                       <text value="Username:"/>
                     </properties>
@@ -1260,7 +1481,7 @@
                       </grid>
                     </constraints>
                     <properties>
-                      <font size="24"/>
+                      <font size="36"/>
                     </properties>
                   </component>
                   <component id="4fc2e" class="javax.swing.JLabel">
@@ -1268,7 +1489,7 @@
                       <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
-                      <font size="24"/>
+                      <font size="36"/>
                       <foreground color="-1"/>
                       <text value="Password:"/>
                     </properties>
@@ -1280,7 +1501,7 @@
                       </grid>
                     </constraints>
                     <properties>
-                      <font size="24"/>
+                      <font size="36"/>
                     </properties>
                   </component>
                   <component id="442ba" class="javax.swing.JButton" binding="btnLogin">
@@ -1290,7 +1511,7 @@
                     <properties>
                       <background color="-14803168"/>
                       <borderPainted value="true"/>
-                      <font size="24"/>
+                      <font size="36"/>
                       <foreground color="-11316397"/>
                       <text value="Login"/>
                     </properties>
@@ -1310,6 +1531,117 @@
               </grid>
             </children>
           </grid>
+        </children>
+      </grid>
+      <grid id="b7e6b" binding="WaitlistMenu" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <card name="CardWaitlist"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <splitpane id="fa9c3">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="200"/>
+              </grid>
+            </constraints>
+            <properties>
+              <dividerLocation value="70"/>
+              <dividerSize value="0"/>
+              <orientation value="0"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="dcd0f" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <splitpane position="left"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="96a08" class="javax.swing.JButton" binding="removeEntryButton" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font size="36"/>
+                      <text value="Remove Entry"/>
+                    </properties>
+                  </component>
+                  <component id="f904" class="javax.swing.JButton" binding="addEntryButton" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font size="36"/>
+                      <text value="Add Entry"/>
+                    </properties>
+                  </component>
+                  <component id="f73ce" class="javax.swing.JButton" binding="exitButtonWaitlist">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-65536"/>
+                      <font size="36"/>
+                      <foreground color="-16777216"/>
+                      <text value="Exit"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <splitpane id="b75ae">
+                <constraints>
+                  <splitpane position="right"/>
+                </constraints>
+                <properties>
+                  <dividerSize value="0"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="67cdb" class="javax.swing.JTable" binding="tableWaitlist">
+                    <constraints>
+                      <splitpane position="left"/>
+                    </constraints>
+                    <properties>
+                      <fillsViewportHeight value="true"/>
+                    </properties>
+                  </component>
+                  <grid id="aa42b" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints>
+                      <splitpane position="right"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="99b18" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <icon value="Images/arrow-down.png"/>
+                          <text value=""/>
+                        </properties>
+                      </component>
+                      <component id="15c7e" class="javax.swing.JLabel">
+                        <constraints>
+                          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+                        </constraints>
+                        <properties>
+                          <icon value="Images/arrow-up.png"/>
+                          <text value=""/>
+                        </properties>
+                      </component>
+                    </children>
+                  </grid>
+                </children>
+              </splitpane>
+            </children>
+          </splitpane>
         </children>
       </grid>
     </children>

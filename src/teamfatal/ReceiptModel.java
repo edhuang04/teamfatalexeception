@@ -3,6 +3,7 @@ package teamfatal;
 import javax.swing.*;
 import javax.swing.table.AbstractTableModel;
 import javax.swing.table.DefaultTableModel;
+import java.text.NumberFormat;
 import java.util.*;
 
 /**
@@ -15,13 +16,13 @@ public class ReceiptModel extends DefaultTableModel{
 
     public ReceiptModel()
     {
-        super(0,3);
+        super(0, 3);
     }
 
     public ReceiptModel(Receipt receipt)
     {
         super(0,3);
-        myTable = new Table();
+        myTable = new Table(0);
         loadReceipt();
     }
 
@@ -48,8 +49,9 @@ public class ReceiptModel extends DefaultTableModel{
                 {
                     if (this.getValueAt(iter, 1).equals(item.getName()))
                     {
+                        NumberFormat nf = NumberFormat.getCurrencyInstance();
                         this.setValueAt(Integer.parseInt(this.getValueAt(iter, 0).toString()) + 1, iter, 0);
-                        this.setValueAt("$" + Double.toString(Double.parseDouble(this.getValueAt(iter, 2).toString().substring(1)) + item.getPrice()), iter, 2);
+                        this.setValueAt(nf.format(Double.parseDouble(this.getValueAt(iter, 2).toString().substring(1)) + item.getPrice()), iter, 2);
                         itemFound = true;
                     }
                     ++iter;
@@ -57,7 +59,8 @@ public class ReceiptModel extends DefaultTableModel{
             }
             else
             {
-                this.addRow(new Object[]{"1", item.getName(), "$" + Double.toString(item.getPrice())});
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                this.addRow(new Object[]{"1", item.getName(), nf.format(item.getPrice())});
             }
 
             myTable.getReceipt().addItem(item);
@@ -73,8 +76,9 @@ public class ReceiptModel extends DefaultTableModel{
                 {
                     if (this.getValueAt(iter, 1).equals(item.getName()))
                     {
+                        NumberFormat nf = NumberFormat.getCurrencyInstance();
                         this.setValueAt(Integer.parseInt(this.getValueAt(iter, 0).toString()) + 1, iter, 0);
-                        this.setValueAt("$" + Double.toString(Double.parseDouble(this.getValueAt(iter, 2).toString().substring(1)) + item.getPrice()), iter, 2);
+                        this.setValueAt(nf.format(Double.parseDouble(this.getValueAt(iter, 2).toString().substring(1)) + item.getPrice()), iter, 2);
                         itemFound = true;
                     }
                     ++iter;
@@ -82,7 +86,8 @@ public class ReceiptModel extends DefaultTableModel{
             }
             else
             {
-                this.addRow(new Object[]{"1", item.getName(), "$" + Double.toString(item.getPrice())});
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                this.addRow(new Object[]{"1", item.getName(), nf.format(item.getPrice())});
             }
 
             myBooth.getReceipt().addItem(item);
@@ -98,8 +103,9 @@ public class ReceiptModel extends DefaultTableModel{
                 {
                     if (this.getValueAt(iter, 1).equals(item.getName()))
                     {
+                        NumberFormat nf = NumberFormat.getCurrencyInstance();
                         this.setValueAt(Integer.parseInt(this.getValueAt(iter, 0).toString()) + 1, iter, 0);
-                        this.setValueAt("$" + Double.toString(Double.parseDouble(this.getValueAt(iter, 2).toString().substring(1)) + item.getPrice()), iter, 2);
+                        this.setValueAt("$" + nf.format(Double.parseDouble(this.getValueAt(iter, 2).toString().substring(1)) + item.getPrice()), iter, 2);
                         itemFound = true;
                     }
                     ++iter;
@@ -107,7 +113,8 @@ public class ReceiptModel extends DefaultTableModel{
             }
             else
             {
-                this.addRow(new Object[]{"1", item.getName(), "$" + Double.toString(item.getPrice())});
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                this.addRow(new Object[]{"1", item.getName(), nf.format(item.getPrice())});
             }
 
             myOrder.getReceipt().addItem(item);
@@ -142,7 +149,8 @@ public class ReceiptModel extends DefaultTableModel{
             while (iter.hasNext()) {
                 Map.Entry<FoodItem, Integer> entry = iter.next();
                 double total = entry.getKey().getPrice() * entry.getValue();
-                this.addRow(new Object[]{entry.getValue(), entry.getKey().getName(), "$" + Double.toString(total)});
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                this.addRow(new Object[]{entry.getValue(), entry.getKey().getName(), nf.format(total)});
             }
         }
         else if(myBooth != null)
@@ -154,7 +162,8 @@ public class ReceiptModel extends DefaultTableModel{
             while (iter.hasNext()) {
                 Map.Entry<FoodItem, Integer> entry = iter.next();
                 double total = entry.getKey().getPrice() * entry.getValue();
-                this.addRow(new Object[]{entry.getValue(), entry.getKey().getName(), "$" + Double.toString(total)});
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                this.addRow(new Object[]{entry.getValue(), entry.getKey().getName(), nf.format(total)});
             }
         }
         else
@@ -166,7 +175,8 @@ public class ReceiptModel extends DefaultTableModel{
             while (iter.hasNext()) {
                 Map.Entry<FoodItem, Integer> entry = iter.next();
                 double total = entry.getKey().getPrice() * entry.getValue();
-                this.addRow(new Object[]{entry.getValue(), entry.getKey().getName(), "$" + Double.toString(total)});
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                this.addRow(new Object[]{entry.getValue(), entry.getKey().getName(), nf.format(total)});
             }
         }
     }

@@ -15,12 +15,13 @@ public class WaitlistModel extends DefaultTableModel {
 
     public WaitlistModel()
     {
-        super(0, 2);
+        super(0, 3);
+        super.setColumnIdentifiers(new Object[] {"Party Name", "Size", "Phone Number" });
     }
 
     public WaitlistModel(Receipt receipt)
     {
-        super(0,2);
+        super(0,3);
     }
 
     public WaitlistModel(int row, int col)
@@ -28,9 +29,9 @@ public class WaitlistModel extends DefaultTableModel {
         super(row, col);
     }
 
-    public void addEntry(int numPersons, String name)
+    public void addEntry(String name, String partySize, String phone)
     {
-        this.addRow(new Object[]{name, Integer.toString(numPersons)});
+        this.addRow(new Object[]{name, partySize, phone});
     }
 
 

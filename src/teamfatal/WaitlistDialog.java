@@ -15,6 +15,23 @@ public class WaitlistDialog extends JDialog{
     private JButton buttonCancel;
     private boolean responded;
 
+    @Override
+    public String getName() {
+        return name;
+    }
+
+    public String getPartyNum() {
+        return partyNum;
+    }
+
+    public String getCellphone() {
+        return cellphone;
+    }
+
+    private String name;
+    private String partyNum;
+    private String cellphone;
+
     public WaitlistDialog(){
 
         setContentPane(panel1);
@@ -58,6 +75,10 @@ public class WaitlistDialog extends JDialog{
     private void onOK() {
 // add your code here
         responded = true;
+        name = textName.getText();
+        cellphone = textCell.getText();
+        partyNum = textParty.getText();
+
         dispose();
     }
 

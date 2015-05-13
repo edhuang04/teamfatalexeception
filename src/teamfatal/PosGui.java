@@ -164,6 +164,8 @@ public class PosGui extends JFrame{
         this.setExtendedState(MAXIMIZED_BOTH);
         pack();
         setVisible(true);
+        tableWaitlist.setModel(new WaitlistModel());
+        tableWaitlist.setRowHeight(30);
         merge.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -219,7 +221,7 @@ public class PosGui extends JFrame{
                 });
                 NameDialog tempDialog = new NameDialog();
                 tempDialog.pack();
-                tempDialog.setLocation(960 - tempDialog.getWidth()/2, 540 - tempDialog.getHeight()/2);
+                tempDialog.setLocation(960 - tempDialog.getWidth() / 2, 540 - tempDialog.getHeight() / 2);
                 System.out.println(tempDialog.getWidth());
                 tempDialog.setVisible(true);
                 if(tempDialog.response() == true)
@@ -228,9 +230,9 @@ public class PosGui extends JFrame{
                     myOrder.setText(name);
                     myOrder.setHorizontalTextPosition(2);
                     myOrder.setVerticalAlignment(3);
+                    togoPanel.add(myOrder);
+                    togoPanel.updateUI();
                 }
-                togoPanel.add(myOrder);
-                togoPanel.updateUI();
             }
         });
         btnRemoveTable.addMouseListener(new MouseAdapter() {
@@ -255,7 +257,6 @@ public class PosGui extends JFrame{
                 myLayout.show(rootPanel, "CardTable");
             }
         });
-        createWaitlist();
         addEntryButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -280,15 +281,6 @@ public class PosGui extends JFrame{
         
         model.setColumnIdentifiers(new Object[]{"Quantity", "Description", "Price"});
     }
-
-    private void createWaitlist() {
-        tableWaitlist.setModel(new WaitlistModel());
-    }
-
-    private void openWaitlist() {
-
-    }
-
 
     private void addPizza()
     {
@@ -454,6 +446,11 @@ public class PosGui extends JFrame{
         waitPrintout.setLocation(960 - waitPrintout.getWidth()/2, 540 - waitPrintout.getHeight()/2);
         System.out.println(waitPrintout.getWidth());
         waitPrintout.setVisible(true);
+        if(waitPrintout.respondeded())
+        {
+            String[] temp = new String[] {waitPrintout.getName(), waitPrintout.getPartyNumber(), waitPrintout.getCellphone()};
+            ((WaitlistModel) tableWaitlist.getModel()).addEntry(temp[0], temp[1], temp[2]);
+        }
     }
 
     private void checkout()

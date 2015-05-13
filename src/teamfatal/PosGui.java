@@ -119,6 +119,7 @@ public class PosGui extends JFrame{
     private JButton addEntryButton;
     private JButton exitButtonWaitlist;
     private JTable tableWaitlist;
+    private JScrollPane waitlistScrollpane;
     private ButtonGroup Crust;
     private ButtonGroup Size;
     private JButton currentOrderButton;
@@ -570,6 +571,7 @@ public class PosGui extends JFrame{
             JOptionPane.showMessageDialog(new Frame(), "Tables.txt could not be properly loaded.");
         }
     }
+
     /**
      * When table is clicked, update the displayable receipt with the chosen table
      * @param myTable
@@ -577,9 +579,11 @@ public class PosGui extends JFrame{
     private void tableClicked(Table myTable) {
         if(removing == 1) {
             removeTable(myTable);
+            removing = -1;
         }
         else if(merging == -1) {
-            totalText.setText("$0.00");
+            NumberFormat nf = NumberFormat.getCurrencyInstance();
+            totalText.setText(nf.format(myTable.getReceipt().getTotal()));
             model.loadTable(myTable);
             CardLayout myLayout = (CardLayout) rootPanel.getLayout();
             myLayout.show(rootPanel, "CardOrder");
@@ -600,9 +604,9 @@ public class PosGui extends JFrame{
                     }
                 });
                 tablePanel.add(multiTable);
-
                 tablePanel.remove(firstMerge);
                 tablePanel.remove(myTable);
+                rootPanel.repaint();
                 merging = -1;
             }
         }

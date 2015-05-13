@@ -6,7 +6,7 @@ import java.awt.event.*;
 /**
  * Created by trenton on 5/12/15.
  */
-public class Waitlist extends JDialog{
+public class WaitlistDialog extends JDialog{
     private JPanel panel1;
     private JTextField textName;
     private JTextField textParty;
@@ -15,7 +15,7 @@ public class Waitlist extends JDialog{
     private JButton buttonCancel;
     private boolean responded;
 
-    public Waitlist(){
+    public WaitlistDialog(){
 
         setContentPane(panel1);
         setModal(true);

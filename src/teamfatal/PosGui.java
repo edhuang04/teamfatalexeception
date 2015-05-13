@@ -259,7 +259,7 @@ public class PosGui extends JFrame{
         addEntryButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-
+                waitlist();
             }
         });
         passwordFieldUser.addActionListener(new ActionListener() {
@@ -285,10 +285,10 @@ public class PosGui extends JFrame{
         tableWaitlist.setModel(new WaitlistModel());
     }
 
-
     private void openWaitlist() {
 
     }
+
 
     private void addPizza()
     {
@@ -445,6 +445,15 @@ public class PosGui extends JFrame{
         catch(Exception e) {
             JOptionPane.showMessageDialog(new Frame(), "Tables.txt could not be properly loaded.");
         }
+    }
+
+    private void waitlist(){
+
+        WaitlistDialog waitPrintout = new WaitlistDialog();
+        waitPrintout.pack();
+        waitPrintout.setLocation(960 - waitPrintout.getWidth()/2, 540 - waitPrintout.getHeight()/2);
+        System.out.println(waitPrintout.getWidth());
+        waitPrintout.setVisible(true);
     }
 
     private void checkout()

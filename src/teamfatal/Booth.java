@@ -9,8 +9,8 @@ import java.awt.event.MouseEvent;
 /**
  * Created by trenton on 4/2/15.
  */
-abstract class Booth extends JLabel {
-    Receipt boothReceipt;
+public class Booth extends OrderObject {
+    int id;
     boolean occupied;
 
     /**
@@ -21,31 +21,26 @@ abstract class Booth extends JLabel {
      */
     public Booth() {
         super();
+        this.setIcon(createImageIcon("Resources/Images/LeftBoothRed.jpg", "Booth"));
         occupied = false;
-        boothReceipt = new Receipt();
     }
 
-    abstract void setOccupied(boolean status);
-
-    abstract void checkOut();
-
-    /**
-     * Getter for tableReceipt
-     * @return Receipt for the table
-     */
-    public Receipt getReceipt() {
-        return boothReceipt;
+    void setOccupied(boolean status) {
+        if (status) {
+            occupied = true;
+            ImageIcon icon = createImageIcon("Resources/Images/LeftBoothGreen.jpg", "");
+            this.setIcon(icon);
+        } else {
+            occupied = false;
+            ImageIcon icon = createImageIcon("Resources/Images/LeftBoothRed.jpg", "");
+            this.setIcon(icon);
+        }
     }
 
-
-    /**
-     * Create and return ImageIcon of the image
-     * @param path Image location for the icon
-     * @param description Description of the image
-     * @return ImageIcon of the image
-     */
-    protected ImageIcon createImageIcon(String path, String description)
-    {
-        return new ImageIcon(path, description);
+    public void checkOut() {
+        occupied = false;
+        ImageIcon icon = createImageIcon("Resources/Images/LeftBoothRed.jpg", "");
+        this.setIcon(icon);
+        receipt.clearReceipt();
     }
 }

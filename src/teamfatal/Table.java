@@ -10,10 +10,9 @@ import java.awt.event.MouseEvent;
 /**
  * Created by trenton on 4/2/15.
  */
-public class Table extends JLabel
+public class Table extends OrderObject
 {
     int id;
-    Receipt tableReceipt;
     boolean occupied;
 
     /**
@@ -29,7 +28,6 @@ public class Table extends JLabel
         this.setIcon(icon);
         this.setVisible(true);
         occupied = false;
-        tableReceipt = new Receipt();
         id = otherId;
         this.setText(Integer.toString(id));
         this.setVerticalTextPosition(BOTTOM);
@@ -41,12 +39,11 @@ public class Table extends JLabel
 
     public Table(Receipt receipt)
     {
-        super();
+        super(receipt);
         ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");
         this.setIcon(icon);
         this.setVisible(true);
         occupied = false;
-        tableReceipt = receipt;
     }
 
     public void setOccupied(boolean status)
@@ -70,15 +67,7 @@ public class Table extends JLabel
         occupied = false;
         ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");
         this.setIcon(icon);
-        tableReceipt.clearReceipt();
-    }
-
-    /**
-     * Getter for tableReceipt
-     * @return Receipt for the table
-     */
-    public Receipt getReceipt() {
-        return tableReceipt;
+        receipt.clearReceipt();
     }
 
     /**
@@ -87,17 +76,5 @@ public class Table extends JLabel
      */
     public int getId() {
         return id;
-    }
-
-
-    /**
-     * Create and return ImageIcon of the image
-     * @param path Image location for the icon
-     * @param description Description of the image
-     * @return ImageIcon of the image
-     */
-    protected ImageIcon createImageIcon(String path, String description)
-    {
-        return new ImageIcon(path, description);
     }
 }

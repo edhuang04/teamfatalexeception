@@ -139,12 +139,13 @@
       <item class="teamfatal.RightBooth" icon="/com/intellij/uiDesigner/icons/label.png" removable="true" auto-create-binding="true" can-attach-label="false">
         <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="0" />
       </item>
-      <item class="teamfatal.LeftBooth" icon="/com/intellij/uiDesigner/icons/label.png" removable="true" auto-create-binding="true" can-attach-label="false">
+      <item class="teamfatal.Booth" icon="/com/intellij/uiDesigner/icons/label.png" removable="true" auto-create-binding="true" can-attach-label="false">
         <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="0" />
       </item>
       <item class="javax.swing.JToggleButton" icon="" removable="true" auto-create-binding="true" can-attach-label="false">
         <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="0" />
       </item>
     </group>
+    <group name="NewComponents" />
   </component>
 </project>

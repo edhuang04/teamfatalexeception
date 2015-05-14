@@ -5,10 +5,19 @@ import javax.swing.*;
 /**
  * Created by trenton on 4/22/15.
  */
-public class ToGoOrder extends JLabel {
+public class ToGoOrder extends OrderObject {
     String name;
     boolean paid;
-    Receipt orderReceipt;
+
+    @Override
+    void checkOut() {
+
+    }
+
+    @Override
+    void setOccupied(boolean occupied) {
+
+    }
 
     /**
      * Default Constructor
@@ -24,7 +33,7 @@ public class ToGoOrder extends JLabel {
         this.setIcon(icon);
         this.setVisible(true);
         paid = false;
-        orderReceipt = new Receipt();
+        receipt = new Receipt();
     }
 
     public void setPaid(boolean status)
@@ -64,25 +73,4 @@ public class ToGoOrder extends JLabel {
     {
 
     }
-
-    /**
-     * Getter for tableReceipt
-     * @return Receipt for the table
-     */
-    public Receipt getReceipt() {
-        return orderReceipt;
-    }
-
-
-    /**
-     * Create and return ImageIcon of the image
-     * @param path Image location for the icon
-     * @param description Description of the image
-     * @return ImageIcon of the image
-     */
-    protected ImageIcon createImageIcon(String path, String description)
-    {
-        return new ImageIcon(path, description);
-    }
-
 }

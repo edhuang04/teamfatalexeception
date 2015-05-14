@@ -58,12 +58,9 @@ public class PosGui extends JFrame{
     private JScrollPane scrollPane1;
     private JLabel imageSparker;
     private JPanel managerPanel;
-    private RightBooth rightBooth1;
-    private RightBooth rightBooth2;
-    private LeftBooth leftBooth1;
-    private LeftBooth leftBooth2;
-    private LeftBooth leftBooth3;
-    private RightBooth rightBooth3;
+    private Booth booth1;
+    private Booth booth2;
+    private Booth booth3;
     private ImagePanel BackgroundPanel;
     private JPanel LoginInputPanel;
     private JPanel leftBoothPanel;
@@ -120,6 +117,9 @@ public class PosGui extends JFrame{
     private JButton exitButtonWaitlist;
     private JTable tableWaitlist;
     private JScrollPane waitlistScrollpane;
+    private Booth booth4;
+    private Booth booth5;
+    private Booth booth6;
     private ButtonGroup Crust;
     private ButtonGroup Size;
     private JButton currentOrderButton;
@@ -130,12 +130,11 @@ public class PosGui extends JFrame{
     List<FoodItem> foodItems;
     Map<Integer,Table> tableItems;
     ReceiptModel model;
-    Table currentTable;
-    Booth currentBooth;
-    ToGoOrder currentOrder;
+    OrderObject currentOrder;
     Map<String, String> userGroup;
     Map<String, String> adminGroup;
     Table firstMerge;
+    Map<MultiTable, JPanel> multiTables;
 
     int merging = -1;
     int removing = -1;
@@ -144,6 +143,7 @@ public class PosGui extends JFrame{
      * Initializes the main root Frame with everything loaded onto it.
      */
     public PosGui() {
+        multiTables = new HashMap<MultiTable, JPanel>();
         leftBoothPanel.setOpaque(true);
         leftBoothPanel.setBackground(Color.DARK_GRAY);
         leftBoothPanel.repaint();
@@ -348,7 +348,7 @@ public class PosGui extends JFrame{
                     toppings.add("Pineapple");
                 Pizza myPizza = new Pizza(size);
                 model.addFoodItem(myPizza);
-                totalText.setText(Double.toString(currentTable.getReceipt().getTotal()));
+                totalText.setText(Double.toString(currentOrder.getReceipt().getTotal()));
             }
         }
     }
@@ -381,14 +381,6 @@ public class PosGui extends JFrame{
         catch(Exception e) {
 
         }
-    }
-
-    /**
-     * Let's buttons repaint root
-     */
-    private void myRepaint()
-    {
-        this.repaint();
     }
 
     /**
@@ -465,64 +457,47 @@ public class PosGui extends JFrame{
                 null,
                 options,
                 options[1]);
-        if (currentTable != null) {
-            if (choice == 0) {
-                CreditCardDialog test = new CreditCardDialog();
-                test.pack();
-                test.setVisible(true);
+
+        if (choice == 0) {
+            CreditCardDialog test = new CreditCardDialog();
+            test.pack();
+            test.setVisible(true);
+        }
+
+        ReceiptPrintout printout = new ReceiptPrintout();
+        printout.loadReceipt(currentOrder.getReceipt());
+        //printout.loadReceipt(currentTable.getReceipt());
+        printout.pack();
+        printout.setVisible(true);
+
+        if(currentOrder.getClass().equals(MultiTable.class))
+        {
+            List<Table> tempList = ((MultiTable) currentOrder).finish();
+            for(Table table : tempList)
+            {
+                tablePanel.add(table);
+                table.addMouseListener(new MouseAdapter() {
+                    @Override
+                    public void mouseClicked(MouseEvent e) {
+                        tableClicked((Table) e.getSource());
+                    }
+                });
             }
-
-            ReceiptPrintout printout = new ReceiptPrintout();
-            printout.loadReceipt(currentTable.getReceipt());
-            //printout.loadReceipt(currentTable.getReceipt());
-            printout.pack();
-            printout.setVisible(true);
-
-            currentTable.setOccupied(false);
-            currentTable.checkOut();
-            currentTable = null;
+            tablePanel.remove( ((MultiTable) currentOrder).getPanel());
             exitToTables();
         }
-        else if(currentBooth != null)
+        else if(currentOrder.getClass().equals(ToGoOrder.class))
         {
-            if (choice == 0) {
-                CreditCardDialog test = new CreditCardDialog();
-                test.pack();
-                test.setVisible(true);
-            }
-
-            ReceiptPrintout printout = new ReceiptPrintout();
-            printout.loadReceipt(currentBooth.getReceipt());
-            //printout.loadReceipt(currentTable.getReceipt());
-            printout.pack();
-            printout.setVisible(true);
-
-            currentBooth.setOccupied(false);
-            currentBooth.checkOut();
-            currentBooth = null;
-            exitToTables();
+            currentOrder.checkOut();
+            currentOrder = null;
+            exitToTogo();
         }
         else
         {
-            if(choice == 0) {
-                CreditCardDialog test = new CreditCardDialog();
-                test.pack();
-                test.setVisible(true);
-                currentOrder.checkOut(1);
-
-                togoPanel.remove(currentOrder);
-                ReceiptPrintout printout = new ReceiptPrintout();
-                printout.loadReceipt(currentOrder.getReceipt());
-                //printout.loadReceipt(currentTable.getReceipt());
-                printout.pack();
-                printout.setVisible(true);
-            }
-            else {
-                currentOrder.checkOut(2);
-            }
+            currentOrder.setOccupied(false);
+            currentOrder.checkOut();
             currentOrder = null;
-
-            exitToTogo();
+            exitToTables();
         }
     }
     /**
@@ -531,12 +506,13 @@ public class PosGui extends JFrame{
     private void addTable() {
         Table tableNew = new Table(tableItems.size());
         tablePanel.add(tableNew);
-        tableNew.addMouseListener(new MouseAdapter() {
+        MouseListener mouseListener = new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 tableClicked((Table) e.getSource());
             }
-        });
+        };
+        tableNew.addMouseListener(mouseListener);
         tablePanel.updateUI();
         tableItems.put(tableNew.getId(), tableNew);
     }
@@ -594,7 +570,7 @@ public class PosGui extends JFrame{
             CardLayout myLayout = (CardLayout) rootPanel.getLayout();
             myLayout.show(rootPanel, "CardOrder");
             myTable.setOccupied(true);
-            currentTable = myTable;
+            currentOrder = myTable;
         }
         else {
             if(merging == 0) {
@@ -603,28 +579,31 @@ public class PosGui extends JFrame{
             }
             else {
                 final MultiTable multiTable = new MultiTable(firstMerge, myTable);
-                multiTable.addMouseListener(new MouseAdapter() {
+                JPanel panel = multiTable.getPanel();
+                panel.addMouseListener(new MouseAdapter() {
                     @Override
                     public void mouseClicked(MouseEvent e) {
-                        tableClicked(multiTable);
+                        multiTableClicked(multiTable);
                     }
                 });
-                tablePanel.add(multiTable);
+                tablePanel.add(panel);
+                firstMerge.removeMouseListener(firstMerge.getMouseListeners()[0]);
                 tablePanel.remove(firstMerge);
+                myTable.removeMouseListener(myTable.getMouseListeners()[0]);
                 tablePanel.remove(myTable);
-                rootPanel.repaint();
+                currentOrder = multiTable;
                 merging = -1;
             }
         }
     }
 
-    private void tableClicked(MultiTable multiTable) {
+    private void multiTableClicked(MultiTable multiTable) {
         totalText.setText("$0.00");
-        model.loadTable(multiTable.getTable());
+        model.loadMultitable(multiTable);
         CardLayout myLayout = (CardLayout) rootPanel.getLayout();
         myLayout.show(rootPanel, "CardOrder");
         multiTable.setOccupied(true);
-        currentTable = multiTable.getTable();
+        currentOrder = multiTable;
     }
 
     private void togoClicked(ToGoOrder order) {
@@ -673,12 +652,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Berry Sparkler", 5));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageSmoothie.addMouseListener(new MouseAdapter() {
@@ -687,12 +661,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Smoothie", 3.5));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageBerryFizz.addMouseListener(new MouseAdapter() {
@@ -701,12 +670,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Berry Fizz", 5));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageWrap.addMouseListener(new MouseAdapter() {
@@ -715,12 +679,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Lettuce Wrap", 6));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageEggRolls.addMouseListener(new MouseAdapter() {
@@ -729,12 +688,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Avocado Club Egg Rolls", 4));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageFlatBread.addMouseListener(new MouseAdapter() {
@@ -743,12 +697,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Bianco Flatbread", 7));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageWedge.addMouseListener(new MouseAdapter() {
@@ -757,12 +706,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Petite Wedge", 2));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageSedona.addMouseListener(new MouseAdapter() {
@@ -771,12 +715,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Sedona Tortilla Soup", 6));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageSouffleCake.addMouseListener(new MouseAdapter() {
@@ -785,12 +724,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Belgian Chocolate Souffle Cake", 15));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageRedVelvet.addMouseListener(new MouseAdapter() {
@@ -799,12 +733,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Red Velvet Cake", 25));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageCaramelPudding.addMouseListener(new MouseAdapter() {
@@ -813,12 +742,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Salted Caramel Pudding", 12));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageKeyLime.addMouseListener(new MouseAdapter() {
@@ -827,12 +751,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Key Lime Pie", 12));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageTiramisu.addMouseListener(new MouseAdapter() {
@@ -841,12 +760,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Tiramisu", 14));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageSangria.addMouseListener(new MouseAdapter() {
@@ -855,12 +769,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Sangria", 7));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageBBQ.addMouseListener(new MouseAdapter() {
@@ -869,12 +778,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("BBQ Pizza", 12));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageCalifornia.addMouseListener(new MouseAdapter() {
@@ -883,12 +787,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("California Club", 14));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageCaVeggie.addMouseListener(new MouseAdapter() {
@@ -897,12 +796,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("California  Veggie", 14));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageAsparagus.addMouseListener(new MouseAdapter() {
@@ -911,12 +805,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Asparagus Arugula", 8));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         imageSalmon.addMouseListener(new MouseAdapter() {
@@ -925,12 +814,7 @@ public class PosGui extends JFrame{
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Cedar Plank Salmon", 16));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
         btnAddPizza.addActionListener(new ActionListener() {
@@ -938,12 +822,7 @@ public class PosGui extends JFrame{
             public void actionPerformed(ActionEvent actionEvent) {
                 addPizza();
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
-                if (currentTable != null)
-                    totalText.setText(nf.format(currentTable.getReceipt().getTotal()));
-                else if (currentBooth != null)
-                    totalText.setText(nf.format(currentBooth.getReceipt().getTotal()));
-                else
-                    totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }
         });
     }
@@ -958,43 +837,43 @@ public class PosGui extends JFrame{
             CardLayout myLayout = (CardLayout) rootPanel.getLayout();
             myLayout.show(rootPanel, "CardOrder");
             myBooth.setOccupied(true);
-            currentBooth = myBooth;
+            currentOrder = myBooth;
         }
     }
 
     private void setupBooths()
     {
-        leftBooth1.addMouseListener(new MouseAdapter() {
+        booth1.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 boothClicked((Booth) e.getSource());
             }
         });
-        leftBooth2.addMouseListener(new MouseAdapter() {
+        booth2.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 boothClicked((Booth) e.getSource());
             }
         });
-        leftBooth3.addMouseListener(new MouseAdapter() {
+        booth3.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 boothClicked((Booth) e.getSource());
             }
         });
-        rightBooth1.addMouseListener(new MouseAdapter() {
+        booth4.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 boothClicked((Booth) e.getSource());
             }
         });
-        rightBooth2.addMouseListener(new MouseAdapter() {
+        booth5.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 boothClicked((Booth) e.getSource());
             }
         });
-        rightBooth3.addMouseListener(new MouseAdapter() {
+        booth6.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 boothClicked((Booth) e.getSource());
@@ -1016,8 +895,7 @@ public class PosGui extends JFrame{
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 exitToTables();
-                currentTable = null;
-                currentBooth = null;
+                currentOrder = null;
             }
         });
         btnTableExit.addActionListener(new ActionListener() {
@@ -1050,5 +928,4 @@ public class PosGui extends JFrame{
     private JScrollPane scrollPane1(){
         return scrollPane1;
     }
-
 }

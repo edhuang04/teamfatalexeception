@@ -8,26 +8,23 @@ import java.util.List;
 /**
  * Created by trenton on 4/15/15.
  */
-public class MultiTable extends JPanel {
+public class MultiTable extends OrderObject {
+    JPanel panel;
     List<Table> tableList;
-    Table table;
-    Receipt tableReceipt;
     boolean occupied;
 
     public MultiTable(Table table1, Table table2)
     {
         super();
+        panel = new JPanel(new FlowLayout());
         tableList = new ArrayList<Table>();
-        this.setLayout(new FlowLayout());
         tableList.add(table1);
-
-        tableReceipt = table1.getReceipt();
-        this.add(table1);
+        receipt = table1.getReceipt();
+        panel.add(table1);
         tableList.add(table2);
-        tableReceipt.merge(table2.getReceipt());
-        this.add(table2);
-        table = new Table(0);
-        this.setBackground(Color.DARK_GRAY);
+        receipt.merge(table2.getReceipt());
+        panel.add(table2);
+        panel.setBackground(Color.DARK_GRAY);
     }
 
     public void addTable(Table otherTable)
@@ -37,17 +34,9 @@ public class MultiTable extends JPanel {
 
     public List<Table> separate()
     {
-        this.removeAll();
-        tableReceipt = null;
+        panel.removeAll();
+        receipt = null;
         return tableList;
-    }
-
-    /**
-     * Getter for tableReceipt
-     * @return Receipt for the table
-     */
-    public Receipt getReceipt() {
-        return tableReceipt;
     }
 
     public void setOccupied(boolean status)
@@ -74,23 +63,21 @@ public class MultiTable extends JPanel {
     public void checkOut()
     {
         occupied = false;
-        ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");
+        setOccupied(false);
         separate();
-        tableReceipt.clearReceipt();
+        receipt.clearReceipt();
     }
 
-    public Table getTable() {
-        return table;
-    }
-
-    /**
-     * Create and return ImageIcon of the image
-     * @param path Image location for the icon
-     * @param description Description of the image
-     * @return ImageIcon of the image
-     */
-    protected ImageIcon createImageIcon(String path, String description)
+    public List<Table> finish()
     {
-        return new ImageIcon(path, description);
+        occupied = false;
+        setOccupied(false);
+        receipt.clearReceipt();
+        return separate();
+    }
+
+    public JPanel getPanel()
+    {
+        return panel;
     }
 }

@@ -174,33 +174,28 @@
                                 </properties>
                                 <border type="none"/>
                                 <children>
-                                  <component id="62614" class="teamfatal.LeftBooth" binding="leftBooth1" default-binding="true">
+                                  <component id="62614" class="teamfatal.Booth" binding="booth1" default-binding="true">
                                     <constraints>
                                       <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                                     </constraints>
                                     <properties>
-                                      <foreground color="-1"/>
-                                      <horizontalAlignment value="0"/>
-                                      <opaque value="false"/>
-                                      <text value="0"/>
-                                      <verticalAlignment value="3"/>
-                                      <verticalTextPosition value="3"/>
+                                      <icon value="Images/LeftBoothRed.jpg"/>
                                     </properties>
                                   </component>
-                                  <component id="6e5ea" class="teamfatal.LeftBooth" binding="leftBooth2" default-binding="true">
+                                  <component id="6e5ea" class="teamfatal.Booth" binding="booth2" default-binding="true">
                                     <constraints>
                                       <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                                     </constraints>
                                     <properties>
-                                      <foreground color="-16777216"/>
+                                      <icon value="Images/LeftBoothRed.jpg"/>
                                     </properties>
                                   </component>
-                                  <component id="b864e" class="teamfatal.LeftBooth" binding="leftBooth3" default-binding="true">
+                                  <component id="b864e" class="teamfatal.Booth" binding="booth3" default-binding="true">
                                     <constraints>
                                       <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                                     </constraints>
                                     <properties>
-                                      <foreground color="-12828863"/>
+                                      <icon value="Images/LeftBoothRed.jpg"/>
                                     </properties>
                                   </component>
                                 </children>
@@ -217,23 +212,29 @@
                             </properties>
                             <border type="none"/>
                             <children>
-                              <component id="cbedf" class="teamfatal.RightBooth" binding="rightBooth1" default-binding="true">
-                                <constraints>
-                                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                                </constraints>
-                                <properties/>
-                              </component>
-                              <component id="4213a" class="teamfatal.RightBooth" binding="rightBooth2" default-binding="true">
+                              <component id="71e10" class="teamfatal.Booth" binding="booth4" default-binding="true">
                                 <constraints>
                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                                 </constraints>
-                                <properties/>
+                                <properties>
+                                  <icon value="Images/LeftBoothRed.jpg"/>
+                                </properties>
                               </component>
-                              <component id="8a1c2" class="teamfatal.RightBooth" binding="rightBooth3" default-binding="true">
+                              <component id="10d1c" class="teamfatal.Booth" binding="booth5" default-binding="true">
+                                <constraints>
+                                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                                </constraints>
+                                <properties>
+                                  <icon value="Images/LeftBoothRed.jpg"/>
+                                </properties>
+                              </component>
+                              <component id="6c175" class="teamfatal.Booth" binding="booth6" default-binding="true">
                                 <constraints>
                                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                                 </constraints>
-                                <properties/>
+                                <properties>
+                                  <icon value="Images/LeftBoothRed.jpg"/>
+                                </properties>
                               </component>
                             </children>
                           </grid>
@@ -1615,7 +1616,7 @@
                   <background color="-12829636"/>
                   <dividerLocation value="1600"/>
                   <dividerSize value="0"/>
-                  <lastDividerLocation value="453"/>
+                  <lastDividerLocation value="-1"/>
                 </properties>
                 <border type="none"/>
                 <children>

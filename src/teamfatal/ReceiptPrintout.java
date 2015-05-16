@@ -132,8 +132,11 @@ public class ReceiptPrintout extends JDialog {
         setTax(myReceipt.getTotal());
         setTotal(myReceipt.getTotal());
         setTips(myReceipt.getTotal());
-
-        ReceiptModel model = new ReceiptModel(myReceipt);
+        ReceiptModel model = new ReceiptModel();
+        model.loadOrder(new Table(myReceipt));
+        table1.setModel(model);
+        table1.repaint();
+        table1.updateUI();
     }
 
     private void setTax(double amount)

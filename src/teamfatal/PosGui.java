@@ -206,6 +206,8 @@ public class PosGui extends JFrame{
                 String value = model.getValueAt(row, column).toString();
                 if (model.getValueAt(row, column) != "") {
                     model.removeFoodItem(model.getValueAt(row, 1).toString());
+                    NumberFormat nf = NumberFormat.getCurrencyInstance();
+                    totalText.setText(nf.format(model.getMyOrder().getReceipt().getTotal()));
                 }
             }
         });
@@ -268,6 +270,12 @@ public class PosGui extends JFrame{
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 tryLogin();
+            }
+        });
+        tableWaitlist.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
             }
         });
     }

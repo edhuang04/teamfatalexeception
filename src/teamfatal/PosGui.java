@@ -21,15 +21,6 @@ public class PosGui extends JFrame{
     private JButton btnTableExit;
     private JButton btnManager;
     private JButton btnCheckout;
-    private JButton btn9x;
-    private JButton btn8x;
-    private JButton btn7x;
-    private JButton btn6x;
-    private JButton btn2x;
-    private JButton btn5x;
-    private JButton btn4x;
-    private JButton btn3x;
-    private JButton btn10x;
     private JPanel OrderToolsPanel;
     private JPanel OrderMenuPanel;
     private JButton btnDiscount;
@@ -123,6 +114,7 @@ public class PosGui extends JFrame{
     private Booth booth6;
     private JButton removeButton;
     private JButton notifyButton;
+    private JPanel ManagerMenu;
     private ButtonGroup Crust;
     private ButtonGroup Size;
     private JButton currentOrderButton;
@@ -293,6 +285,13 @@ public class PosGui extends JFrame{
             public void actionPerformed(ActionEvent actionEvent) {
                 int row = tableWaitlist.getSelectedRow();
                 ((WaitlistModel) tableWaitlist.getModel()).removeRow(row);
+            }
+        });
+        btnManager.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+                myLayout.show(rootPanel, "CardTable");
             }
         });
     }

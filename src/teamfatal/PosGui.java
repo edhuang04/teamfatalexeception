@@ -2,6 +2,7 @@ package teamfatal; /**
  * Created by Trenton on 3/6/2015.
  */
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
@@ -120,6 +121,8 @@ public class PosGui extends JFrame{
     private Booth booth4;
     private Booth booth5;
     private Booth booth6;
+    private JButton removeButton;
+    private JButton notifyButton;
     private ButtonGroup Crust;
     private ButtonGroup Size;
     private JButton currentOrderButton;
@@ -227,8 +230,7 @@ public class PosGui extends JFrame{
                 tempDialog.setLocation(960 - tempDialog.getWidth() / 2, 540 - tempDialog.getHeight() / 2);
                 System.out.println(tempDialog.getWidth());
                 tempDialog.setVisible(true);
-                if(tempDialog.response() == true)
-                {
+                if (tempDialog.response() == true) {
                     String name = tempDialog.getName();
                     myOrder.setText(name);
                     myOrder.setHorizontalTextPosition(2);
@@ -275,7 +277,22 @@ public class PosGui extends JFrame{
         tableWaitlist.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                super.mouseClicked(e);
+                JTable target = (JTable) e.getSource();
+                int row = target.getSelectedRow();
+                int column = target.getSelectedColumn();
+                String value = model.getValueAt(row, column).toString();
+                if (model.getValueAt(row, column) != "") {
+                    model.removeFoodItem(model.getValueAt(row, 1).toString());
+                    NumberFormat nf = NumberFormat.getCurrencyInstance();
+                    totalText.setText(nf.format(model.getMyOrder().getReceipt().getTotal()));
+                }
+            }
+        });
+        removeButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                int row = tableWaitlist.getSelectedRow();
+                ((WaitlistModel) tableWaitlist.getModel()).removeRow(row);
             }
         });
     }

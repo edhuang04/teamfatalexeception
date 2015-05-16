@@ -6,17 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ff9c25a-82b0-4dec-b907-14f59c669f1a" name="Default" comment="yada yada">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/teamfatal/OrderObject.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/teamfatal/RightBooth.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/teamfatal/LeftBooth.java" afterPath="$PROJECT_DIR$/src/teamfatal/Booth.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/MultiTable.java" afterPath="$PROJECT_DIR$/src/teamfatal/MultiTable.java" />
+    <list default="true" id="0ff9c25a-82b0-4dec-b907-14f59c669f1a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.form" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.java" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/Receipt.java" afterPath="$PROJECT_DIR$/src/teamfatal/Receipt.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/ReceiptModel.java" afterPath="$PROJECT_DIR$/src/teamfatal/ReceiptModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/Table.java" afterPath="$PROJECT_DIR$/src/teamfatal/Table.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/ToGoOrder.java" afterPath="$PROJECT_DIR$/src/teamfatal/ToGoOrder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Data/Tables.txt" afterPath="$PROJECT_DIR$/Resources/Data/Tables.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RestaurantPOS.iws" />
@@ -54,37 +49,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PosGui.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PosGui.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.67688024">
-              <caret line="678" column="38" selection-start-line="678" selection-start-column="38" selection-end-line="678" selection-end-column="38" />
+            <state vertical-scroll-proportion="-12.866667">
+              <caret line="221" column="19" selection-start-line="221" selection-start-column="19" selection-end-line="221" selection-end-column="19" />
               <folding>
-                <element signature="e#5718#5881#0" expanded="true" />
-                <element signature="e#5880#5881#0" expanded="true" />
-                <element signature="e#9167#9330#0" expanded="true" />
-                <element signature="e#9329#9330#0" expanded="true" />
-                <element signature="e#16411#16623#0" expanded="true" />
-                <element signature="e#16622#16623#0" expanded="true" />
-                <element signature="e#17325#17497#0" expanded="true" />
-                <element signature="e#17496#17497#0" expanded="true" />
+                <element signature="e#6717#7229#0" expanded="true" />
+                <element signature="e#7228#7229#0" expanded="true" />
+                <element signature="e#7273#8413#0" expanded="true" />
+                <element signature="e#8412#8413#0" expanded="true" />
+                <element signature="e#8456#8605#0" expanded="true" />
+                <element signature="e#8604#8605#0" expanded="true" />
+                <element signature="e#8695#8962#0" expanded="true" />
+                <element signature="e#8961#8962#0" expanded="true" />
+                <element signature="e#9010#9274#0" expanded="true" />
+                <element signature="e#9273#9274#0" expanded="true" />
+                <element signature="e#9318#9481#0" expanded="true" />
+                <element signature="e#9480#9481#0" expanded="true" />
+                <element signature="e#9528#9691#0" expanded="true" />
+                <element signature="e#9690#9691#0" expanded="true" />
                 <element signature="method#decrementTables#0;class#PosGui#0" expanded="false" />
-                <element signature="e#19730#19936#0" expanded="true" />
-                <element signature="e#19935#19936#0" expanded="true" />
-                <element signature="method#togoClicked#0;class#PosGui#0" expanded="false" />
                 <element signature="method#logOff#0;class#PosGui#0" expanded="false" />
                 <element signature="method#exitToTables#0;class#PosGui#0" expanded="false" />
-                <element signature="e#21854#22236#0" expanded="true" />
-                <element signature="e#22235#22236#0" expanded="true" />
-                <element signature="e#30779#30951#0" expanded="true" />
-                <element signature="e#30950#30951#0" expanded="true" />
-                <element signature="e#30986#31158#0" expanded="true" />
-                <element signature="e#31157#31158#0" expanded="true" />
-                <element signature="e#31193#31365#0" expanded="true" />
-                <element signature="e#31364#31365#0" expanded="true" />
-                <element signature="e#33276#33277#0" expanded="true" />
-                <element signature="e#33310#33311#0" expanded="true" />
+                <element signature="e#22425#22803#0" expanded="true" />
+                <element signature="e#22802#22803#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReceiptModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
+              <folding>
+                <element signature="e#401#402#0" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
+                <element signature="e#606#607#0" expanded="true" />
+                <element signature="e#637#638#0" expanded="true" />
+                <element signature="e#680#681#0" expanded="true" />
+                <element signature="e#710#711#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Receipt.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/teamfatal/Receipt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6101695">
+              <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,16 +133,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Category.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/Category.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MultiTable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/teamfatal/MultiTable.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -137,50 +144,6 @@
                 <element signature="e#1780#1781#0" expanded="true" />
                 <element signature="e#1808#1809#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReceiptPrintout.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="146" column="8" selection-start-line="146" selection-start-column="8" selection-end-line="147" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WaitlistModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/WaitlistModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#774#775#0" expanded="true" />
-                <element signature="e#808#809#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ToGoOrder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/ToGoOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Table.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/Table.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -217,14 +180,16 @@
         <option value="$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/NameDialog.form" />
         <option value="$PROJECT_DIR$/src/teamfatal/WaitlistModel.java" />
-        <option value="$PROJECT_DIR$/src/teamfatal/ReceiptModel.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/Table.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/OrderObject.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/ToGoOrder.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/Booth.java" />
-        <option value="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
         <option value="$PROJECT_DIR$/src/teamfatal/MultiTable.java" />
+        <option value="$PROJECT_DIR$/src/teamfatal/QuantityDialog.form" />
+        <option value="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
         <option value="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
+        <option value="$PROJECT_DIR$/src/teamfatal/ReceiptModel.java" />
+        <option value="$PROJECT_DIR$/src/teamfatal/Receipt.java" />
       </list>
     </option>
   </component>
@@ -272,7 +237,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -347,8 +311,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -691,7 +656,9 @@
       <workItem from="1430966439392" duration="1982000" />
       <workItem from="1431387390330" duration="10862000" />
       <workItem from="1431561177419" duration="3884000" />
-      <workItem from="1431565075750" duration="2321000" />
+      <workItem from="1431565075750" duration="2664000" />
+      <workItem from="1431661498259" duration="539000" />
+      <workItem from="1431725430558" duration="8089000" />
     </task>
     <task id="LOCAL-00001" summary="Much progress made - Trenton">
       <created>1429574412147</created>
@@ -729,11 +696,17 @@
       <option name="project" value="LOCAL" />
       <updated>1431486982524</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="yada yada">
+      <created>1431567406582</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1431567406582</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70600000" />
+    <option name="totallyTimeSpent" value="79571000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -767,8 +740,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Code explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20106952" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2748663" sideWeight="0.49786553" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2748663" sideWeight="0.50213444" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27272728" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32834226" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -847,209 +820,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/Table.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/teamfatal.PosGui">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>teamfatal.PosGui</OriginalElement>
-          <nodes>
-            <node x="" y="">java.awt.Frame</node>
-            <node x="" y="">java.awt.Window</node>
-            <node x="" y="">java.awt.MenuContainer</node>
-            <node x="" y="">javax.swing.TransferHandler.HasGetTransferHandler</node>
-            <node x="" y="">javax.swing.RootPaneContainer</node>
-            <node x="" y="">javax.accessibility.Accessible</node>
-            <node x="" y="">java.awt.Component</node>
-            <node x="" y="">java.awt.image.ImageObserver</node>
-            <node x="" y="">java.io.Serializable</node>
-            <node x="" y="">teamfatal.PosGui</node>
-            <node x="" y="">java.awt.Container</node>
-            <node x="" y="">javax.swing.JFrame</node>
-            <node x="" y="">javax.swing.WindowConstants</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="354.0" y="255.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/teamfatal">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>teamfatal</OriginalElement>
-          <nodes>
-            <node x="0.0" y="1366.0">teamfatal.LoginPane</node>
-            <node x="859.9366096866096" y="423.0">teamfatal.Table</node>
-            <node x="10.5" y="228.0">teamfatal.FoodItemGui</node>
-            <node x="886.8816239316238" y="1268.0">teamfatal.Main</node>
-            <node x="336.25498575498574" y="0.0">teamfatal.FoodItem</node>
-            <node x="264.49999999999994" y="652.5">teamfatal.LeftBooth</node>
-            <node x="676.2549857549857" y="205.0">teamfatal.Receipt</node>
-            <node x="218.0" y="1366.0">teamfatal.CategoryParser</node>
-            <node x="440.25498575498574" y="274.0">teamfatal.Pizza</node>
-            <node x="505.49999999999994" y="652.5">teamfatal.RightBooth</node>
-            <node x="1579.25" y="992.5">teamfatal.CategoryButton</node>
-            <node x="751.8816239316238" y="843.0">teamfatal.PosGui</node>
-            <node x="1510.5" y="652.5">teamfatal.Category</node>
-            <node x="372.63660968660963" y="434.5">teamfatal.Booth</node>
-            <node x="746.5" y="641.0">teamfatal.MultiTable</node>
-            <node x="999.5" y="618.0">teamfatal.ReceiptModel</node>
-            <node x="1260.5" y="664.0">teamfatal.ImagePanel</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="teamfatal.MultiTable" target="teamfatal.Table">
-              <point x="52.5" y="-49.5" />
-              <point x="904.0" y="598.0" />
-              <point x="888.0366096866096" y="598.0" />
-              <point x="-112.39999999999998" y="72.5" />
-            </edge>
-            <edge source="teamfatal.Main" target="teamfatal.PosGui">
-              <point x="0.0" y="-26.5" />
-              <point x="0.0" y="187.5" />
-            </edge>
-            <edge source="teamfatal.PosGui" target="teamfatal.ReceiptModel">
-              <point x="65.53846153846155" y="-187.5" />
-              <point x="1030.4200854700853" y="783.0" />
-              <point x="1059.75" y="783.0" />
-              <point x="-60.25" y="72.5" />
-            </edge>
-            <edge source="teamfatal.PosGui" target="teamfatal.MultiTable">
-              <point x="-65.53846153846155" y="-187.5" />
-              <point x="899.3431623931623" y="783.0" />
-              <point x="851.5" y="783.0" />
-              <point x="0.0" y="49.5" />
-            </edge>
-            <edge source="teamfatal.PosGui" target="teamfatal.Category">
-              <point x="196.61538461538453" y="-187.5" />
-              <point x="1161.4970085470084" y="823.0" />
-              <point x="1562.25" y="823.0" />
-              <point x="-51.75" y="38.0" />
-            </edge>
-            <edge source="teamfatal.Booth" target="teamfatal.Receipt">
-              <point x="-65.25000000000003" y="-61.0" />
-              <point x="437.88660968660963" y="393.0" />
-              <point x="704.9549857549857" y="393.0" />
-              <point x="-114.80000000000001" y="84.0" />
-            </edge>
-            <edge source="teamfatal.Pizza" target="teamfatal.FoodItem">
-              <point x="0.0" y="-15.0" />
-              <point x="470.75498575498574" y="185.0" />
-              <point x="469.25498575498574" y="185.0" />
-              <point x="19.0" y="72.5" />
-            </edge>
-            <edge source="teamfatal.LeftBooth" target="teamfatal.Booth">
-              <point x="0.0" y="-38.0" />
-              <point x="374.99999999999994" y="598.0" />
-              <point x="437.88660968660963" y="598.0" />
-              <point x="-65.25" y="61.0" />
-            </edge>
-            <edge source="teamfatal.Receipt" target="teamfatal.FoodItem">
-              <point x="5.6843418860808015E-14" y="-84.0" />
-              <point x="819.7549857549858" y="185.0" />
-              <point x="507.25498575498574" y="185.0" />
-              <point x="57.0" y="72.5" />
-            </edge>
-            <edge source="teamfatal.Table" target="teamfatal.Receipt">
-              <point x="-70.25" y="-72.5" />
-              <point x="930.1866096866096" y="403.0" />
-              <point x="877.1549857549858" y="403.0" />
-              <point x="57.400000000000034" y="84.0" />
-            </edge>
-            <edge source="teamfatal.ReceiptModel" target="teamfatal.Table">
-              <point x="0.0" y="-72.5" />
-              <point x="1120.0" y="598.0" />
-              <point x="1112.8366096866096" y="598.0" />
-              <point x="112.39999999999998" y="72.5" />
-            </edge>
-            <edge source="teamfatal.Category" target="teamfatal.FoodItem">
-              <point x="0.0" y="-38.0" />
-              <point x="1614.0" y="175.0" />
-              <point x="545.2549857549857" y="175.0" />
-              <point x="95.0" y="72.5" />
-            </edge>
-            <edge source="teamfatal.CategoryButton" target="teamfatal.Category">
-              <point x="0.0" y="-38.0" />
-              <point x="51.75" y="38.0" />
-            </edge>
-            <edge source="teamfatal.PosGui" target="teamfatal.RightBooth">
-              <point x="-98.30769230769232" y="-187.5" />
-              <point x="866.5739316239315" y="793.0" />
-              <point x="616.0" y="793.0" />
-              <point x="0.0" y="38.0" />
-            </edge>
-            <edge source="teamfatal.MultiTable" target="teamfatal.Receipt">
-              <point x="-52.5" y="-49.5" />
-              <point x="799.0" y="403.0" />
-              <point x="819.7549857549857" y="403.0" />
-              <point x="0.0" y="84.0" />
-            </edge>
-            <edge source="teamfatal.RightBooth" target="teamfatal.Booth">
-              <point x="0.0" y="-38.0" />
-              <point x="616.0" y="598.0" />
-              <point x="568.3866096866096" y="598.0" />
-              <point x="65.24999999999997" y="61.0" />
-            </edge>
-            <edge source="teamfatal.PosGui" target="teamfatal.ImagePanel">
-              <point x="163.8461538461538" y="-187.5" />
-              <point x="1128.7277777777776" y="813.0" />
-              <point x="1433.0" y="813.0" />
-              <point x="57.5" y="26.5" />
-            </edge>
-            <edge source="teamfatal.PosGui" target="teamfatal.Table">
-              <point x="32.76923076923072" y="-187.5" />
-              <point x="997.6508547008546" y="823.0" />
-              <point x="989.0" y="823.0" />
-              <point x="989.0" y="598.0" />
-              <point x="1056.6366096866095" y="598.0" />
-              <point x="56.1999999999999" y="72.5" />
-            </edge>
-            <edge source="teamfatal.PosGui" target="teamfatal.LeftBooth">
-              <point x="-131.0769230769231" y="-187.5" />
-              <point x="833.8047008547007" y="803.0" />
-              <point x="374.99999999999994" y="803.0" />
-              <point x="0.0" y="38.0" />
-            </edge>
-            <edge source="teamfatal.FoodItemGui" target="teamfatal.FoodItem">
-              <point x="0.0" y="-61.0" />
-              <point x="127.0" y="175.0" />
-              <point x="393.25498575498574" y="175.0" />
-              <point x="-57.0" y="72.5" />
-            </edge>
-            <edge source="teamfatal.PosGui" target="teamfatal.FoodItem">
-              <point x="-163.84615384615387" y="-187.5" />
-              <point x="801.03547008547" y="813.0" />
-              <point x="253.99999999999994" y="813.0" />
-              <point x="253.99999999999994" y="185.0" />
-              <point x="431.25498575498574" y="185.0" />
-              <point x="-19.0" y="72.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="371.0" y="849.0" />
-          <SelectedNodes>
-            <node>teamfatal.PosGui</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/FoodItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1210,13 +980,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/CreditCardDialog.form">
-      <provider editor-type-id="ui-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/FoodItemGui.java">
@@ -1247,49 +1017,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/Receipt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.02422611">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.form">
-      <provider editor-type-id="ui-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/NameDialog.form">
       <provider editor-type-id="ui-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/NameDialog.form">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="235" column="23" selection-start-line="235" selection-start-column="23" selection-end-line="235" selection-end-column="23" />
-          <folding>
-            <element signature="e#491#492#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-          </folding>
-        </state>
+      <provider editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.java">
@@ -1328,37 +1075,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/Booth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/Table.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/OrderObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1376,36 +1096,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/Booth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/java/util/Vector.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.64">
+          <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/javax/swing/table/DefaultTableModel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.64">
+          <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/java/awt/AWTEventMulticaster.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34615386">
+          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67688024">
-          <caret line="678" column="38" selection-start-line="678" selection-start-column="38" selection-end-line="678" selection-end-column="38" />
+        <state vertical-scroll-proportion="-12.866667">
+          <caret line="221" column="19" selection-start-line="221" selection-start-column="19" selection-end-line="221" selection-end-column="19" />
           <folding>
-            <element signature="e#5718#5881#0" expanded="true" />
-            <element signature="e#5880#5881#0" expanded="true" />
-            <element signature="e#9167#9330#0" expanded="true" />
-            <element signature="e#9329#9330#0" expanded="true" />
-            <element signature="e#16411#16623#0" expanded="true" />
-            <element signature="e#16622#16623#0" expanded="true" />
-            <element signature="e#17325#17497#0" expanded="true" />
-            <element signature="e#17496#17497#0" expanded="true" />
+            <element signature="e#6717#7229#0" expanded="true" />
+            <element signature="e#7228#7229#0" expanded="true" />
+            <element signature="e#7273#8413#0" expanded="true" />
+            <element signature="e#8412#8413#0" expanded="true" />
+            <element signature="e#8456#8605#0" expanded="true" />
+            <element signature="e#8604#8605#0" expanded="true" />
+            <element signature="e#8695#8962#0" expanded="true" />
+            <element signature="e#8961#8962#0" expanded="true" />
+            <element signature="e#9010#9274#0" expanded="true" />
+            <element signature="e#9273#9274#0" expanded="true" />
+            <element signature="e#9318#9481#0" expanded="true" />
+            <element signature="e#9480#9481#0" expanded="true" />
+            <element signature="e#9528#9691#0" expanded="true" />
+            <element signature="e#9690#9691#0" expanded="true" />
             <element signature="method#decrementTables#0;class#PosGui#0" expanded="false" />
-            <element signature="e#19730#19936#0" expanded="true" />
-            <element signature="e#19935#19936#0" expanded="true" />
-            <element signature="method#togoClicked#0;class#PosGui#0" expanded="false" />
             <element signature="method#logOff#0;class#PosGui#0" expanded="false" />
             <element signature="method#exitToTables#0;class#PosGui#0" expanded="false" />
-            <element signature="e#21854#22236#0" expanded="true" />
-            <element signature="e#22235#22236#0" expanded="true" />
-            <element signature="e#30779#30951#0" expanded="true" />
-            <element signature="e#30950#30951#0" expanded="true" />
-            <element signature="e#30986#31158#0" expanded="true" />
-            <element signature="e#31157#31158#0" expanded="true" />
-            <element signature="e#31193#31365#0" expanded="true" />
-            <element signature="e#31364#31365#0" expanded="true" />
-            <element signature="e#33276#33277#0" expanded="true" />
-            <element signature="e#33310#33311#0" expanded="true" />
+            <element signature="e#22425#22803#0" expanded="true" />
+            <element signature="e#22802#22803#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/OrderObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
+          <folding>
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/Receipt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6101695">
+          <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>

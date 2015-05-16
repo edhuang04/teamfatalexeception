@@ -203,8 +203,9 @@ public class PosGui extends JFrame{
                 JTable target = (JTable) e.getSource();
                 int row = target.getSelectedRow();
                 int column = target.getSelectedColumn();
+                String value = model.getValueAt(row, column).toString();
                 if (model.getValueAt(row, column) != "") {
-
+                    model.removeFoodItem(model.getValueAt(row, 1).toString());
                 }
             }
         });
@@ -566,7 +567,7 @@ public class PosGui extends JFrame{
         else if(merging == -1) {
             NumberFormat nf = NumberFormat.getCurrencyInstance();
             totalText.setText(nf.format(myTable.getReceipt().getTotal()));
-            model.loadTable(myTable);
+            model.loadOrder(myTable);
             CardLayout myLayout = (CardLayout) rootPanel.getLayout();
             myLayout.show(rootPanel, "CardOrder");
             myTable.setOccupied(true);
@@ -599,7 +600,7 @@ public class PosGui extends JFrame{
 
     private void multiTableClicked(MultiTable multiTable) {
         totalText.setText("$0.00");
-        model.loadMultitable(multiTable);
+        model.loadOrder(multiTable);
         CardLayout myLayout = (CardLayout) rootPanel.getLayout();
         myLayout.show(rootPanel, "CardOrder");
         multiTable.setOccupied(true);
@@ -608,7 +609,7 @@ public class PosGui extends JFrame{
 
     private void togoClicked(ToGoOrder order) {
         totalText.setText("$0.00");
-        model.loadToGo(order);
+        model.loadOrder(order);
         CardLayout myLayout = (CardLayout) rootPanel.getLayout();
         myLayout.show(rootPanel, "CardOrder");
         currentOrder = order;
@@ -832,8 +833,8 @@ public class PosGui extends JFrame{
      * @param myBooth
      */
     private void boothClicked(Booth myBooth) {
-        if(merging == -1) {
-            model.loadBooth(myBooth);
+        if (merging == -1) {
+            model.loadOrder(myBooth);
             CardLayout myLayout = (CardLayout) rootPanel.getLayout();
             myLayout.show(rootPanel, "CardOrder");
             myBooth.setOccupied(true);

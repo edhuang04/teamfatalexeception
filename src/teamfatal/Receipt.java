@@ -31,16 +31,33 @@ public class Receipt {
     }
 
 
-    public void removeItem(FoodItem item)
+    public void removeItem(String itemName)
     {
-        if(orderedItems.get(item) > 1)
+        Iterator<Map.Entry<FoodItem, Integer>> entries = orderedItems.entrySet().iterator();
+        Map.Entry<FoodItem, Integer> entry = null;
+        FoodItem item = null;
+
+        while(entries.hasNext())
         {
-            orderedItems.put(item, orderedItems.get(item) - 1);
+            entry = entries.next();
+            item = entry.getKey();
+            if(item.getName().equals(itemName))
+            {
+                break;
+            }
+        }
+
+        if(entry.getValue() != 1)
+        {
+            orderedItems.put(item, entry.getValue() - 1);
+            System.out.println(entry.getValue() - 1);
         }
         else
         {
+            System.out.println("Removed");
             orderedItems.remove(item);
         }
+        System.out.println(orderedItems.toString());
     }
 
     /**

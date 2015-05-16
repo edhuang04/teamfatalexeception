@@ -7,11 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ff9c25a-82b0-4dec-b907-14f59c669f1a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.form" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.java" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/Receipt.java" afterPath="$PROJECT_DIR$/src/teamfatal/Receipt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/ReceiptModel.java" afterPath="$PROJECT_DIR$/src/teamfatal/ReceiptModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Data/Tables.txt" afterPath="$PROJECT_DIR$/Resources/Data/Tables.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RestaurantPOS.iws" />
@@ -658,7 +653,7 @@
       <workItem from="1431561177419" duration="3884000" />
       <workItem from="1431565075750" duration="2664000" />
       <workItem from="1431661498259" duration="539000" />
-      <workItem from="1431725430558" duration="8089000" />
+      <workItem from="1431725430558" duration="8100000" />
     </task>
     <task id="LOCAL-00001" summary="Much progress made - Trenton">
       <created>1429574412147</created>
@@ -702,11 +697,17 @@
       <option name="project" value="LOCAL" />
       <updated>1431567406582</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="yada yada">
+      <created>1431735981025</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1431735981025</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79571000" />
+    <option name="totallyTimeSpent" value="79582000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -740,7 +741,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Code explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2748663" sideWeight="0.49786553" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2748663" sideWeight="0.49786553" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2748663" sideWeight="0.50213444" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27272728" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />

@@ -7,24 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ff9c25a-82b0-4dec-b907-14f59c669f1a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/BT_Sauce_Marinara3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/BT_Size_XLargePizza.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/BT_mozzarella2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/BT_topping_Chicken.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/PanelResized2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/deepCrustPizza.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/panelResized.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/regularCrustPizza.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/thinCrustPizza.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/togobox.png" />
-      <change type="DELETED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\BT_Sauce_Marinara.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\table.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Images/table-green.png" afterPath="$PROJECT_DIR$/Resources/Images/table-green.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Images/table-red.png" afterPath="$PROJECT_DIR$/Resources/Images/table-red.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.form" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Data/Tables.txt" afterPath="$PROJECT_DIR$/Resources/Data/Tables.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/ToGoOrder.java" afterPath="$PROJECT_DIR$/src/teamfatal/ToGoOrder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RestaurantPOS.iws" />
@@ -480,7 +462,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
     <property name="OverrideImplement.combined" value="true" />
@@ -821,7 +803,7 @@
       <workItem from="1431661498259" duration="539000" />
       <workItem from="1431725430558" duration="11926000" />
       <workItem from="1431739826276" duration="747000" />
-      <workItem from="1431888943220" duration="7622000" />
+      <workItem from="1431888943220" duration="7796000" />
     </task>
     <task id="LOCAL-00001" summary="Much progress made - Trenton">
       <created>1429574412147</created>
@@ -895,11 +877,17 @@
       <option name="project" value="LOCAL" />
       <updated>1431739853774</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Adjusted images and added new ones">
+      <created>1431900022546</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1431900022546</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91777000" />
+    <option name="totallyTimeSpent" value="91951000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -971,7 +959,8 @@
     <MESSAGE value="&#10;More Stuff" />
     <MESSAGE value="yada yada" />
     <MESSAGE value="Receipt finally finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Receipt finally finished" />
+    <MESSAGE value="Adjusted images and added new ones" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted images and added new ones" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -29,7 +29,7 @@ public class ToGoOrder extends OrderObject {
     {
         super();
         this.name = name;
-        ImageIcon icon = createImageIcon("Resources/Images/Togo.jpg", "");
+        ImageIcon icon = createImageIcon("Resources/Images/togobox.png", "");
         this.setIcon(icon);
         this.setVisible(true);
         paid = false;

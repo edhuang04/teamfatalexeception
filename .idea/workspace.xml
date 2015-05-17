@@ -7,8 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ff9c25a-82b0-4dec-b907-14f59c669f1a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/BT_Sauce_Marinara3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/BT_Size_XLargePizza.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/BT_mozzarella2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/BT_topping_Chicken.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/PanelResized2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/deepCrustPizza.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/panelResized.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/regularCrustPizza.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/thinCrustPizza.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/togobox.png" />
+      <change type="DELETED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\BT_Sauce_Marinara.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\table.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Images/table-green.png" afterPath="$PROJECT_DIR$/Resources/Images/table-green.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Images/table-red.png" afterPath="$PROJECT_DIR$/Resources/Images/table-red.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.form" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.java" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Data/Tables.txt" afterPath="$PROJECT_DIR$/Resources/Data/Tables.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/ToGoOrder.java" afterPath="$PROJECT_DIR$/src/teamfatal/ToGoOrder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RestaurantPOS.iws" />
@@ -49,94 +65,179 @@
       <file leaf-file-name="PosGui.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="293" column="49" selection-start-line="293" selection-start-column="49" selection-end-line="293" selection-end-column="49" />
+            <state vertical-scroll-proportion="-8.034483">
+              <caret line="663" column="27" selection-start-line="663" selection-start-column="23" selection-end-line="663" selection-end-column="27" />
               <folding>
+                <element signature="e#5413#5577#0" expanded="true" />
+                <element signature="e#5576#5577#0" expanded="true" />
+                <element signature="e#5618#5781#0" expanded="true" />
+                <element signature="e#5780#5781#0" expanded="true" />
+                <element signature="e#5822#6177#0" expanded="true" />
+                <element signature="e#6176#6177#0" expanded="true" />
+                <element signature="e#6219#6576#0" expanded="true" />
+                <element signature="e#6575#6576#0" expanded="true" />
+                <element signature="e#6617#7297#0" expanded="true" />
+                <element signature="e#7296#7297#0" expanded="true" />
+                <element signature="e#7341#8466#0" expanded="true" />
+                <element signature="e#7554#7769#0" expanded="true" />
+                <element signature="e#7768#7769#0" expanded="true" />
+                <element signature="e#8465#8466#0" expanded="true" />
+                <element signature="e#8509#8658#0" expanded="true" />
+                <element signature="e#8657#8658#0" expanded="true" />
+                <element signature="e#8748#9015#0" expanded="true" />
+                <element signature="e#9014#9015#0" expanded="true" />
+                <element signature="e#9063#9327#0" expanded="true" />
+                <element signature="e#9326#9327#0" expanded="true" />
+                <element signature="e#9371#9534#0" expanded="true" />
+                <element signature="e#9533#9534#0" expanded="true" />
+                <element signature="e#9581#9744#0" expanded="true" />
+                <element signature="e#9743#9744#0" expanded="true" />
+                <element signature="e#9786#10466#0" expanded="true" />
+                <element signature="e#10465#10466#0" expanded="true" />
+                <element signature="e#10508#10776#0" expanded="true" />
+                <element signature="e#10775#10776#0" expanded="true" />
                 <element signature="e#10816#11080#0" expanded="true" />
                 <element signature="e#11079#11080#0" expanded="true" />
+                <element signature="e#12746#12754#0" expanded="true" />
+                <element signature="e#17951#18163#0" expanded="true" />
+                <element signature="e#18162#18163#0" expanded="true" />
+                <element signature="e#18865#19037#0" expanded="true" />
+                <element signature="e#19036#19037#0" expanded="true" />
                 <element signature="method#decrementTables#0;class#PosGui#0" expanded="false" />
+                <element signature="e#21270#21476#0" expanded="true" />
+                <element signature="e#21475#21476#0" expanded="true" />
                 <element signature="method#logOff#0;class#PosGui#0" expanded="false" />
                 <element signature="method#exitToTables#0;class#PosGui#0" expanded="false" />
+                <element signature="e#23390#23772#0" expanded="true" />
+                <element signature="e#23771#23772#0" expanded="true" />
+                <element signature="e#23814#24192#0" expanded="true" />
+                <element signature="e#24191#24192#0" expanded="true" />
+                <element signature="e#24235#24613#0" expanded="true" />
+                <element signature="e#24612#24613#0" expanded="true" />
+                <element signature="e#24651#25031#0" expanded="true" />
+                <element signature="e#25030#25031#0" expanded="true" />
+                <element signature="e#25073#25463#0" expanded="true" />
+                <element signature="e#25462#25463#0" expanded="true" />
+                <element signature="e#25506#25890#0" expanded="true" />
+                <element signature="e#25889#25890#0" expanded="true" />
+                <element signature="e#25929#26309#0" expanded="true" />
+                <element signature="e#26308#26309#0" expanded="true" />
+                <element signature="e#26349#26737#0" expanded="true" />
+                <element signature="e#26736#26737#0" expanded="true" />
+                <element signature="e#26782#27181#0" expanded="true" />
+                <element signature="e#27180#27181#0" expanded="true" />
+                <element signature="e#27224#27608#0" expanded="true" />
+                <element signature="e#27607#27608#0" expanded="true" />
+                <element signature="e#27656#28047#0" expanded="true" />
+                <element signature="e#28046#28047#0" expanded="true" />
+                <element signature="e#28088#28469#0" expanded="true" />
+                <element signature="e#28468#28469#0" expanded="true" />
+                <element signature="e#28511#28888#0" expanded="true" />
+                <element signature="e#28887#28888#0" expanded="true" />
+                <element signature="e#28929#29304#0" expanded="true" />
+                <element signature="e#29303#29304#0" expanded="true" />
+                <element signature="e#29341#29719#0" expanded="true" />
+                <element signature="e#29718#29719#0" expanded="true" />
+                <element signature="e#29763#30147#0" expanded="true" />
+                <element signature="e#30146#30147#0" expanded="true" />
+                <element signature="e#30189#30576#0" expanded="true" />
+                <element signature="e#30575#30576#0" expanded="true" />
+                <element signature="e#30619#31004#0" expanded="true" />
+                <element signature="e#31003#31004#0" expanded="true" />
+                <element signature="e#31044#31431#0" expanded="true" />
+                <element signature="e#31430#31431#0" expanded="true" />
+                <element signature="e#31472#31789#0" expanded="true" />
+                <element signature="e#31788#31789#0" expanded="true" />
+                <element signature="e#32316#32488#0" expanded="true" />
+                <element signature="e#32487#32488#0" expanded="true" />
+                <element signature="e#32523#32695#0" expanded="true" />
+                <element signature="e#32694#32695#0" expanded="true" />
+                <element signature="e#32730#32902#0" expanded="true" />
+                <element signature="e#32901#32902#0" expanded="true" />
+                <element signature="e#32937#33109#0" expanded="true" />
+                <element signature="e#33108#33109#0" expanded="true" />
+                <element signature="e#33144#33316#0" expanded="true" />
+                <element signature="e#33315#33316#0" expanded="true" />
+                <element signature="e#33351#33523#0" expanded="true" />
+                <element signature="e#33522#33523#0" expanded="true" />
+                <element signature="e#33657#33820#0" expanded="true" />
+                <element signature="e#33819#33820#0" expanded="true" />
+                <element signature="e#33862#34066#0" expanded="true" />
+                <element signature="e#34065#34066#0" expanded="true" />
+                <element signature="e#34108#34269#0" expanded="true" />
+                <element signature="e#34268#34269#0" expanded="true" />
+                <element signature="e#34310#34508#0" expanded="true" />
+                <element signature="e#34507#34508#0" expanded="true" />
+                <element signature="e#34727#34728#0" expanded="true" />
+                <element signature="e#34773#34774#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PosGui.form" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NameDialog.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/teamfatal/NameDialog.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ToGoOrder.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/teamfatal/ToGoOrder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.20958903">
+              <caret line="31" column="70" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PosGui.form" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReceiptModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
-              <folding>
-                <element signature="e#401#402#0" expanded="true" />
-                <element signature="e#428#429#0" expanded="true" />
-                <element signature="e#606#607#0" expanded="true" />
-                <element signature="e#637#638#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-                <element signature="e#710#711#0" expanded="true" />
-              </folding>
-            </state>
+      <file leaf-file-name="togobox.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/Images/togobox.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Receipt.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/Receipt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
-            </state>
+      <file leaf-file-name="BT_Size_XLargePizza.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/Images/BT_Size_XLargePizza.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OrderObject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/OrderObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="15" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="15" />
-              <folding />
-            </state>
+      <file leaf-file-name="thinCrustPizza.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/Images/thinCrustPizza.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReceiptPrintout.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="176" column="59" selection-start-line="176" selection-start-column="59" selection-end-line="176" selection-end-column="59" />
-              <folding />
-            </state>
+      <file leaf-file-name="BT_mozzarella2.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/Images/BT_mozzarella2.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Booth.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/Booth.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-              <folding />
-            </state>
+      <file leaf-file-name="BT_Sauce_Marinara3.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/Images/BT_Sauce_Marinara3.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WaitlistModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/WaitlistModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#774#775#0" expanded="true" />
-                <element signature="e#808#809#0" expanded="true" />
-              </folding>
-            </state>
+      <file leaf-file-name="table-green.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resources/Images/table-green.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -171,7 +272,6 @@
         <option value="$PROJECT_DIR$/src/teamfatal/NameDialog.form" />
         <option value="$PROJECT_DIR$/src/teamfatal/WaitlistModel.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/Table.java" />
-        <option value="$PROJECT_DIR$/src/teamfatal/ToGoOrder.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/Booth.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/MultiTable.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/QuantityDialog.form" />
@@ -182,6 +282,7 @@
         <option value="$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.form" />
         <option value="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
+        <option value="$PROJECT_DIR$/src/teamfatal/ToGoOrder.java" />
       </list>
     </option>
   </component>
@@ -200,8 +301,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="width" value="1922" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -229,8 +331,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -321,12 +421,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="teamfatal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NameDialog" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestaurantPOS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="teamfatalexeception" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestaurantPOS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="teamfatalexeception" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -344,9 +486,14 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="187" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="405" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="402" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -674,6 +821,7 @@
       <workItem from="1431661498259" duration="539000" />
       <workItem from="1431725430558" duration="11926000" />
       <workItem from="1431739826276" duration="747000" />
+      <workItem from="1431888943220" duration="7622000" />
     </task>
     <task id="LOCAL-00001" summary="Much progress made - Trenton">
       <created>1429574412147</created>
@@ -751,7 +899,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84155000" />
+    <option name="totallyTimeSpent" value="91777000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -774,68 +922,38 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1922" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Code explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32834226" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2748663" sideWeight="0.50213444" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27272728" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32834226" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12646745" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32708332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09625668" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2748663" sideWeight="0.49786553" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Code explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27272728" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12646745" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32708332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09625668" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20106952" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32834226" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12604167" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.09544469" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1778742" sideWeight="0.49786553" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Code explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+    </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -866,48 +984,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/WaitlistModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/CategoryParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Images/01 - laUneyx.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Images/Salad-AsparagusArugula.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Resources/Images/App_AvocadoClubEggRolls.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resources/Images/Pizza_CaliforniaClub.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1048,45 +1124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/ImagePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21854305">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/LoginPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/java/text/Format.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.36">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/NameDialog.form">
-      <provider editor-type-id="ui-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/ToGoOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="39" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/Category.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1107,32 +1144,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
           <folding>
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#1780#1781#0" expanded="true" />
-            <element signature="e#1808#1809#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="false" />
+            <element signature="e#772#773#0" expanded="false" />
+            <element signature="e#1780#1781#0" expanded="false" />
+            <element signature="e#1808#1809#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/java/util/Vector.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.64">
-          <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/javax/swing/table/DefaultTableModel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.64">
-          <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar!/java/awt/AWTEventMulticaster.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34615386">
-          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1159,12 +1175,12 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="92" column="22" selection-start-line="92" selection-start-column="22" selection-end-line="92" selection-end-column="22" />
           <folding>
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#428#429#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="false" />
+            <element signature="e#428#429#0" expanded="false" />
+            <element signature="e#606#607#0" expanded="false" />
+            <element signature="e#637#638#0" expanded="false" />
+            <element signature="e#680#681#0" expanded="false" />
+            <element signature="e#710#711#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1190,9 +1206,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="false" />
+            <element signature="e#515#516#0" expanded="false" />
+            <element signature="e#565#566#0" expanded="false" />
+            <element signature="e#596#597#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1201,22 +1218,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Images/panelResized.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Images/login.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/LoginPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/ImagePanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="293" column="49" selection-start-line="293" selection-start-column="49" selection-end-line="293" selection-end-column="49" />
-          <folding>
-            <element signature="e#10816#11080#0" expanded="true" />
-            <element signature="e#11079#11080#0" expanded="true" />
-            <element signature="method#decrementTables#0;class#PosGui#0" expanded="false" />
-            <element signature="method#logOff#0;class#PosGui#0" expanded="false" />
-            <element signature="method#exitToTables#0;class#PosGui#0" expanded="false" />
-          </folding>
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Images/PanelResized2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Images/table-red.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Images/table-green.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Images/BT_mozzarella2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Images/BT_Sauce_Marinara3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Images/thinCrustPizza.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Images/BT_Size_XLargePizza.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resources/Images/togobox.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
@@ -1226,6 +1297,135 @@
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.034483">
+          <caret line="663" column="27" selection-start-line="663" selection-start-column="23" selection-end-line="663" selection-end-column="27" />
+          <folding>
+            <element signature="e#5413#5577#0" expanded="true" />
+            <element signature="e#5576#5577#0" expanded="true" />
+            <element signature="e#5618#5781#0" expanded="true" />
+            <element signature="e#5780#5781#0" expanded="true" />
+            <element signature="e#5822#6177#0" expanded="true" />
+            <element signature="e#6176#6177#0" expanded="true" />
+            <element signature="e#6219#6576#0" expanded="true" />
+            <element signature="e#6575#6576#0" expanded="true" />
+            <element signature="e#6617#7297#0" expanded="true" />
+            <element signature="e#7296#7297#0" expanded="true" />
+            <element signature="e#7341#8466#0" expanded="true" />
+            <element signature="e#7554#7769#0" expanded="true" />
+            <element signature="e#7768#7769#0" expanded="true" />
+            <element signature="e#8465#8466#0" expanded="true" />
+            <element signature="e#8509#8658#0" expanded="true" />
+            <element signature="e#8657#8658#0" expanded="true" />
+            <element signature="e#8748#9015#0" expanded="true" />
+            <element signature="e#9014#9015#0" expanded="true" />
+            <element signature="e#9063#9327#0" expanded="true" />
+            <element signature="e#9326#9327#0" expanded="true" />
+            <element signature="e#9371#9534#0" expanded="true" />
+            <element signature="e#9533#9534#0" expanded="true" />
+            <element signature="e#9581#9744#0" expanded="true" />
+            <element signature="e#9743#9744#0" expanded="true" />
+            <element signature="e#9786#10466#0" expanded="true" />
+            <element signature="e#10465#10466#0" expanded="true" />
+            <element signature="e#10508#10776#0" expanded="true" />
+            <element signature="e#10775#10776#0" expanded="true" />
+            <element signature="e#10816#11080#0" expanded="true" />
+            <element signature="e#11079#11080#0" expanded="true" />
+            <element signature="e#12746#12754#0" expanded="true" />
+            <element signature="e#17951#18163#0" expanded="true" />
+            <element signature="e#18162#18163#0" expanded="true" />
+            <element signature="e#18865#19037#0" expanded="true" />
+            <element signature="e#19036#19037#0" expanded="true" />
+            <element signature="method#decrementTables#0;class#PosGui#0" expanded="false" />
+            <element signature="e#21270#21476#0" expanded="true" />
+            <element signature="e#21475#21476#0" expanded="true" />
+            <element signature="method#logOff#0;class#PosGui#0" expanded="false" />
+            <element signature="method#exitToTables#0;class#PosGui#0" expanded="false" />
+            <element signature="e#23390#23772#0" expanded="true" />
+            <element signature="e#23771#23772#0" expanded="true" />
+            <element signature="e#23814#24192#0" expanded="true" />
+            <element signature="e#24191#24192#0" expanded="true" />
+            <element signature="e#24235#24613#0" expanded="true" />
+            <element signature="e#24612#24613#0" expanded="true" />
+            <element signature="e#24651#25031#0" expanded="true" />
+            <element signature="e#25030#25031#0" expanded="true" />
+            <element signature="e#25073#25463#0" expanded="true" />
+            <element signature="e#25462#25463#0" expanded="true" />
+            <element signature="e#25506#25890#0" expanded="true" />
+            <element signature="e#25889#25890#0" expanded="true" />
+            <element signature="e#25929#26309#0" expanded="true" />
+            <element signature="e#26308#26309#0" expanded="true" />
+            <element signature="e#26349#26737#0" expanded="true" />
+            <element signature="e#26736#26737#0" expanded="true" />
+            <element signature="e#26782#27181#0" expanded="true" />
+            <element signature="e#27180#27181#0" expanded="true" />
+            <element signature="e#27224#27608#0" expanded="true" />
+            <element signature="e#27607#27608#0" expanded="true" />
+            <element signature="e#27656#28047#0" expanded="true" />
+            <element signature="e#28046#28047#0" expanded="true" />
+            <element signature="e#28088#28469#0" expanded="true" />
+            <element signature="e#28468#28469#0" expanded="true" />
+            <element signature="e#28511#28888#0" expanded="true" />
+            <element signature="e#28887#28888#0" expanded="true" />
+            <element signature="e#28929#29304#0" expanded="true" />
+            <element signature="e#29303#29304#0" expanded="true" />
+            <element signature="e#29341#29719#0" expanded="true" />
+            <element signature="e#29718#29719#0" expanded="true" />
+            <element signature="e#29763#30147#0" expanded="true" />
+            <element signature="e#30146#30147#0" expanded="true" />
+            <element signature="e#30189#30576#0" expanded="true" />
+            <element signature="e#30575#30576#0" expanded="true" />
+            <element signature="e#30619#31004#0" expanded="true" />
+            <element signature="e#31003#31004#0" expanded="true" />
+            <element signature="e#31044#31431#0" expanded="true" />
+            <element signature="e#31430#31431#0" expanded="true" />
+            <element signature="e#31472#31789#0" expanded="true" />
+            <element signature="e#31788#31789#0" expanded="true" />
+            <element signature="e#32316#32488#0" expanded="true" />
+            <element signature="e#32487#32488#0" expanded="true" />
+            <element signature="e#32523#32695#0" expanded="true" />
+            <element signature="e#32694#32695#0" expanded="true" />
+            <element signature="e#32730#32902#0" expanded="true" />
+            <element signature="e#32901#32902#0" expanded="true" />
+            <element signature="e#32937#33109#0" expanded="true" />
+            <element signature="e#33108#33109#0" expanded="true" />
+            <element signature="e#33144#33316#0" expanded="true" />
+            <element signature="e#33315#33316#0" expanded="true" />
+            <element signature="e#33351#33523#0" expanded="true" />
+            <element signature="e#33522#33523#0" expanded="true" />
+            <element signature="e#33657#33820#0" expanded="true" />
+            <element signature="e#33819#33820#0" expanded="true" />
+            <element signature="e#33862#34066#0" expanded="true" />
+            <element signature="e#34065#34066#0" expanded="true" />
+            <element signature="e#34108#34269#0" expanded="true" />
+            <element signature="e#34268#34269#0" expanded="true" />
+            <element signature="e#34310#34508#0" expanded="true" />
+            <element signature="e#34507#34508#0" expanded="true" />
+            <element signature="e#34727#34728#0" expanded="true" />
+            <element signature="e#34773#34774#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/NameDialog.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/ToGoOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20958903">
+          <caret line="31" column="70" selection-start-line="31" selection-start-column="70" selection-end-line="31" selection-end-column="70" />
           <folding />
         </state>
       </provider>

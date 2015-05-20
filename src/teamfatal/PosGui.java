@@ -108,13 +108,12 @@ public class PosGui extends JFrame{
     private JButton addEntryButton;
     private JButton exitButtonWaitlist;
     private JTable tableWaitlist;
-    private JScrollPane waitlistScrollpane;
     private Booth booth4;
     private Booth booth5;
     private Booth booth6;
     private JButton removeButton;
-    private JButton notifyButton;
     private JPanel ManagerMenu;
+    private JButton notifyButton;
     private ButtonGroup Crust;
     private ButtonGroup Size;
     private JButton currentOrderButton;
@@ -269,22 +268,7 @@ public class PosGui extends JFrame{
         tableWaitlist.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                JTable target = (JTable) e.getSource();
-                int row = target.getSelectedRow();
-                int column = target.getSelectedColumn();
-                String value = model.getValueAt(row, column).toString();
-                if (model.getValueAt(row, column) != "") {
-                    model.removeFoodItem(model.getValueAt(row, 1).toString());
-                    NumberFormat nf = NumberFormat.getCurrencyInstance();
-                    totalText.setText(nf.format(model.getMyOrder().getReceipt().getTotal()));
-                }
-            }
-        });
-        removeButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                int row = tableWaitlist.getSelectedRow();
-                ((WaitlistModel) tableWaitlist.getModel()).removeRow(row);
+
             }
         });
         btnManager.addActionListener(new ActionListener() {
@@ -292,6 +276,12 @@ public class PosGui extends JFrame{
             public void actionPerformed(ActionEvent actionEvent) {
                 CardLayout myLayout = (CardLayout) rootPanel.getLayout();
                 myLayout.show(rootPanel, "CardTable");
+            }
+        });
+        removeEntryButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                ((WaitlistModel) tableWaitlist.getModel()).removeRow(tableWaitlist.getSelectedRow());
             }
         });
     }

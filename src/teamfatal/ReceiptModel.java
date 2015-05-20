@@ -89,7 +89,7 @@ public class ReceiptModel extends DefaultTableModel{
     public void removeFoodItem(String itemName)
     {
         myOrder.getReceipt().removeItem(itemName);
-        this.setRowCount(0);
+        this.setRowCount(1);
         loadReceipt();
     }
 
@@ -115,6 +115,6 @@ public class ReceiptModel extends DefaultTableModel{
 
     public void clearReceipt() {
         myOrder = null;
-        this.setRowCount(0);
+        this.setRowCount(1);
     }
 }

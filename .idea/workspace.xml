@@ -7,14 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ff9c25a-82b0-4dec-b907-14f59c669f1a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/CreditCardDialog.form" afterPath="$PROJECT_DIR$/src/teamfatal/CreditCardDialog.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/DiscountDialog.form" afterPath="$PROJECT_DIR$/src/teamfatal/DiscountDialog.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/ImagePanel.java" afterPath="$PROJECT_DIR$/src/teamfatal/ImagePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/NameDialog.form" afterPath="$PROJECT_DIR$/src/teamfatal/NameDialog.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.form" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.form" afterPath="$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Data/Tables.txt" afterPath="$PROJECT_DIR$/Resources/Data/Tables.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/WaitlistDialog.form" afterPath="$PROJECT_DIR$/src/teamfatal/WaitlistDialog.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RestaurantPOS.iws" />
@@ -779,7 +771,7 @@
       <workItem from="1431932877707" duration="399000" />
       <workItem from="1432080669318" duration="6229000" />
       <workItem from="1432266977643" duration="58000" />
-      <workItem from="1432267049269" duration="4817000" />
+      <workItem from="1432267049269" duration="4878000" />
     </task>
     <task id="LOCAL-00001" summary="Much progress made - Trenton">
       <created>1429574412147</created>
@@ -871,11 +863,17 @@
       <option name="project" value="LOCAL" />
       <updated>1432264036316</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Changed fonts">
+      <created>1432271915989</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1432271915989</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103454000" />
+    <option name="totallyTimeSpent" value="103515000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -949,7 +947,8 @@
     <MESSAGE value="yada yada" />
     <MESSAGE value="Receipt finally finished" />
     <MESSAGE value="Adjusted images and added new ones" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adjusted images and added new ones" />
+    <MESSAGE value="Changed fonts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed fonts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

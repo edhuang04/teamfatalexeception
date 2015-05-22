@@ -5,8 +5,8 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.File;
-import java.io.FileWriter;
+import java.io.*;
+import java.text.DateFormat;
 import java.text.NumberFormat;
 import java.util.*;
 import java.util.List;
@@ -114,6 +114,9 @@ public class PosGui extends JFrame{
     private JButton removeButton;
     private JPanel ManagerMenu;
     private JButton notifyButton;
+    private JButton button1;
+    private JButton btnManagerExit;
+    private JButton exitButton;
     private ButtonGroup Crust;
     private ButtonGroup Size;
     private JButton currentOrderButton;
@@ -129,6 +132,7 @@ public class PosGui extends JFrame{
     Map<String, String> adminGroup;
     Table firstMerge;
     Map<MultiTable, JPanel> multiTables;
+    boolean isAdmin;
 
     int merging = -1;
     int removing = -1;
@@ -271,13 +275,6 @@ public class PosGui extends JFrame{
 
             }
         });
-        btnManager.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                CardLayout myLayout = (CardLayout) rootPanel.getLayout();
-                myLayout.show(rootPanel, "CardTable");
-            }
-        });
         removeEntryButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -290,6 +287,32 @@ public class PosGui extends JFrame{
                 tryDiscount();
             }
         });
+        btnManagerExit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+                myLayout.show(rootPanel, "CardTable");
+            }
+        });
+        btnManager.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                if(isAdmin) {
+                    CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+                    myLayout.show(rootPanel, "CardManager");
+                }
+                else {
+
+                }
+            }
+        });
+        exitButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+                myLayout.show(rootPanel, "CardTable");
+            }
+        });
     }
 
     private void tryDiscount() {
@@ -299,7 +322,7 @@ public class PosGui extends JFrame{
         dialog.setVisible(true);
         String discount = dialog.getDiscountCode();
         try {
-            File fileCodes = new File("");
+            File fileCodes = new File("Resources/Data/Discounts.txt");
         }
         catch(Exception e)
         {
@@ -431,6 +454,18 @@ public class PosGui extends JFrame{
                 CardLayout myLayout = (CardLayout) rootPanel.getLayout();
                 myLayout.show(rootPanel, "CardTable");
                 labelWarning.setVisible(false);
+                isAdmin = false;
+
+                try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
+                        new FileOutputStream("Resources/Data/UserData.txt", true), "utf-8"))) {
+                    DateFormat df = DateFormat.getDateTimeInstance (DateFormat.MEDIUM, DateFormat.MEDIUM, new Locale ("en", "EN"));
+                    String formattedDate = df.format (new Date ());
+                    writer.write(username + " logged in - " + formattedDate);
+                    writer.newLine();
+                }
+                catch(Exception e){
+
+                }
             }
         }
         else if(adminGroup.containsKey(username)) {
@@ -438,14 +473,23 @@ public class PosGui extends JFrame{
                 CardLayout myLayout = (CardLayout) rootPanel.getLayout();
                 myLayout.show(rootPanel, "CardTable");
                 labelWarning.setVisible(false);
+                isAdmin = true;
+
+                try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
+                        new FileOutputStream("Resources/Data/UserData.txt", true), "utf-8"))) {
+                    DateFormat df = DateFormat.getDateTimeInstance (DateFormat.MEDIUM, DateFormat.MEDIUM, new Locale ("en", "EN"));
+                    String formattedDate = df.format (new Date ());
+                    writer.write(username + " logged in - " + formattedDate);
+                    writer.newLine();
+                }
+                catch(Exception e){
+
+                }
             }
         }
         else {
             labelWarning.setVisible(true);
         }
-
-        textFieldUser.setText("");
-        passwordFieldUser.setText("");
     }
 
     /**
@@ -536,6 +580,7 @@ public class PosGui extends JFrame{
             exitToTables();
         }
     }
+
     /**
      * Adds a table to the tablelayout
      */
@@ -654,6 +699,18 @@ public class PosGui extends JFrame{
      *  Currently switches to the login card
      */
     private void logOff() {
+        try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
+                new FileOutputStream("Resources/Data/UserData.txt", true), "utf-8"))) {
+            DateFormat df = DateFormat.getDateTimeInstance (DateFormat.MEDIUM, DateFormat.MEDIUM, new Locale ("en", "EN"));
+            String formattedDate = df.format (new Date ());
+            writer.write(textFieldUser.getText() + " logged off - " + formattedDate);
+            writer.newLine();
+        }
+        catch(Exception e){
+
+        }
+        textFieldUser.setText("");
+        passwordFieldUser.setText("");
         CardLayout myLayout = (CardLayout) rootPanel.getLayout();
         myLayout.show(rootPanel, "CardLogin");
     }

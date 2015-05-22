@@ -1,13 +1,7 @@
 package teamfatal; /**
  * Created by Trenton on 3/6/2015.
  */
-import javax.mail.Message;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
 import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
@@ -120,8 +114,15 @@ public class PosGui extends JFrame{
     private JPanel ManagerMenu;
     private JButton notifyButton;
     private JButton checkPurchasesButton;
-    private JButton btnManagerExit;
+    private JButton btnManagerUsers;
     private JButton exitButton;
+    private JPanel EditUserMenu;
+    private JPanel TransactionsMenu;
+    private JTable tableUsers;
+    private JButton usersBtnExit;
+    private JButton usersBtnRemove;
+    private JButton usersBtnAdd;
+    private JButton exitButtonLogin;
     private ButtonGroup Crust;
     private ButtonGroup Size;
     private JButton currentOrderButton;
@@ -292,13 +293,6 @@ public class PosGui extends JFrame{
                 tryDiscount();
             }
         });
-        btnManagerExit.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                CardLayout myLayout = (CardLayout) rootPanel.getLayout();
-                myLayout.show(rootPanel, "CardTable");
-            }
-        });
         btnManager.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -321,6 +315,30 @@ public class PosGui extends JFrame{
                 ((WaitlistModel) tableWaitlist.getModel()).notify(tableWaitlist.getSelectedRow());
             }
         });
+        btnManagerUsers.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+                myLayout.show(rootPanel, "CardUsers");
+            }
+        });
+        usersBtnExit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+                myLayout.show(rootPanel, "CardManager");
+            }
+        });
+        exitButtonLogin.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                exitPos();
+            }
+        });
+    }
+
+    private void exitPos(){
+        this.dispose();
     }
 
     private void tryDiscount() {

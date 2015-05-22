@@ -10,9 +10,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.form" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.java" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Data/UserData.txt" afterPath="$PROJECT_DIR$/Resources/Data/UserData.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/WaitlistDialog.form" afterPath="$PROJECT_DIR$/src/teamfatal/WaitlistDialog.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/WaitlistDialog.java" afterPath="$PROJECT_DIR$/src/teamfatal/WaitlistDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/WaitlistModel.java" afterPath="$PROJECT_DIR$/src/teamfatal/WaitlistModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RestaurantPOS.iws" />
@@ -55,33 +52,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PosGui.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PosGui.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.533334">
-              <caret line="324" column="0" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.79945797">
+              <caret line="336" column="11" selection-start-line="336" selection-start-column="11" selection-end-line="336" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#9651#9814#0" expanded="true" />
-                <element signature="e#9813#9814#0" expanded="true" />
-                <element signature="e#9861#10024#0" expanded="true" />
-                <element signature="e#10023#10024#0" expanded="true" />
-                <element signature="e#10513#10679#0" expanded="true" />
-                <element signature="e#10678#10679#0" expanded="true" />
-                <element signature="e#10723#10987#0" expanded="true" />
-                <element signature="e#10986#10987#0" expanded="true" />
-                <element signature="e#11027#11349#0" expanded="true" />
-                <element signature="e#11348#11349#0" expanded="true" />
-                <element signature="e#11389#11653#0" expanded="true" />
-                <element signature="e#11652#11653#0" expanded="true" />
-                <element signature="e#11695#11929#0" expanded="true" />
-                <element signature="e#11928#11929#0" expanded="true" />
+                <element signature="e#8820#8969#0" expanded="true" />
+                <element signature="e#8968#8969#0" expanded="true" />
+                <element signature="e#9892#10055#0" expanded="true" />
+                <element signature="e#10054#10055#0" expanded="true" />
+                <element signature="e#11112#11376#0" expanded="true" />
+                <element signature="e#11375#11376#0" expanded="true" />
+                <element signature="e#11697#11961#0" expanded="true" />
+                <element signature="e#11960#11961#0" expanded="true" />
+                <element signature="e#12003#12269#0" expanded="true" />
+                <element signature="e#12268#12269#0" expanded="true" />
+                <element signature="e#12314#12476#0" expanded="true" />
+                <element signature="e#12475#12476#0" expanded="true" />
+                <element signature="e#12512#12513#0" expanded="true" />
+                <element signature="e#12542#12543#0" expanded="true" />
                 <element signature="method#decrementTables#0;class#PosGui#0" expanded="false" />
                 <element signature="method#exitToTables#0;class#PosGui#0" expanded="false" />
-                <element signature="e#36735#36898#0" expanded="true" />
-                <element signature="e#36897#36898#0" expanded="true" />
-                <element signature="e#37186#37347#0" expanded="true" />
-                <element signature="e#37346#37347#0" expanded="true" />
+                <element signature="e#37341#37504#0" expanded="true" />
+                <element signature="e#37503#37504#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,12 +89,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WaitlistModel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WaitlistModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/teamfatal/WaitlistModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5121951">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
+                <element signature="e#738#739#0" expanded="true" />
                 <element signature="e#764#765#0" expanded="true" />
                 <element signature="e#814#815#0" expanded="true" />
                 <element signature="e#845#846#0" expanded="true" />
@@ -152,12 +148,12 @@
         <option value="$PROJECT_DIR$/src/teamfatal/NameDialog.form" />
         <option value="$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.form" />
         <option value="$PROJECT_DIR$/Resources/Data/Logins.txt" />
-        <option value="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
         <option value="$PROJECT_DIR$/src/teamfatal/WaitlistDialog.form" />
         <option value="$PROJECT_DIR$/src/teamfatal/WaitlistDialog.java" />
         <option value="$PROJECT_DIR$/Resources/Data/UserData.txt" />
-        <option value="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/WaitlistModel.java" />
+        <option value="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
+        <option value="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
       </list>
     </option>
   </component>
@@ -766,7 +762,7 @@
       <workItem from="1432080669318" duration="6229000" />
       <workItem from="1432266977643" duration="58000" />
       <workItem from="1432267049269" duration="5355000" />
-      <workItem from="1432315907770" duration="10122000" />
+      <workItem from="1432315907770" duration="11774000" />
     </task>
     <task id="LOCAL-00001" summary="Much progress made - Trenton">
       <created>1429574412147</created>
@@ -876,11 +872,17 @@
       <option name="project" value="LOCAL" />
       <updated>1432319483337</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Changed fonts">
+      <created>1432334553538</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1432334553538</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114114000" />
+    <option name="totallyTimeSpent" value="115766000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1226,17 +1228,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/Booth.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1307,46 +1298,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.533334">
-          <caret line="324" column="0" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9651#9814#0" expanded="true" />
-            <element signature="e#9813#9814#0" expanded="true" />
-            <element signature="e#9861#10024#0" expanded="true" />
-            <element signature="e#10023#10024#0" expanded="true" />
-            <element signature="e#10513#10679#0" expanded="true" />
-            <element signature="e#10678#10679#0" expanded="true" />
-            <element signature="e#10723#10987#0" expanded="true" />
-            <element signature="e#10986#10987#0" expanded="true" />
-            <element signature="e#11027#11349#0" expanded="true" />
-            <element signature="e#11348#11349#0" expanded="true" />
-            <element signature="e#11389#11653#0" expanded="true" />
-            <element signature="e#11652#11653#0" expanded="true" />
-            <element signature="e#11695#11929#0" expanded="true" />
-            <element signature="e#11928#11929#0" expanded="true" />
-            <element signature="method#decrementTables#0;class#PosGui#0" expanded="false" />
-            <element signature="method#exitToTables#0;class#PosGui#0" expanded="false" />
-            <element signature="e#36735#36898#0" expanded="true" />
-            <element signature="e#36897#36898#0" expanded="true" />
-            <element signature="e#37186#37347#0" expanded="true" />
-            <element signature="e#37346#37347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/WaitlistModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5121951">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
+            <element signature="e#738#739#0" expanded="true" />
             <element signature="e#764#765#0" expanded="true" />
             <element signature="e#814#815#0" expanded="true" />
             <element signature="e#845#846#0" expanded="true" />
             <element signature="e#3202#3203#0" expanded="true" />
             <element signature="e#3236#3237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79945797">
+          <caret line="336" column="11" selection-start-line="336" selection-start-column="11" selection-end-line="336" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8820#8969#0" expanded="true" />
+            <element signature="e#8968#8969#0" expanded="true" />
+            <element signature="e#9892#10055#0" expanded="true" />
+            <element signature="e#10054#10055#0" expanded="true" />
+            <element signature="e#11112#11376#0" expanded="true" />
+            <element signature="e#11375#11376#0" expanded="true" />
+            <element signature="e#11697#11961#0" expanded="true" />
+            <element signature="e#11960#11961#0" expanded="true" />
+            <element signature="e#12003#12269#0" expanded="true" />
+            <element signature="e#12268#12269#0" expanded="true" />
+            <element signature="e#12314#12476#0" expanded="true" />
+            <element signature="e#12475#12476#0" expanded="true" />
+            <element signature="e#12512#12513#0" expanded="true" />
+            <element signature="e#12542#12543#0" expanded="true" />
+            <element signature="method#decrementTables#0;class#PosGui#0" expanded="false" />
+            <element signature="method#exitToTables#0;class#PosGui#0" expanded="false" />
+            <element signature="e#37341#37504#0" expanded="true" />
+            <element signature="e#37503#37504#0" expanded="true" />
           </folding>
         </state>
       </provider>

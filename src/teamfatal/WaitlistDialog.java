@@ -13,6 +13,7 @@ public class WaitlistDialog extends JDialog{
     private JTextField textCell;
     private JButton addGuest;
     private JButton buttonCancel;
+    private JComboBox comboBoxProvider;
     private boolean responded;
 
     @Override
@@ -31,6 +32,7 @@ public class WaitlistDialog extends JDialog{
     private String name;
     private String partyNum;
     private String cellphone;
+    private int provider;
 
     public WaitlistDialog(){
 
@@ -64,11 +66,24 @@ public class WaitlistDialog extends JDialog{
                 onCancel();
             }
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        buttonCancel.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                onCancel();
+            }
+        });
+        addGuest.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                onOK();
+            }
+        });
     }
 
-    public String getWaitName(){ return textName.getText();   }
-    public String getPartyNumber() { return textParty.getText(); }
-    public String getCell(){ return textCell.getText(); }
+    public String getWaitName(){ return name;   }
+    public String getPartyNumber() { return partyNum; }
+    public String getCell(){ return cellphone; }
+    public int getProvider(){ return provider; }
 
     public boolean respondeded() { return responded; }
 
@@ -78,7 +93,7 @@ public class WaitlistDialog extends JDialog{
         name = textName.getText();
         cellphone = textCell.getText();
         partyNum = textParty.getText();
-
+        provider = comboBoxProvider.getSelectedIndex();
         dispose();
     }
 

@@ -1,6 +1,11 @@
 package teamfatal; /**
  * Created by Trenton on 3/6/2015.
  */
+import javax.mail.Message;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -114,7 +119,7 @@ public class PosGui extends JFrame{
     private JButton removeButton;
     private JPanel ManagerMenu;
     private JButton notifyButton;
-    private JButton button1;
+    private JButton checkPurchasesButton;
     private JButton btnManagerExit;
     private JButton exitButton;
     private ButtonGroup Crust;
@@ -278,7 +283,7 @@ public class PosGui extends JFrame{
         removeEntryButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                ((WaitlistModel) tableWaitlist.getModel()).removeRow(tableWaitlist.getSelectedRow());
+                ((WaitlistModel) tableWaitlist.getModel()).removeEntry(tableWaitlist.getSelectedRow());
             }
         });
         btnDiscount.addActionListener(new ActionListener() {
@@ -301,9 +306,6 @@ public class PosGui extends JFrame{
                     CardLayout myLayout = (CardLayout) rootPanel.getLayout();
                     myLayout.show(rootPanel, "CardManager");
                 }
-                else {
-
-                }
             }
         });
         exitButton.addActionListener(new ActionListener() {
@@ -311,6 +313,12 @@ public class PosGui extends JFrame{
             public void actionPerformed(ActionEvent actionEvent) {
                 CardLayout myLayout = (CardLayout) rootPanel.getLayout();
                 myLayout.show(rootPanel, "CardTable");
+            }
+        });
+        notifyButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                ((WaitlistModel) tableWaitlist.getModel()).notify(tableWaitlist.getSelectedRow());
             }
         });
     }
@@ -456,6 +464,7 @@ public class PosGui extends JFrame{
                 labelWarning.setVisible(false);
                 isAdmin = false;
 
+
                 try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
                         new FileOutputStream("Resources/Data/UserData.txt", true), "utf-8"))) {
                     DateFormat df = DateFormat.getDateTimeInstance (DateFormat.MEDIUM, DateFormat.MEDIUM, new Locale ("en", "EN"));
@@ -520,8 +529,8 @@ public class PosGui extends JFrame{
         waitPrintout.setVisible(true);
         if(waitPrintout.respondeded())
         {
-            String[] temp = new String[] {waitPrintout.getName(), waitPrintout.getPartyNumber(), waitPrintout.getCellphone()};
-            ((WaitlistModel) tableWaitlist.getModel()).addEntry(temp[0], temp[1], temp[2]);
+            Object[] temp = new Object[] {waitPrintout.getName(), waitPrintout.getPartyNumber(), waitPrintout.getCellphone(), waitPrintout.getProvider()};
+            ((WaitlistModel) tableWaitlist.getModel()).addEntry(temp[0].toString(), temp[1].toString(), temp[2].toString(), (int)temp[3]);
         }
     }
 

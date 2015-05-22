@@ -35,7 +35,7 @@
               <dividerLocation value="1719"/>
               <dividerSize value="0"/>
               <foreground color="-9605779"/>
-              <lastDividerLocation value="1719"/>
+              <lastDividerLocation value="-1"/>
               <opaque value="false"/>
               <resizeWeight value="1.0"/>
             </properties>
@@ -75,7 +75,7 @@
                         </constraints>
                         <properties>
                           <background color="-16727354"/>
-                          <font size="24"/>
+                          <font name="Comic Neue" size="26"/>
                           <foreground color="-16777216"/>
                           <text value="DINE-IN"/>
                         </properties>
@@ -86,7 +86,7 @@
                         </constraints>
                         <properties>
                           <background color="-256"/>
-                          <font size="24"/>
+                          <font name="Comic Neue" size="26"/>
                           <foreground color="-16777216"/>
                           <text value="Merge"/>
                         </properties>
@@ -99,7 +99,7 @@
                           <background color="-29688"/>
                           <borderPainted value="true"/>
                           <focusTraversalPolicyProvider value="false"/>
-                          <font size="24"/>
+                          <font name="Comic Neue" size="26"/>
                           <foreground color="-16777216"/>
                           <text value="ToGo"/>
                         </properties>
@@ -139,7 +139,7 @@
                           <enabled value="true"/>
                           <foreground color="-16777216"/>
                           <inheritsPopupMenu value="false"/>
-                          <lastDividerLocation value="1600"/>
+                          <lastDividerLocation value="-1"/>
                           <maximumSize width="1700" height="1700"/>
                           <opaque value="false"/>
                         </properties>
@@ -289,7 +289,7 @@
                     </constraints>
                     <properties>
                       <background color="-6776676"/>
-                      <font size="20"/>
+                      <font name="Comic Neue" size="20"/>
                       <foreground color="-16777216"/>
                       <horizontalAlignment value="2"/>
                       <text value="Manager"/>
@@ -301,7 +301,7 @@
                     </constraints>
                     <properties>
                       <background color="-6776676"/>
-                      <font size="20"/>
+                      <font name="Comic Neue" size="20"/>
                       <foreground color="-16777216"/>
                       <horizontalAlignment value="2"/>
                       <text value="Add Table"/>
@@ -313,7 +313,7 @@
                     </constraints>
                     <properties>
                       <background color="-1572846"/>
-                      <font size="20"/>
+                      <font name="Comic Neue" size="20"/>
                       <foreground color="-16777216"/>
                       <horizontalAlignment value="2"/>
                       <text value="Log Off"/>
@@ -326,7 +326,7 @@
                     <properties>
                       <actionCommand value="Remove Table."/>
                       <background color="-6776676"/>
-                      <font size="20"/>
+                      <font name="Comic Neue" size="20"/>
                       <foreground color="-16777216"/>
                       <horizontalAlignment value="2"/>
                       <iconTextGap value="4"/>
@@ -339,7 +339,7 @@
                     </constraints>
                     <properties>
                       <background color="-6776676"/>
-                      <font size="20"/>
+                      <font name="Comic Neue" size="20"/>
                       <foreground color="-16777216"/>
                       <horizontalAlignment value="2"/>
                       <text value="Waitlist"/>
@@ -395,7 +395,7 @@
                     <properties>
                       <background color="-1572846"/>
                       <enabled value="true"/>
-                      <font size="24"/>
+                      <font name="Comic Neue" size="24"/>
                       <foreground color="-16777216"/>
                       <text value="Exit"/>
                     </properties>
@@ -408,7 +408,7 @@
                       <autoscrolls value="true"/>
                       <background color="-16216064"/>
                       <borderPainted value="false"/>
-                      <font size="24"/>
+                      <font name="Comic Neue" size="24"/>
                       <foreground color="-16777216"/>
                       <text value="Checkout"/>
                     </properties>
@@ -420,7 +420,7 @@
                     <properties>
                       <background color="-16758330"/>
                       <focusTraversalPolicyProvider value="false"/>
-                      <font size="24"/>
+                      <font name="Comic Neue" size="24"/>
                       <foreground color="-16777216"/>
                       <text value="Discount"/>
                     </properties>
@@ -447,7 +447,7 @@
                     <properties>
                       <dividerLocation value="600"/>
                       <dividerSize value="0"/>
-                      <lastDividerLocation value="700"/>
+                      <lastDividerLocation value="-1"/>
                       <opaque value="false"/>
                       <resizeWeight value="0.3"/>
                     </properties>
@@ -514,6 +514,7 @@
                                         </constraints>
                                         <properties>
                                           <background color="-12829636"/>
+                                          <font name="Comic Neue" size="14"/>
                                           <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_Bacon.png"/>
@@ -527,6 +528,7 @@
                                         </constraints>
                                         <properties>
                                           <background color="-12828864"/>
+                                          <font name="Comic Neue" size="14"/>
                                           <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Sauce_Marinara3.png"/>
@@ -540,6 +542,7 @@
                                         </constraints>
                                         <properties>
                                           <background color="-12828864"/>
+                                          <font name="Comic Neue" size="14"/>
                                           <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_mozzarella2.png"/>
@@ -553,6 +556,7 @@
                                         </constraints>
                                         <properties>
                                           <background color="-12828864"/>
+                                          <font name="Comic Neue" size="14"/>
                                           <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_Mushroom.png"/>
@@ -566,6 +570,7 @@
                                         </constraints>
                                         <properties>
                                           <background color="-12828864"/>
+                                          <font name="Comic Neue" size="14"/>
                                           <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_Pepperoni.png"/>
@@ -579,6 +584,7 @@
                                         </constraints>
                                         <properties>
                                           <background color="-12828864"/>
+                                          <font name="Comic Neue" size="14"/>
                                           <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_Olive_black.png"/>
@@ -592,6 +598,7 @@
                                         </constraints>
                                         <properties>
                                           <background color="-12828864"/>
+                                          <font name="Comic Neue" size="14"/>
                                           <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_ItalianSausage.png"/>
@@ -605,6 +612,7 @@
                                         </constraints>
                                         <properties>
                                           <background color="-12828864"/>
+                                          <font name="Comic Neue" size="14"/>
                                           <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_Tomato.png"/>
@@ -618,6 +626,7 @@
                                         </constraints>
                                         <properties>
                                           <background color="-12828864"/>
+                                          <font name="Comic Neue" size="14"/>
                                           <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_topping_Chicken.png"/>
@@ -631,6 +640,7 @@
                                         </constraints>
                                         <properties>
                                           <background color="-12828864"/>
+                                          <font name="Comic Neue" size="14"/>
                                           <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_Pineapple.png"/>
@@ -644,6 +654,7 @@
                                         </constraints>
                                         <properties>
                                           <background color="-12828864"/>
+                                          <font name="Comic Neue" size="14"/>
                                           <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_Onion_Red.png"/>
@@ -657,6 +668,7 @@
                                         </constraints>
                                         <properties>
                                           <background color="-12828864"/>
+                                          <font name="Comic Neue" size="14"/>
                                           <foreground color="-1"/>
                                           <horizontalTextPosition value="0"/>
                                           <icon value="Images/BT_Topping_Ham.png"/>
@@ -713,6 +725,7 @@
                                     </constraints>
                                     <properties>
                                       <background color="-12829636"/>
+                                      <font name="Comic Neue" size="16"/>
                                       <foreground color="-1"/>
                                       <horizontalTextPosition value="0"/>
                                       <icon value="Images/BT_Size_MediumPizza.png"/>
@@ -727,6 +740,7 @@
                                     </constraints>
                                     <properties>
                                       <background color="-12829636"/>
+                                      <font name="Comic Neue" size="16"/>
                                       <foreground color="-1"/>
                                       <hideActionText value="false"/>
                                       <horizontalTextPosition value="0"/>
@@ -741,6 +755,7 @@
                                     </constraints>
                                     <properties>
                                       <background color="-12829636"/>
+                                      <font name="Comic Neue" size="16"/>
                                       <foreground color="-1"/>
                                       <horizontalTextPosition value="0"/>
                                       <icon value="Images/BT_Size_XLargePizza.png"/>
@@ -754,6 +769,7 @@
                                     </constraints>
                                     <properties>
                                       <background color="-12829636"/>
+                                      <font name="Comic Neue" size="16"/>
                                       <foreground color="-1"/>
                                       <horizontalTextPosition value="0"/>
                                       <icon value="Images/BT_Size_SmallPizza.png"/>
@@ -772,7 +788,9 @@
                             </constraints>
                             <properties>
                               <background color="-14474461"/>
-                              <foreground color="-16777216"/>
+                              <focusable value="true"/>
+                              <font style="1"/>
+                              <foreground color="-1"/>
                               <opaque value="false"/>
                             </properties>
                             <border type="line" title="Crust" title-justification="2">
@@ -787,6 +805,8 @@
                                 </constraints>
                                 <properties>
                                   <background color="-12829636"/>
+                                  <font name="Comic Neue" size="14"/>
+                                  <foreground color="-1"/>
                                   <horizontalTextPosition value="0"/>
                                   <icon value="Images/thinCrustPizza.png"/>
                                   <text value="Thin Crust"/>
@@ -800,6 +820,8 @@
                                 </constraints>
                                 <properties>
                                   <background color="-12829636"/>
+                                  <font name="Comic Neue" size="14"/>
+                                  <foreground color="-1"/>
                                   <horizontalTextPosition value="0"/>
                                   <icon value="Images/deepCrustPizza.png"/>
                                   <text value="Deep Dish"/>
@@ -812,6 +834,8 @@
                                 </constraints>
                                 <properties>
                                   <background color="-12829636"/>
+                                  <font name="Comic Neue" size="14"/>
+                                  <foreground color="-1"/>
                                   <horizontalTextPosition value="0"/>
                                   <icon value="Images/regularCrustPizza.png"/>
                                   <text value="Original"/>
@@ -858,6 +882,8 @@
                                     </constraints>
                                     <properties>
                                       <background color="-12829636"/>
+                                      <enabled value="false"/>
+                                      <font/>
                                       <foreground color="-12829636"/>
                                     </properties>
                                     <border type="none"/>
@@ -886,7 +912,7 @@
                                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
-                                                  <font size="14"/>
+                                                  <font name="Comic Neue" size="16"/>
                                                   <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
@@ -902,7 +928,7 @@
                                                   <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
-                                                  <font size="14"/>
+                                                  <font name="Comic Neue" size="16"/>
                                                   <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
@@ -918,7 +944,7 @@
                                                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
-                                                  <font size="14"/>
+                                                  <font name="Comic Neue" size="16"/>
                                                   <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
@@ -971,6 +997,7 @@
                                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font name="Comic Neue" size="14"/>
                                                   <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
@@ -986,6 +1013,7 @@
                                                   <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font name="Comic Neue" size="14"/>
                                                   <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
@@ -1001,6 +1029,7 @@
                                                   <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font name="Comic Neue" size="14"/>
                                                   <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
@@ -1015,6 +1044,7 @@
                                                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font name="Comic Neue" size="14"/>
                                                   <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
@@ -1029,6 +1059,7 @@
                                                   <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font name="Comic Neue" size="14"/>
                                                   <foreground color="-1"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/App_SedonaTortillaSoup.jpg"/>
@@ -1078,6 +1109,7 @@
                                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font name="Comic Neue" size="14"/>
                                                   <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
@@ -1092,6 +1124,7 @@
                                                   <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font name="Comic Neue" size="14"/>
                                                   <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
@@ -1106,6 +1139,7 @@
                                                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font name="Comic Neue" size="14"/>
                                                   <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
@@ -1120,6 +1154,7 @@
                                                   <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font name="Comic Neue" size="14"/>
                                                   <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
@@ -1134,6 +1169,7 @@
                                                   <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font name="Comic Neue" size="14"/>
                                                   <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
@@ -1181,6 +1217,7 @@
                                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font name="Comic Neue" size="14"/>
                                                   <foreground color="-1"/>
                                                   <horizontalAlignment value="0"/>
                                                   <horizontalTextPosition value="0"/>
@@ -1229,6 +1266,7 @@
                                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font name="Comic Neue" size="14"/>
                                                   <foreground color="-1"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Pizza_BBQChicken.jpg"/>
@@ -1241,6 +1279,7 @@
                                                   <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font name="Comic Neue" size="14"/>
                                                   <foreground color="-1"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Pizza_CaliforniaClub.jpg"/>
@@ -1253,6 +1292,7 @@
                                                   <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font name="Comic Neue" size="14"/>
                                                   <foreground color="-1"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Pizza_CaliforniaVeggiePizza.jpg"/>
@@ -1302,6 +1342,7 @@
                                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font name="Comic Neue" size="14"/>
                                                   <foreground color="-1"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/Salad-AsparagusArugula.jpg"/>
@@ -1346,6 +1387,7 @@
                                                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                                                 </constraints>
                                                 <properties>
+                                                  <font name="Comic Neue" size="14"/>
                                                   <foreground color="-1"/>
                                                   <horizontalTextPosition value="0"/>
                                                   <icon value="Images/MP_CedarPlankSalmon.jpg"/>
@@ -1532,7 +1574,7 @@
                       <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
-                      <font size="36"/>
+                      <font name="Comic Neue" size="42"/>
                       <foreground color="-1"/>
                       <text value="Username:"/>
                     </properties>
@@ -1552,7 +1594,7 @@
                       <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
-                      <font size="36"/>
+                      <font name="Comic Neue" size="42"/>
                       <foreground color="-1"/>
                       <text value="Password:"/>
                     </properties>
@@ -1574,7 +1616,7 @@
                     <properties>
                       <background color="-14803168"/>
                       <borderPainted value="true"/>
-                      <font size="36"/>
+                      <font name="Comic Neue" size="42"/>
                       <foreground color="-11316397"/>
                       <text value="Login"/>
                     </properties>
@@ -1584,7 +1626,7 @@
                       <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                     </constraints>
                     <properties>
-                      <font size="24"/>
+                      <font name="Comic Neue" size="26"/>
                       <foreground color="-65536"/>
                       <text value="Incorrect Login"/>
                       <visible value="false"/>
@@ -1639,7 +1681,7 @@
                     </constraints>
                     <properties>
                       <background color="-6776676"/>
-                      <font size="36"/>
+                      <font name="Comic Neue" size="38"/>
                       <foreground color="-16777216"/>
                       <text value="Remove Entry"/>
                     </properties>
@@ -1650,7 +1692,7 @@
                     </constraints>
                     <properties>
                       <background color="-6776676"/>
-                      <font size="36"/>
+                      <font name="Comic Neue" size="38"/>
                       <foreground color="-16777216"/>
                       <text value="Add Entry"/>
                     </properties>
@@ -1661,7 +1703,7 @@
                     </constraints>
                     <properties>
                       <background color="-65536"/>
-                      <font size="36"/>
+                      <font name="Comic Neue" size="38"/>
                       <foreground color="-16777216"/>
                       <text value="Exit"/>
                     </properties>
@@ -1672,7 +1714,7 @@
                     </constraints>
                     <properties>
                       <background color="-6776676"/>
-                      <font size="36"/>
+                      <font name="Comic Neue" size="40"/>
                       <foreground color="-16777216"/>
                       <text value="Notify"/>
                     </properties>

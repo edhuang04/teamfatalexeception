@@ -23,19 +23,9 @@ public class ImagePanel extends JPanel {
         image = new ImageIcon("Resources/Images/panelResized.png").getImage();
     }
 
-    public ImagePanel(boolean isDoubleBuffered) {
-        super(isDoubleBuffered);
-    }
-
     public ImagePanel(LayoutManager layout, Image image) {
         super(layout);
 
-        this.image = image;
-    }
-
-    public ImagePanel(LayoutManager layout, boolean isDoubleBuffered, Image image) {
-
-        super(layout, isDoubleBuffered);
         this.image = image;
     }
 

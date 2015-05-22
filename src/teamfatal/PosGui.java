@@ -224,8 +224,8 @@ public class PosGui extends JFrame{
                 if (tempDialog.response() == true) {
                     String name = tempDialog.getName();
                     myOrder.setText(name);
-                    myOrder.setHorizontalTextPosition(2);
-                    myOrder.setVerticalAlignment(3);
+                    myOrder.setVerticalTextPosition(JLabel.BOTTOM);
+                    myOrder.setHorizontalTextPosition(JLabel.CENTER);
                     togoPanel.add(myOrder);
                     togoPanel.updateUI();
                 }
@@ -284,6 +284,27 @@ public class PosGui extends JFrame{
                 ((WaitlistModel) tableWaitlist.getModel()).removeRow(tableWaitlist.getSelectedRow());
             }
         });
+        btnDiscount.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                tryDiscount();
+            }
+        });
+    }
+
+    private void tryDiscount() {
+        DiscountDialog dialog = new DiscountDialog();
+        dialog.pack();
+        dialog.setLocation(rootPanel.getWidth()/ 2, rootPanel.getHeight()/2);
+        dialog.setVisible(true);
+        String discount = dialog.getDiscountCode();
+        try {
+            File fileCodes = new File("");
+        }
+        catch(Exception e)
+        {
+
+        }
     }
 
     private void setupReceipt() {
@@ -942,5 +963,14 @@ public class PosGui extends JFrame{
 
     private JScrollPane scrollPane1(){
         return scrollPane1;
+    }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+        TableMenu = new ImagePanel(2);
+        OrderMenu = new ImagePanel(2);
+        rightBoothPanel = new ImagePanel(1);
+        leftBoothPanel = new ImagePanel(1);
+        WaitlistMenu = new ImagePanel(2);
     }
 }

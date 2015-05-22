@@ -2,23 +2,24 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="teamfatal.PosGui">
   <grid id="27dc6" binding="rootPanel" layout-manager="CardLayout" hgap="0" vgap="0" show="929bb">
     <constraints>
-      <xy x="20" y="20" width="1962" height="1329"/>
+      <xy x="20" y="285" width="1723" height="1064"/>
     </constraints>
     <properties>
       <background color="-12829636"/>
       <foreground color="-12828863"/>
-      <maximumSize width="-1" height="-1"/>
+      <maximumSize width="1920" height="1080"/>
+      <preferredSize width="1920" height="1080"/>
     </properties>
     <border type="none"/>
     <children>
-      <grid id="c22b" binding="TableMenu" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="c22b" binding="TableMenu" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <card name="CardTable"/>
         </constraints>
         <properties>
-          <background color="-12829636"/>
-          <foreground color="-12829636"/>
+          <background color="-11578282"/>
+          <foreground color="-11578282"/>
           <maximumSize width="1920" height="1080"/>
         </properties>
         <border type="none"/>
@@ -31,9 +32,11 @@
             </constraints>
             <properties>
               <continuousLayout value="true"/>
-              <dividerLocation value="1775"/>
+              <dividerLocation value="1719"/>
               <dividerSize value="0"/>
               <foreground color="-9605779"/>
+              <lastDividerLocation value="1719"/>
+              <opaque value="false"/>
               <resizeWeight value="1.0"/>
             </properties>
             <border type="none"/>
@@ -43,10 +46,12 @@
                   <splitpane position="left"/>
                 </constraints>
                 <properties>
+                  <continuousLayout value="true"/>
                   <dividerLocation value="80"/>
                   <dividerSize value="0"/>
                   <lastDividerLocation value="-1"/>
                   <maximumSize width="-1" height="-1"/>
+                  <opaque value="false"/>
                   <orientation value="0"/>
                 </properties>
                 <border type="none"/>
@@ -58,7 +63,9 @@
                     </constraints>
                     <properties>
                       <background color="-12829636"/>
+                      <focusable value="false"/>
                       <foreground color="-12829636"/>
+                      <opaque value="false"/>
                     </properties>
                     <border type="none"/>
                     <children>
@@ -90,6 +97,7 @@
                         </constraints>
                         <properties>
                           <background color="-29688"/>
+                          <borderPainted value="true"/>
                           <focusTraversalPolicyProvider value="false"/>
                           <font size="24"/>
                           <foreground color="-16777216"/>
@@ -117,6 +125,7 @@
                     <properties>
                       <background color="-12829636"/>
                       <foreground color="-12829636"/>
+                      <opaque value="false"/>
                     </properties>
                     <border type="none"/>
                     <children>
@@ -125,13 +134,14 @@
                           <card name="CardDinein"/>
                         </constraints>
                         <properties>
-                          <dividerLocation value="1625"/>
+                          <dividerLocation value="1575"/>
                           <dividerSize value="0"/>
                           <enabled value="true"/>
                           <foreground color="-16777216"/>
                           <inheritsPopupMenu value="false"/>
-                          <lastDividerLocation value="-1"/>
+                          <lastDividerLocation value="1600"/>
                           <maximumSize width="1700" height="1700"/>
+                          <opaque value="false"/>
                         </properties>
                         <border type="none"/>
                         <children>
@@ -146,6 +156,7 @@
                               <enabled value="true"/>
                               <foreground color="-5738752"/>
                               <lastDividerLocation value="-1"/>
+                              <opaque value="false"/>
                               <visible value="true"/>
                             </properties>
                             <border type="none"/>
@@ -158,11 +169,12 @@
                                   <background color="-11578282"/>
                                   <foreground color="-11578282"/>
                                   <maximumSize width="1000" height="1000"/>
+                                  <opaque value="false"/>
                                 </properties>
                                 <border type="none"/>
                                 <children/>
                               </grid>
-                              <grid id="4cdba" binding="leftBoothPanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                              <grid id="4cdba" binding="leftBoothPanel" custom-create="true" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                                 <margin top="0" left="0" bottom="0" right="0"/>
                                 <constraints>
                                   <splitpane position="left"/>
@@ -202,13 +214,13 @@
                               </grid>
                             </children>
                           </splitpane>
-                          <grid id="2e224" binding="rightBoothPanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                          <grid id="2e224" binding="rightBoothPanel" custom-create="true" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                             <margin top="0" left="0" bottom="0" right="0"/>
                             <constraints>
                               <splitpane position="right"/>
                             </constraints>
                             <properties>
-                              <foreground color="-12828863"/>
+                              <foreground color="-2769920"/>
                             </properties>
                             <border type="none"/>
                             <children>
@@ -247,6 +259,7 @@
                         <properties>
                           <background color="-12829636"/>
                           <foreground color="-12829636"/>
+                          <opaque value="false"/>
                         </properties>
                         <border type="none"/>
                         <children/>
@@ -264,7 +277,7 @@
                   <background color="-12698050"/>
                   <enabled value="true"/>
                   <foreground color="-14145496"/>
-                  <maximumSize width="100" height="2147483647"/>
+                  <maximumSize width="164" height="2147483647"/>
                   <minimumSize width="100" height="269"/>
                   <requestFocusEnabled value="true"/>
                 </properties>
@@ -338,13 +351,14 @@
           </splitpane>
         </children>
       </grid>
-      <grid id="56921" binding="OrderMenu" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="56921" binding="OrderMenu" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <card name="CardOrder"/>
         </constraints>
         <properties>
-          <foreground color="-12829636"/>
+          <background color="-2769920"/>
+          <foreground color="-2769920"/>
         </properties>
         <border type="none"/>
         <children>
@@ -357,6 +371,7 @@
             <properties>
               <dividerLocation value="80"/>
               <dividerSize value="0"/>
+              <opaque value="false"/>
               <orientation value="0"/>
               <resizeWeight value="0.0"/>
             </properties>
@@ -369,6 +384,7 @@
                 </constraints>
                 <properties>
                   <background color="-12829636"/>
+                  <opaque value="false"/>
                 </properties>
                 <border type="none"/>
                 <children>
@@ -418,6 +434,7 @@
                 </constraints>
                 <properties>
                   <foreground color="-12829636"/>
+                  <opaque value="false"/>
                 </properties>
                 <border type="none"/>
                 <children>
@@ -430,7 +447,8 @@
                     <properties>
                       <dividerLocation value="600"/>
                       <dividerSize value="0"/>
-                      <lastDividerLocation value="-1"/>
+                      <lastDividerLocation value="700"/>
+                      <opaque value="false"/>
                       <resizeWeight value="0.3"/>
                     </properties>
                     <border type="none"/>
@@ -445,6 +463,7 @@
                           <foreground color="-12829636"/>
                           <maximumSize width="-1" height="-1"/>
                           <minimumSize width="1495" height="1003"/>
+                          <opaque value="false"/>
                         </properties>
                         <border type="none"/>
                         <children>
@@ -456,6 +475,7 @@
                             <properties>
                               <background color="-12829636"/>
                               <foreground color="-13355980"/>
+                              <opaque value="false"/>
                             </properties>
                             <border type="none"/>
                             <children>
@@ -467,6 +487,7 @@
                                 <properties>
                                   <background color="-12829636"/>
                                   <foreground color="-12829636"/>
+                                  <opaque value="false"/>
                                 </properties>
                                 <border type="none"/>
                                 <children>
@@ -480,8 +501,12 @@
                                       <enabled value="true"/>
                                       <foreground color="-1"/>
                                       <maximumSize width="437" height="2147483647"/>
+                                      <opaque value="false"/>
                                     </properties>
-                                    <border type="line" title="Toppings" title-justification="2"/>
+                                    <border type="line" title="Toppings" title-justification="2">
+                                      <title-color color="-16777216"/>
+                                      <color color="-16777216"/>
+                                    </border>
                                     <children>
                                       <component id="4b132" class="javax.swing.JToggleButton" binding="btnBacon">
                                         <constraints>
@@ -661,7 +686,9 @@
                             <constraints>
                               <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
                             </constraints>
-                            <properties/>
+                            <properties>
+                              <opaque value="false"/>
+                            </properties>
                             <border type="none"/>
                             <children>
                               <grid id="87615" binding="PanelBeverages" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -671,9 +698,14 @@
                                 </constraints>
                                 <properties>
                                   <background color="-14474461"/>
+                                  <foreground color="-16777216"/>
                                   <maximumSize width="2147483647" height="100"/>
+                                  <opaque value="false"/>
                                 </properties>
-                                <border type="line" title="Size" title-justification="2"/>
+                                <border type="line" title="Size" title-justification="2">
+                                  <title-color color="-16777216"/>
+                                  <color color="-16777216"/>
+                                </border>
                                 <children>
                                   <component id="2bc36" class="javax.swing.JToggleButton" binding="mediumToggleButton">
                                     <constraints>
@@ -740,10 +772,13 @@
                             </constraints>
                             <properties>
                               <background color="-14474461"/>
-                              <foreground color="-1"/>
+                              <foreground color="-16777216"/>
+                              <opaque value="false"/>
                             </properties>
                             <border type="line" title="Crust" title-justification="2">
                               <font/>
+                              <title-color color="-16777216"/>
+                              <color color="-16777216"/>
                             </border>
                             <children>
                               <component id="6c0a9" class="javax.swing.JToggleButton" binding="toggleThin">
@@ -793,6 +828,7 @@
                             <properties>
                               <background color="-12829636"/>
                               <foreground color="-12828863"/>
+                              <opaque value="false"/>
                             </properties>
                             <border type="none"/>
                             <children>
@@ -1330,13 +1366,14 @@
                         </children>
                       </grid>
                       <grid id="626f6" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <margin top="20" left="0" bottom="0" right="0"/>
                         <constraints>
                           <splitpane position="left"/>
                         </constraints>
                         <properties>
                           <background color="-12829636"/>
                           <foreground color="-12829636"/>
+                          <opaque value="false"/>
                         </properties>
                         <border type="none"/>
                         <children>
@@ -1348,6 +1385,7 @@
                             <properties>
                               <background color="-12829636"/>
                               <foreground color="-12829636"/>
+                              <opaque value="true"/>
                             </properties>
                             <border type="none"/>
                             <children>
@@ -1360,6 +1398,7 @@
                                   <focusTraversalPolicyProvider value="false"/>
                                   <font size="24"/>
                                   <foreground color="-12829636"/>
+                                  <opaque value="true"/>
                                 </properties>
                                 <border type="none"/>
                                 <children>
@@ -1372,6 +1411,7 @@
                                       <font size="24"/>
                                       <foreground color="-1"/>
                                       <intercellSpacing width="1" height="1"/>
+                                      <opaque value="false"/>
                                       <rowMargin value="1"/>
                                       <selectionForeground color="-1"/>
                                     </properties>
@@ -1387,6 +1427,7 @@
                             </constraints>
                             <properties>
                               <background color="-13882324"/>
+                              <opaque value="false"/>
                             </properties>
                             <border type="none"/>
                             <children>
@@ -1397,6 +1438,7 @@
                                 </constraints>
                                 <properties>
                                   <background color="-12829636"/>
+                                  <opaque value="false"/>
                                 </properties>
                                 <border type="none"/>
                                 <children>
@@ -1406,7 +1448,7 @@
                                     </constraints>
                                     <properties>
                                       <font size="16"/>
-                                      <foreground color="-1376257"/>
+                                      <foreground color="-16777216"/>
                                       <text value="Total"/>
                                       <verticalAlignment value="0"/>
                                       <verticalTextPosition value="0"/>
@@ -1435,6 +1477,7 @@
                                     </constraints>
                                     <properties>
                                       <background color="-12829636"/>
+                                      <opaque value="false"/>
                                     </properties>
                                     <border type="none"/>
                                     <children/>
@@ -1553,7 +1596,7 @@
           </grid>
         </children>
       </grid>
-      <grid id="b7e6b" binding="WaitlistMenu" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="b7e6b" binding="WaitlistMenu" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <card name="CardWaitlist"/>
@@ -1573,6 +1616,7 @@
             <properties>
               <dividerLocation value="70"/>
               <dividerSize value="0"/>
+              <opaque value="false"/>
               <orientation value="0"/>
             </properties>
             <border type="none"/>
@@ -1585,6 +1629,7 @@
                 <properties>
                   <background color="-12829636"/>
                   <foreground color="-12829636"/>
+                  <opaque value="false"/>
                 </properties>
                 <border type="none"/>
                 <children>
@@ -1634,32 +1679,18 @@
                   </component>
                 </children>
               </grid>
-              <splitpane id="b75ae">
+              <component id="67cdb" class="javax.swing.JTable" binding="tableWaitlist">
                 <constraints>
                   <splitpane position="right"/>
                 </constraints>
                 <properties>
                   <background color="-12829636"/>
-                  <dividerLocation value="1254"/>
-                  <dividerSize value="1"/>
-                  <lastDividerLocation value="-1"/>
-                  <orientation value="0"/>
+                  <fillsViewportHeight value="true"/>
+                  <font size="24"/>
+                  <foreground color="-1"/>
+                  <opaque value="false"/>
                 </properties>
-                <border type="none"/>
-                <children>
-                  <component id="67cdb" class="javax.swing.JTable" binding="tableWaitlist">
-                    <constraints>
-                      <splitpane position="left"/>
-                    </constraints>
-                    <properties>
-                      <background color="-12829636"/>
-                      <fillsViewportHeight value="true"/>
-                      <font size="24"/>
-                      <foreground color="-1"/>
-                    </properties>
-                  </component>
-                </children>
-              </splitpane>
+              </component>
             </children>
           </splitpane>
         </children>

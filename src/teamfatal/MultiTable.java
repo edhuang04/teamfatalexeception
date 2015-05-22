@@ -16,7 +16,7 @@ public class MultiTable extends OrderObject {
     public MultiTable(Table table1, Table table2)
     {
         super();
-        panel = new JPanel(new FlowLayout());
+        panel = new ImagePanel(new FlowLayout());
         tableList = new ArrayList<Table>();
         tableList.add(table1);
         receipt = table1.getReceipt();

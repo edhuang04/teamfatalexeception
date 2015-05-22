@@ -7,6 +7,8 @@ public class DiscountDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
+    private JTextField textField1;
+    private String discountCode;
 
     public DiscountDialog() {
         setContentPane(contentPane);
@@ -44,10 +46,14 @@ public class DiscountDialog extends JDialog {
     private void onOK() {
 // add your code here
         dispose();
+        discountCode = textField1.getText();
     }
 
     private void onCancel() {
 // add your code here if necessary
         dispose();
+        discountCode = "";
     }
+
+    public String getDiscountCode(){ return discountCode; }
 }

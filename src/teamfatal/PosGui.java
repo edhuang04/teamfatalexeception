@@ -123,6 +123,12 @@ public class PosGui extends JFrame{
     private JButton usersBtnRemove;
     private JButton usersBtnAdd;
     private JButton exitButtonLogin;
+    private JLabel mojito;
+    private JLabel Margarita;
+    private JLabel Peach;
+    private JLabel BBQChicken;
+    private JLabel Shrimp;
+    private JLabel SpicyChicken;
     private ButtonGroup Crust;
     private ButtonGroup Size;
     private JButton currentOrderButton;
@@ -771,6 +777,60 @@ public class PosGui extends JFrame{
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
                 model.addFoodItem(new FoodItem("Berry Sparkler", 5));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        SpicyChicken.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Spicy Chicken Quesadilla", 11.0));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        Shrimp.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Shrimp Scampi", 12.0));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        BBQChicken.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("BBQ Chicken Salad", 12.0));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        Peach.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Carmalized Peach Salad", 11.0));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        mojito.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Mojito", 6.0));
+                NumberFormat nf = NumberFormat.getCurrencyInstance();
+                totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
+            }
+        });
+        Margarita.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                model.addFoodItem(new FoodItem("Margarita", 7.0));
                 NumberFormat nf = NumberFormat.getCurrencyInstance();
                 totalText.setText(nf.format(currentOrder.getReceipt().getTotal()));
             }

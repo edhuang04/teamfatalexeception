@@ -7,11 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ff9c25a-82b0-4dec-b907-14f59c669f1a" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\table-green2.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\table-red2.png" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\table-green New.png" afterPath="$PROJECT_DIR$/Resources/Images/table-green.png" />
-      <change type="MOVED" beforePath="C:\Users\Rawr\IdeaProjects\teamfatalexeception\Resources\Images\table-redNew.png" afterPath="$PROJECT_DIR$/Resources/Images/table-red.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Data/UserData.txt" afterPath="$PROJECT_DIR$/Resources/Data/UserData.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RestaurantPOS.iws" />
@@ -780,7 +775,7 @@
       <workItem from="1432266977643" duration="58000" />
       <workItem from="1432267049269" duration="5355000" />
       <workItem from="1432315907770" duration="11774000" />
-      <workItem from="1432450431819" duration="714000" />
+      <workItem from="1432450431819" duration="727000" />
     </task>
     <task id="LOCAL-00001" summary="Much progress made - Trenton">
       <created>1429574412147</created>
@@ -908,11 +903,17 @@
       <option name="project" value="LOCAL" />
       <updated>1432450544054</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Changed tables around">
+      <created>1432451156736</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1432451156736</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116480000" />
+    <option name="totallyTimeSpent" value="116493000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -988,7 +989,8 @@
     <MESSAGE value="Adjusted images and added new ones" />
     <MESSAGE value="Changed fonts" />
     <MESSAGE value="Added new table images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new table images" />
+    <MESSAGE value="Changed tables around" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed tables around" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1234,6 +1236,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">

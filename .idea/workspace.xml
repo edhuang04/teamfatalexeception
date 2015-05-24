@@ -7,11 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ff9c25a-82b0-4dec-b907-14f59c669f1a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/table-green New.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/table-green2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/table-red2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Resources/Images/table-redNew.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RestaurantPOS.iws" />
@@ -746,7 +741,7 @@
       <workItem from="1432266977643" duration="58000" />
       <workItem from="1432267049269" duration="5355000" />
       <workItem from="1432315907770" duration="11774000" />
-      <workItem from="1432450431819" duration="91000" />
+      <workItem from="1432450431819" duration="107000" />
     </task>
     <task id="LOCAL-00001" summary="Much progress made - Trenton">
       <created>1429574412147</created>
@@ -862,11 +857,17 @@
       <option name="project" value="LOCAL" />
       <updated>1432334553538</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added new table images">
+      <created>1432450535824</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1432450535824</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115857000" />
+    <option name="totallyTimeSpent" value="115873000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -941,7 +942,8 @@
     <MESSAGE value="Receipt finally finished" />
     <MESSAGE value="Adjusted images and added new ones" />
     <MESSAGE value="Changed fonts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed fonts" />
+    <MESSAGE value="Added new table images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new table images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

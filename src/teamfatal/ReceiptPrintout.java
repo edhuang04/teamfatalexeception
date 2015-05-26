@@ -121,7 +121,8 @@ public class ReceiptPrintout extends JDialog {
         btnTextCancel.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-
+                CardLayout myLayout = (CardLayout) CardPanel.getLayout();
+                myLayout.show(CardPanel, "CardMain");
             }
         });
     }
@@ -219,7 +220,8 @@ public class ReceiptPrintout extends JDialog {
         MimeMessage generateMailMessage = new MimeMessage(getMailSession);
         generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress(email));
         generateMailMessage.setSubject("Team Fatal Pizzeria Receipt");
-        String emailBody = "Hello, this is an automated test." + "<br><br> Regards, <br>Team Fatal Pizzeria";
+        NumberFormat nf = NumberFormat.getCurrencyInstance();
+        String emailBody = "Total - " + nf.format(myReceipt.getTotal()) + "<br><br> Regards, <br>Team Fatal Pizzeria";
         generateMailMessage.setContent(emailBody, "text/html");
 
 //Step3

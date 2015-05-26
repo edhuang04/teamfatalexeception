@@ -7,9 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ff9c25a-82b0-4dec-b907-14f59c669f1a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Images/LeftBoothGreen.jpg" afterPath="$PROJECT_DIR$/Resources/Images/LeftBoothGreen.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Images/LeftBoothRed.jpg" afterPath="$PROJECT_DIR$/Resources/Images/LeftBoothRed.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/CreditCardDialog.form" afterPath="$PROJECT_DIR$/src/teamfatal/CreditCardDialog.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/DiscountDialog.form" afterPath="$PROJECT_DIR$/src/teamfatal/DiscountDialog.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Data/Logins.txt" afterPath="$PROJECT_DIR$/Resources/Data/Logins.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.form" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.java" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.form" afterPath="$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.form" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.java" afterPath="$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Data/UserData.txt" afterPath="$PROJECT_DIR$/Resources/Data/UserData.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/WaitlistModel.java" afterPath="$PROJECT_DIR$/src/teamfatal/WaitlistModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RestaurantPOS.iws" />
@@ -52,23 +58,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PosGui.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PosGui.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="336" column="11" selection-start-line="336" selection-start-column="11" selection-end-line="336" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.43441465">
+              <caret line="685" column="92" selection-start-line="685" selection-start-column="92" selection-end-line="685" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#6301#6465#0" expanded="true" />
+                <element signature="e#6464#6465#0" expanded="true" />
+                <element signature="e#13671#13937#0" expanded="true" />
+                <element signature="e#13936#13937#0" expanded="true" />
                 <element signature="method#decrementTables#0;class#PosGui#0" expanded="false" />
-                <element signature="method#exitToTables#0;class#PosGui#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="table-green.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resources/Images/table-green.png">
-          <provider selected="true" editor-type-id="images">
+      <file leaf-file-name="ReceiptPrintout.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="124" column="53" selection-start-line="124" selection-start-column="53" selection-end-line="124" selection-end-column="53" />
+              <folding>
+                <element signature="e#4306#4569#0" expanded="true" />
+                <element signature="e#4568#4569#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReceiptPrintout.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.form">
+          <provider selected="true" editor-type-id="ui-designer">
             <state />
           </provider>
         </entry>
@@ -120,10 +142,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginPane.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginPane.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/teamfatal/LoginPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.35253772">
+            <state vertical-scroll-proportion="0.0">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
             </state>
@@ -134,23 +156,6 @@
         <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WaitlistModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/teamfatal/WaitlistModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="e#738#739#0" expanded="true" />
-                <element signature="e#764#765#0" expanded="true" />
-                <element signature="e#814#815#0" expanded="true" />
-                <element signature="e#845#846#0" expanded="true" />
-                <element signature="e#3202#3203#0" expanded="true" />
-                <element signature="e#3236#3237#0" expanded="true" />
-              </folding>
-            </state>
           </provider>
         </entry>
       </file>
@@ -187,7 +192,6 @@
         <option value="$PROJECT_DIR$/src/teamfatal/ReceiptModel.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/Receipt.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/OrderObject.java" />
-        <option value="$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/ToGoOrder.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/MultiTable.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/DiscountDialog.java" />
@@ -195,16 +199,17 @@
         <option value="$PROJECT_DIR$/src/teamfatal/CreditCardDialog.form" />
         <option value="$PROJECT_DIR$/src/teamfatal/DiscountDialog.form" />
         <option value="$PROJECT_DIR$/src/teamfatal/NameDialog.form" />
-        <option value="$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.form" />
         <option value="$PROJECT_DIR$/Resources/Data/Logins.txt" />
         <option value="$PROJECT_DIR$/src/teamfatal/WaitlistDialog.form" />
         <option value="$PROJECT_DIR$/src/teamfatal/WaitlistDialog.java" />
         <option value="$PROJECT_DIR$/Resources/Data/UserData.txt" />
         <option value="$PROJECT_DIR$/src/teamfatal/WaitlistModel.java" />
-        <option value="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
-        <option value="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/Table.java" />
         <option value="$PROJECT_DIR$/src/teamfatal/Booth.java" />
+        <option value="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
+        <option value="$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.java" />
+        <option value="$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.form" />
+        <option value="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
       </list>
     </option>
   </component>
@@ -223,9 +228,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="x" value="-1" />
+    <option name="width" value="1922" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -253,8 +257,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -309,7 +313,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="ReceiptPrintout" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestaurantPOS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="teamfatalexeception" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="teamfatal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="PosGui" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RestaurantPOS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="teamfatalexeception" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="teamfatal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CreditCardDialog" />
               <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -689,6 +737,7 @@
       <workItem from="1432315907770" duration="11774000" />
       <workItem from="1432450431819" duration="727000" />
       <workItem from="1432452662407" duration="376000" />
+      <workItem from="1432609967488" duration="1450000" />
     </task>
     <task id="LOCAL-00001" summary="Much progress made - Trenton">
       <created>1429574412147</created>
@@ -826,7 +875,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116869000" />
+    <option name="totallyTimeSpent" value="118319000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -849,12 +898,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1" y="0" width="1922" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32834226" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Code explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2748663" sideWeight="0.50213444" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -863,16 +913,15 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3262032" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.175" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17449306" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17895879" sideWeight="0.49786553" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17860962" sideWeight="0.49786553" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Code explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
@@ -925,8 +974,19 @@
             <element signature="e#764#765#0" expanded="true" />
             <element signature="e#814#815#0" expanded="true" />
             <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#3202#3203#0" expanded="true" />
-            <element signature="e#3236#3237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/WaitlistModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1139,21 +1199,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Resources/Data/UserData.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="200" column="0" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-6.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1162,16 +1213,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1207,31 +1248,6 @@
             <element signature="e#764#765#0" expanded="true" />
             <element signature="e#814#815#0" expanded="true" />
             <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#3202#3203#0" expanded="true" />
-            <element signature="e#3236#3237#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="336" column="11" selection-start-line="336" selection-start-column="11" selection-end-line="336" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#decrementTables#0;class#PosGui#0" expanded="false" />
-            <element signature="method#exitToTables#0;class#PosGui#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1280,9 +1296,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/LoginPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.35253772">
+        <state vertical-scroll-proportion="0.0">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="124" column="53" selection-start-line="124" selection-start-column="53" selection-end-line="124" selection-end-column="53" />
+          <folding>
+            <element signature="e#4306#4569#0" expanded="true" />
+            <element signature="e#4568#4569#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/teamfatal/PosGui.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43441465">
+          <caret line="685" column="92" selection-start-line="685" selection-start-column="92" selection-end-line="685" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6301#6465#0" expanded="true" />
+            <element signature="e#6464#6465#0" expanded="true" />
+            <element signature="e#13671#13937#0" expanded="true" />
+            <element signature="e#13936#13937#0" expanded="true" />
+            <element signature="method#decrementTables#0;class#PosGui#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

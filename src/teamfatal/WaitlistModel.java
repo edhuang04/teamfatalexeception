@@ -74,19 +74,19 @@ public class WaitlistModel extends DefaultTableModel {
                     email = number + "@vtext.com";
             }
             System.out.println(email);
-//            Session getMailSession = Session.getDefaultInstance(mailServerProperties, null);
-//            MimeMessage generateMailMessage = new MimeMessage(getMailSession);
-//            generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress(email));
-//            generateMailMessage.setSubject("Team Fatal Pizzeria Notification");
-//            String emailBody = "Your table is now ready.";
-//            generateMailMessage.setContent(emailBody, "text/html");
-//
-//            Transport transport = getMailSession.getTransport("smtp");
-//
-//            // Enter your correct gmail UserID and Password (XXXApp Shah@gmail.com)
-//            transport.connect("smtp.gmail.com", "teamfatalpizza", "teamfatal");
-//            transport.sendMessage(generateMailMessage, generateMailMessage.getAllRecipients());
-//            transport.close();
+            Session getMailSession = Session.getDefaultInstance(mailServerProperties, null);
+            MimeMessage generateMailMessage = new MimeMessage(getMailSession);
+            generateMailMessage.addRecipient(Message.RecipientType.TO, new InternetAddress(email));
+            generateMailMessage.setSubject("Team Fatal Pizzeria Notification");
+            String emailBody = "Your table is now ready.";
+            generateMailMessage.setContent(emailBody, "text/html");
+
+            Transport transport = getMailSession.getTransport("smtp");
+
+            // Enter your correct gmail UserID and Password (XXXApp Shah@gmail.com)
+            transport.connect("smtp.gmail.com", "teamfatalpizza", "teamfatal");
+            transport.sendMessage(generateMailMessage, generateMailMessage.getAllRecipients());
+            transport.close();
         }
         catch(Exception e){
             System.out.println("Did not notify.");

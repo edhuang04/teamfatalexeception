@@ -1,7 +1,10 @@
 package teamfatal; /**
  * Created by Trenton on 3/6/2015.
  */
+import javax.smartcardio.Card;
 import javax.swing.*;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
@@ -113,7 +116,7 @@ public class PosGui extends JFrame{
     private JButton removeButton;
     private JPanel ManagerMenu;
     private JButton notifyButton;
-    private JButton checkPurchasesButton;
+    private JButton loggedInHistoryButton;
     private JButton btnManagerUsers;
     private JButton exitButton;
     private JPanel EditUserMenu;
@@ -129,6 +132,9 @@ public class PosGui extends JFrame{
     private JLabel BBQChicken;
     private JLabel Shrimp;
     private JLabel SpicyChicken;
+    private JButton emailTransactionsButton;
+    private JButton exitButton1;
+    private JList listTransactions;
     private ButtonGroup Crust;
     private ButtonGroup Size;
     private JButton currentOrderButton;
@@ -153,6 +159,9 @@ public class PosGui extends JFrame{
      * Initializes the main root Frame with everything loaded onto it.
      */
     public PosGui() {
+        final DefaultTableModel tableModel = new DefaultTableModel();
+        tableUsers.setModel(tableModel);
+        tableModel.setColumnIdentifiers(new Object[] {"Username", "Status"});
         multiTables = new HashMap<MultiTable, JPanel>();
         leftBoothPanel.setOpaque(true);
         leftBoothPanel.setBackground(Color.DARK_GRAY);
@@ -250,7 +259,12 @@ public class PosGui extends JFrame{
         btnRemoveTable.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                removing = 1;
+                if(isAdmin)
+                    removing = 1;
+                else
+                {
+
+                }
             }
         });
         loadFoodItems();
@@ -279,12 +293,6 @@ public class PosGui extends JFrame{
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 tryLogin();
-            }
-        });
-        tableWaitlist.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-
             }
         });
         removeEntryButton.addActionListener(new ActionListener() {
@@ -324,6 +332,32 @@ public class PosGui extends JFrame{
         btnManagerUsers.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
+                try{
+                    Scanner scanner = new Scanner(new File("Resources/Data/Logins.txt"));
+                    String user;
+                    int status;
+                    ((DefaultTableCellRenderer)tableUsers.getDefaultRenderer(Object.class)).setOpaque(false);
+                    while(scanner.hasNext())
+                    {
+                        status = scanner.nextInt();
+                        System.out.println(status);
+                        user = scanner.next();
+                        System.out.print(user);
+                        if(status == 1){
+                            ((DefaultTableModel) tableUsers.getModel()).addRow(new Object[] {user, "Standard User"});
+                        }
+                        else{
+                            ((DefaultTableModel) tableUsers.getModel()).addRow(new Object[] {user, "Administrator"});
+                        }
+                        scanner.nextLine();
+                    }
+
+                    scanner.close();
+                }
+                catch(Exception e){
+                    System.out.println("Test");
+                }
+
                 CardLayout myLayout = (CardLayout) rootPanel.getLayout();
                 myLayout.show(rootPanel, "CardUsers");
             }
@@ -339,6 +373,67 @@ public class PosGui extends JFrame{
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 exitPos();
+            }
+        });
+        usersBtnAdd.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        usersBtnRemove.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        loggedInHistoryButton.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CardLayout layout = (CardLayout) rootPanel.getLayout();
+
+                try {
+                    DefaultListModel listModel = new DefaultListModel();
+                    listTransactions.setModel(listModel);
+
+                    Scanner scanner = new Scanner(new File("Resources/Data/UserData.txt"));
+                    while(scanner.hasNext()) {
+                        listModel.addElement(scanner.nextLine());
+                    }
+                    ((javax.swing.DefaultListCellRenderer)listTransactions.getCellRenderer()).setOpaque(false);
+                    layout.show(rootPanel, "CardTransaction");
+                    scanner.close();
+                }
+                catch(Exception i){
+
+                }
+            }
+        });
+        exitButton1.addActionListener(new ActionListener() {
+            /**
+             * Invoked when an action occurs.
+             *
+             * @param e
+             */
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                CardLayout cardLayout = (CardLayout) rootPanel.getLayout();
+                cardLayout.show(rootPanel, "CardManager");
             }
         });
     }
@@ -474,7 +569,14 @@ public class PosGui extends JFrame{
         }
     }
 
+    private void showManagerFeatures(){
+        btnManager.setVisible(true);
+        btnAddTable.setVisible(true);
+        btnRemoveTable.setVisible(true);
+    }
+
     /**
+     *
      * Attempt to login using the username textfield and the password textfield
      */
     private void tryLogin() {
@@ -483,11 +585,8 @@ public class PosGui extends JFrame{
 
         if(userGroup.containsKey(username)) {
             if(userGroup.get(username).equals(password)) {
-                CardLayout myLayout = (CardLayout) rootPanel.getLayout();
-                myLayout.show(rootPanel, "CardTable");
                 labelWarning.setVisible(false);
                 isAdmin = false;
-
 
                 try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
                         new FileOutputStream("Resources/Data/UserData.txt", true), "utf-8"))) {
@@ -495,6 +594,8 @@ public class PosGui extends JFrame{
                     String formattedDate = df.format (new Date ());
                     writer.write(username + " logged in - " + formattedDate);
                     writer.newLine();
+                    CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+                    myLayout.show(rootPanel, "CardTable");
                 }
                 catch(Exception e){
 
@@ -503,8 +604,6 @@ public class PosGui extends JFrame{
         }
         else if(adminGroup.containsKey(username)) {
             if(adminGroup.get(username).equals(password)) {
-                CardLayout myLayout = (CardLayout) rootPanel.getLayout();
-                myLayout.show(rootPanel, "CardTable");
                 labelWarning.setVisible(false);
                 isAdmin = true;
 
@@ -514,6 +613,9 @@ public class PosGui extends JFrame{
                     String formattedDate = df.format (new Date ());
                     writer.write(username + " logged in - " + formattedDate);
                     writer.newLine();
+                    showManagerFeatures();
+                    CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+                    myLayout.show(rootPanel, "CardTable");
                 }
                 catch(Exception e){
 
@@ -581,6 +683,7 @@ public class PosGui extends JFrame{
         printout.loadReceipt(currentOrder.getReceipt());
         //printout.loadReceipt(currentTable.getReceipt());
         printout.pack();
+        printout.setLocation(960 - printout.getWidth() / 2, 540 - printout.getHeight() / 2);
         printout.setVisible(true);
 
         if(currentOrder.getClass().equals(MultiTable.class))
@@ -707,6 +810,7 @@ public class PosGui extends JFrame{
                 tablePanel.remove(myTable);
                 currentOrder = multiTable;
                 merging = -1;
+                tablePanel.updateUI();
             }
         }
     }
@@ -744,6 +848,9 @@ public class PosGui extends JFrame{
         }
         textFieldUser.setText("");
         passwordFieldUser.setText("");
+        btnManager.setVisible(false);
+        btnRemoveTable.setVisible(false);
+        btnAddTable.setVisible(false);
         CardLayout myLayout = (CardLayout) rootPanel.getLayout();
         myLayout.show(rootPanel, "CardLogin");
     }
@@ -1087,8 +1194,11 @@ public class PosGui extends JFrame{
         btnAddTable.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                addTable();
-                incrementTables();
+                if(isAdmin)
+                {
+                    addTable();
+                    incrementTables();
+                }
             }
         });
     }
@@ -1111,6 +1221,8 @@ public class PosGui extends JFrame{
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
+        EditUserMenu = new ImagePanel(2);
+        TransactionsMenu = new ImagePanel(2);
         TableMenu = new ImagePanel(2);
         OrderMenu = new ImagePanel(2);
         rightBoothPanel = new ImagePanel(1);

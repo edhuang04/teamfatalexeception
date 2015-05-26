@@ -66,6 +66,7 @@ public class ConfirmPaymentDialog extends JDialog {
 
     private void onCash() {
         paymentMethod = 1;
+        dispose();
     }
 
     private void onCancel() {

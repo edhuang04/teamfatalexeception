@@ -671,20 +671,25 @@ public class PosGui extends JFrame{
         if(choice == 0) {
 
         }
-        else if(choice == 1) {
 
+        else if(choice == 1) {
+            CashDialog test = new CashDialog(currentOrder.getReceipt().getTotal());
+            test.pack();
+            test.setLocationRelativeTo(rootPanel);
+            test.setVisible(true);
         }
 
         else if (choice == 2) {
             CreditCardDialog test = new CreditCardDialog();
             test.pack();
+            test.setLocationRelativeTo(rootPanel);
             test.setVisible(true);
         }
 
         ReceiptPrintout printout = new ReceiptPrintout();
         printout.loadReceipt(currentOrder.getReceipt());
         printout.pack();
-        printout.setLocation(960 - printout.getWidth() / 2, 540 - printout.getHeight() / 2);
+        printout.setLocationRelativeTo(rootPanel);
         printout.setVisible(true);
 
         if(currentOrder.getClass().equals(MultiTable.class))

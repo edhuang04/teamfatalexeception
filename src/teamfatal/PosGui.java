@@ -662,18 +662,20 @@ public class PosGui extends JFrame{
 
     private void checkout()
     {
-        Object[] options = {"Credit",
-                "Cash"};
-        int choice = JOptionPane.showOptionDialog(new Frame(),
-                "Credit Card or Cash",
-                "Method of Payment",
-                JOptionPane.YES_NO_CANCEL_OPTION,
-                JOptionPane.QUESTION_MESSAGE,
-                null,
-                options,
-                options[1]);
+        ConfirmPaymentDialog dialog = new ConfirmPaymentDialog();
+        dialog.pack();
+        dialog.setLocationRelativeTo(rootPanel);
+        dialog.setVisible(true);
+        int choice = dialog.getPaymentMethod();
 
-        if (choice == 0) {
+        if(choice == 0) {
+
+        }
+        else if(choice == 1) {
+
+        }
+
+        else if (choice == 2) {
             CreditCardDialog test = new CreditCardDialog();
             test.pack();
             test.setVisible(true);
@@ -681,7 +683,6 @@ public class PosGui extends JFrame{
 
         ReceiptPrintout printout = new ReceiptPrintout();
         printout.loadReceipt(currentOrder.getReceipt());
-        //printout.loadReceipt(currentTable.getReceipt());
         printout.pack();
         printout.setLocation(960 - printout.getWidth() / 2, 540 - printout.getHeight() / 2);
         printout.setVisible(true);

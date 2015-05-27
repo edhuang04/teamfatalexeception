@@ -7,20 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee7d5fa4-9437-4f93-90d7-b9bbf977633f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/RestaurantPOS_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/Booth.java" afterPath="$PROJECT_DIR$/src/teamfatal/Booth.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/CashDialog.form" afterPath="$PROJECT_DIR$/src/teamfatal/CashDialog.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/CashDialog.java" afterPath="$PROJECT_DIR$/src/teamfatal/CashDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/ImagePanel.java" afterPath="$PROJECT_DIR$/src/teamfatal/ImagePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/MultiTable.java" afterPath="$PROJECT_DIR$/src/teamfatal/MultiTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/OrderObject.java" afterPath="$PROJECT_DIR$/src/teamfatal/OrderObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.form" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/PosGui.java" afterPath="$PROJECT_DIR$/src/teamfatal/PosGui.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.form" afterPath="$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/Table.java" afterPath="$PROJECT_DIR$/src/teamfatal/Table.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/teamfatal/ToGoOrder.java" afterPath="$PROJECT_DIR$/src/teamfatal/ToGoOrder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resources/Data/UserData.txt" afterPath="$PROJECT_DIR$/Resources/Data/UserData.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RestaurantPOS.iws" />
@@ -109,11 +95,8 @@
       </file>
       <file leaf-file-name="ReceiptPrintout.form" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.form">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -665,19 +648,27 @@
       <workItem from="1432716063632" duration="394000" />
       <workItem from="1432716952179" duration="2855000" />
       <workItem from="1432757870677" duration="4024000" />
-      <workItem from="1432766989964" duration="9000" />
+      <workItem from="1432766989964" duration="85000" />
     </task>
+    <task id="LOCAL-00001" summary="Final?">
+      <created>1432767028614</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1432767028614</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7960000" />
+    <option name="totallyTimeSpent" value="8036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1055" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Code explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -686,7 +677,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -697,7 +688,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993576" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -713,6 +703,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Final?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -837,6 +831,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -870,6 +865,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -877,6 +873,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22258#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#5677#5678#0" expanded="false" />
+            <element signature="e#5717#5718#0" expanded="false" />
+            <element signature="e#11640#11641#0" expanded="false" />
+            <element signature="e#11673#11674#0" expanded="false" />
+            <element signature="e#11859#11860#0" expanded="false" />
+            <element signature="e#11887#11888#0" expanded="false" />
+            <element signature="e#12463#12464#0" expanded="false" />
+            <element signature="e#12497#12498#0" expanded="false" />
+            <element signature="e#12864#12865#0" expanded="false" />
+            <element signature="e#12910#12911#0" expanded="false" />
+            <element signature="e#13901#13902#0" expanded="false" />
+            <element signature="e#13929#13930#0" expanded="false" />
+            <element signature="e#14071#14072#0" expanded="false" />
+            <element signature="e#14100#14101#0" expanded="false" />
+            <element signature="e#14557#14558#0" expanded="false" />
+            <element signature="e#14597#14598#0" expanded="false" />
+            <element signature="e#14784#14785#0" expanded="false" />
+            <element signature="e#14820#14821#0" expanded="false" />
+            <element signature="e#18413#18414#0" expanded="false" />
+            <element signature="e#18463#18464#0" expanded="false" />
+            <element signature="e#18744#18745#0" expanded="false" />
+            <element signature="e#18779#18780#0" expanded="false" />
+            <element signature="e#19172#19173#0" expanded="false" />
+            <element signature="e#19207#19208#0" expanded="false" />
+            <element signature="e#19521#19522#0" expanded="false" />
+            <element signature="e#19554#19555#0" expanded="false" />
+            <element signature="e#19929#19930#0" expanded="false" />
+            <element signature="e#19961#19962#0" expanded="false" />
+            <element signature="e#20214#20215#0" expanded="false" />
+            <element signature="e#20249#20250#0" expanded="false" />
+            <element signature="e#20950#20951#0" expanded="false" />
+            <element signature="e#21012#21013#0" expanded="false" />
+            <element signature="e#21421#21422#0" expanded="false" />
+            <element signature="e#21487#21488#0" expanded="false" />
+            <element signature="e#21652#21653#0" expanded="false" />
+            <element signature="e#21704#21705#0" expanded="false" />
+            <element signature="e#21866#21867#0" expanded="false" />
+            <element signature="e#21917#21918#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -920,6 +958,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="216" column="0" selection-start-line="216" selection-start-column="0" selection-end-line="216" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#22258#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#5677#5678#0" expanded="false" />
+            <element signature="e#5717#5718#0" expanded="false" />
+            <element signature="e#11640#11641#0" expanded="false" />
+            <element signature="e#11673#11674#0" expanded="false" />
+            <element signature="e#11859#11860#0" expanded="false" />
+            <element signature="e#11887#11888#0" expanded="false" />
+            <element signature="e#12463#12464#0" expanded="false" />
+            <element signature="e#12497#12498#0" expanded="false" />
+            <element signature="e#12864#12865#0" expanded="false" />
+            <element signature="e#12910#12911#0" expanded="false" />
+            <element signature="e#13901#13902#0" expanded="false" />
+            <element signature="e#13929#13930#0" expanded="false" />
+            <element signature="e#14071#14072#0" expanded="false" />
+            <element signature="e#14100#14101#0" expanded="false" />
+            <element signature="e#14557#14558#0" expanded="false" />
+            <element signature="e#14597#14598#0" expanded="false" />
+            <element signature="e#14784#14785#0" expanded="false" />
+            <element signature="e#14820#14821#0" expanded="false" />
+            <element signature="e#18413#18414#0" expanded="false" />
+            <element signature="e#18463#18464#0" expanded="false" />
+            <element signature="e#18744#18745#0" expanded="false" />
+            <element signature="e#18779#18780#0" expanded="false" />
+            <element signature="e#19172#19173#0" expanded="false" />
+            <element signature="e#19207#19208#0" expanded="false" />
+            <element signature="e#19521#19522#0" expanded="false" />
+            <element signature="e#19554#19555#0" expanded="false" />
+            <element signature="e#19929#19930#0" expanded="false" />
+            <element signature="e#19961#19962#0" expanded="false" />
+            <element signature="e#20214#20215#0" expanded="false" />
+            <element signature="e#20249#20250#0" expanded="false" />
+            <element signature="e#20950#20951#0" expanded="false" />
+            <element signature="e#21012#21013#0" expanded="false" />
+            <element signature="e#21421#21422#0" expanded="false" />
+            <element signature="e#21487#21488#0" expanded="false" />
+            <element signature="e#21652#21653#0" expanded="false" />
+            <element signature="e#21704#21705#0" expanded="false" />
+            <element signature="e#21866#21867#0" expanded="false" />
+            <element signature="e#21917#21918#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -927,6 +1007,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -934,6 +1015,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,13 +1099,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/teamfatal/ReceiptPrintout.form">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="ui-designer">
+      <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>

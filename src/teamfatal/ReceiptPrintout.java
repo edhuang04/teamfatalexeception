@@ -14,6 +14,8 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import javax.smartcardio.Card;
 import javax.swing.*;
+import javax.swing.table.DefaultTableColumnModel;
+import javax.swing.table.DefaultTableModel;
 import java.awt.event.*;
 
 public class ReceiptPrintout extends JDialog {
@@ -39,6 +41,7 @@ public class ReceiptPrintout extends JDialog {
     private JLabel labelPercentFifth;
     private JLabel labelPercentEighth;
     private JLabel labelPercentTwenty;
+    private JScrollPane scrollpane1;
     private Receipt myReceipt;
     private final double TAX = 0.0875;
 
@@ -231,5 +234,13 @@ public class ReceiptPrintout extends JDialog {
         transport.connect("smtp.gmail.com", "teamfatalpizza", "teamfatal");
         transport.sendMessage(generateMailMessage, generateMailMessage.getAllRecipients());
         transport.close();
+    }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+
+        final DefaultTableModel model = new DefaultTableModel(new Object[][] {}, new String[] {"Qty", "Description", "Price"});
+        table1 = new JTable(model);
+        table1.setRowHeight(30);
     }
 }

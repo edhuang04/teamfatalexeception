@@ -163,6 +163,7 @@ public class PosGui extends JFrame{
     public PosGui() {
         final DefaultTableModel tableModel = new DefaultTableModel();
         tableUsers.setModel(tableModel);
+        tableUsers.setRowHeight(30);
         tableModel.setColumnIdentifiers(new Object[] {"Username", "Status"});
         multiTables = new HashMap<MultiTable, JPanel>();
         leftBoothPanel.setOpaque(true);
@@ -263,10 +264,6 @@ public class PosGui extends JFrame{
             public void mouseClicked(MouseEvent e) {
                 if(isAdmin)
                     removing = 1;
-                else
-                {
-
-                }
             }
         });
         loadFoodItems();
@@ -334,6 +331,7 @@ public class PosGui extends JFrame{
         btnManagerUsers.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
+                if(tableUsers.getModel().getRowCount() == 0)
                 try{
                     File dir = new File("/tmp/test");
                     File tmp = new File(dir, "Logins.txt");
@@ -417,9 +415,11 @@ public class PosGui extends JFrame{
 
                     File tmp = new File("/tmp/test/UserData.txt");
                     Scanner scanner = new Scanner(new InputStreamReader(new FileInputStream(tmp)));
+                    ((javax.swing.DefaultListCellRenderer)listTransactions.getCellRenderer()).setOpaque(false);
                     while(scanner.hasNext()) {
                         listModel.addElement(scanner.nextLine());
                     }
+                    System.out.println("test");
                     ((javax.swing.DefaultListCellRenderer)listTransactions.getCellRenderer()).setOpaque(false);
                     layout.show(rootPanel, "CardTransaction");
                     scanner.close();
@@ -717,11 +717,7 @@ public class PosGui extends JFrame{
         dialog.setVisible(true);
         int choice = dialog.getPaymentMethod();
 
-        if(choice == 0) {
-
-        }
-
-        else if(choice == 1) {
+        if(choice == 1) {
             CashDialog test = new CashDialog(currentOrder.getReceipt().getTotal() + currentOrder.getReceipt().getTotal()* 0.0875);
             test.pack();
             test.setLocationRelativeTo(rootPanel);
@@ -735,40 +731,38 @@ public class PosGui extends JFrame{
             test.setVisible(true);
         }
 
-        ReceiptPrintout printout = new ReceiptPrintout();
-        printout.loadReceipt(currentOrder.getReceipt());
-        printout.pack();
-        printout.setLocationRelativeTo(rootPanel);
-        printout.setVisible(true);
+        if(choice != 0) {
+            ReceiptPrintout printout = new ReceiptPrintout();
+            printout.loadReceipt(currentOrder.getReceipt());
+            printout.pack();
+            printout.setLocationRelativeTo(rootPanel);
+            printout.setVisible(true);
 
-        if(currentOrder.getClass().equals(MultiTable.class))
-        {
-            List<Table> tempList = ((MultiTable) currentOrder).finish();
-            for(Table table : tempList)
-            {
-                tablePanel.add(table);
-                table.addMouseListener(new MouseAdapter() {
-                    @Override
-                    public void mouseClicked(MouseEvent e) {
-                        tableClicked((Table) e.getSource());
-                    }
-                });
+            if (currentOrder.getClass().equals(MultiTable.class)) {
+                List<Table> tempList = ((MultiTable) currentOrder).finish();
+                for (Table table : tempList) {
+                    tablePanel.add(table);
+                    table.addMouseListener(new MouseAdapter() {
+                        @Override
+                        public void mouseClicked(MouseEvent e) {
+                            tableClicked((Table) e.getSource());
+                        }
+                    });
+                }
+                tablePanel.remove(((MultiTable) currentOrder).getPanel());
+                exitToTables();
+            } else if (currentOrder.getClass().equals(ToGoOrder.class)) {
+                currentOrder.checkOut();
+                togoPanel.remove((ToGoOrder) currentOrder);
+                togoPanel.repaint();
+                currentOrder = null;
+                exitToTogo();
+            } else {
+                currentOrder.setOccupied(false);
+                currentOrder.checkOut();
+                currentOrder = null;
+                exitToTables();
             }
-            tablePanel.remove( ((MultiTable) currentOrder).getPanel());
-            exitToTables();
-        }
-        else if(currentOrder.getClass().equals(ToGoOrder.class))
-        {
-            currentOrder.checkOut();
-            currentOrder = null;
-            exitToTogo();
-        }
-        else
-        {
-            currentOrder.setOccupied(false);
-            currentOrder.checkOut();
-            currentOrder = null;
-            exitToTables();
         }
     }
 

@@ -1,6 +1,7 @@
 package teamfatal;
 
 import javax.swing.*;
+import java.net.URL;
 
 /**
  * Created by trenton on 5/13/15.
@@ -26,6 +27,7 @@ public abstract class OrderObject extends JLabel{
 
     protected ImageIcon createImageIcon(String path, String description)
     {
-        return new ImageIcon(path, description);
+        URL url = OrderObject.class.getResource(path);
+        return new ImageIcon(url, description);
     }
 }

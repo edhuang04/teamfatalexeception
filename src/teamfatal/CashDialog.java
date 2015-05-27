@@ -30,7 +30,7 @@ public class CashDialog extends JDialog {
         getRootPane().setDefaultButton(buttonOK);
 
         this.total = total;
-        textFieldDue.setText(Double.toString(total));
+        textFieldDue.setText(String.format("%.2f", total));
 
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -200,7 +200,7 @@ public class CashDialog extends JDialog {
             public void actionPerformed(ActionEvent e) {
                 String text = textFieldCurrentPayment.getText();
                 if(text.length() > 0) {
-                    textFieldCurrentPayment.setText(text.substring(0, text.length() - 2));
+                    textFieldCurrentPayment.setText(text.substring(0, text.length() - 1));
                     calculate();
                 }
             }
@@ -211,7 +211,7 @@ public class CashDialog extends JDialog {
         double currentPayment = Double.parseDouble(textFieldCurrentPayment.getText());
 
         if(currentPayment > total){
-            textFieldChange.setText(Double.toString(currentPayment - total));
+            textFieldChange.setText(String.format("%.2f", currentPayment - total));
         }
         else{
             textFieldChange.setText("0.00");

@@ -8,6 +8,8 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
+import java.net.URL;
+import java.nio.file.Files;
 import java.text.DateFormat;
 import java.text.NumberFormat;
 import java.util.*;
@@ -333,7 +335,9 @@ public class PosGui extends JFrame{
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 try{
-                    Scanner scanner = new Scanner(new File("Resources/Data/Logins.txt"));
+                    File dir = new File("/tmp/test");
+                    File tmp = new File(dir, "Logins.txt");
+                    Scanner scanner = new Scanner(new InputStreamReader(new FileInputStream(tmp)));
                     String user;
                     int status;
                     ((DefaultTableCellRenderer)tableUsers.getDefaultRenderer(Object.class)).setOpaque(false);
@@ -411,7 +415,8 @@ public class PosGui extends JFrame{
                     DefaultListModel listModel = new DefaultListModel();
                     listTransactions.setModel(listModel);
 
-                    Scanner scanner = new Scanner(new File("Resources/Data/UserData.txt"));
+                    File tmp = new File("/tmp/test/UserData.txt");
+                    Scanner scanner = new Scanner(new InputStreamReader(new FileInputStream(tmp)));
                     while(scanner.hasNext()) {
                         listModel.addElement(scanner.nextLine());
                     }
@@ -547,9 +552,19 @@ public class PosGui extends JFrame{
         userGroup = new HashMap<String, String>();
         adminGroup = new HashMap<String, String>();
 
-        File i = new File("Resources/Data/Logins.txt");
         try {
-            Scanner myFile = new Scanner(i);
+            File dir = new File("/tmp/test");
+            File tmp = new File(dir, "Logins.txt");
+            dir.mkdirs();
+
+            if(!tmp.isFile())
+            {
+                Scanner myFile = new Scanner(new InputStreamReader(getClass().getResourceAsStream("/Data/Logins.txt")));
+
+                Files.copy(getClass().getResourceAsStream("/Data/Logins.txt"), tmp.toPath());
+            }
+
+            Scanner myFile = new Scanner(tmp);
 
             while(myFile.hasNext()) {
                 switch(myFile.nextInt()) {
@@ -565,7 +580,8 @@ public class PosGui extends JFrame{
         }
 
         catch(Exception e) {
-
+            e.printStackTrace();
+            System.out.println("Caught");
         }
     }
 
@@ -580,6 +596,22 @@ public class PosGui extends JFrame{
      * Attempt to login using the username textfield and the password textfield
      */
     private void tryLogin() {
+        File dir = new File("/tmp/test");
+        File tmp = new File(dir, "UserData.txt");
+        dir.mkdirs();
+
+        if(!tmp.isFile())
+        {
+            Scanner myFile = new Scanner(new InputStreamReader(getClass().getResourceAsStream("/Data/UserData.txt")));
+
+            try{
+                Files.copy(getClass().getResourceAsStream("/Data/UserData.txt"), tmp.toPath());
+            }
+            catch(Exception e){
+
+            }
+        }
+
         String username = textFieldUser.getText();
         String password = new String(passwordFieldUser.getPassword());
 
@@ -589,7 +621,7 @@ public class PosGui extends JFrame{
                 isAdmin = false;
 
                 try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
-                        new FileOutputStream("Resources/Data/UserData.txt", true), "utf-8"))) {
+                        new FileOutputStream(tmp, true), "utf-8"))) {
                     DateFormat df = DateFormat.getDateTimeInstance (DateFormat.MEDIUM, DateFormat.MEDIUM, new Locale ("en", "EN"));
                     String formattedDate = df.format (new Date ());
                     writer.write(username + " logged in - " + formattedDate);
@@ -598,7 +630,8 @@ public class PosGui extends JFrame{
                     myLayout.show(rootPanel, "CardTable");
                 }
                 catch(Exception e){
-
+                    CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+                    myLayout.show(rootPanel, "CardTable");
                 }
             }
         }
@@ -608,7 +641,7 @@ public class PosGui extends JFrame{
                 isAdmin = true;
 
                 try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
-                        new FileOutputStream("Resources/Data/UserData.txt", true), "utf-8"))) {
+                        new FileOutputStream(tmp, true), "utf-8"))) {
                     DateFormat df = DateFormat.getDateTimeInstance (DateFormat.MEDIUM, DateFormat.MEDIUM, new Locale ("en", "EN"));
                     String formattedDate = df.format (new Date ());
                     writer.write(username + " logged in - " + formattedDate);
@@ -618,7 +651,9 @@ public class PosGui extends JFrame{
                     myLayout.show(rootPanel, "CardTable");
                 }
                 catch(Exception e){
-
+                    showManagerFeatures();
+                    CardLayout myLayout = (CardLayout) rootPanel.getLayout();
+                    myLayout.show(rootPanel, "CardTable");
                 }
             }
         }
@@ -631,15 +666,29 @@ public class PosGui extends JFrame{
      *  Loads the tables from the textfile into the GUI
      */
     private void loadTables() {
-        try {
-            File j = new File("Resources/Data/Tables.txt");
-            Scanner in = new Scanner(j);
+        File dir = new File("/tmp/test");
+        File tmp = new File(dir, "Tables.txt");
+        dir.mkdirs();
 
-            int numTables = in.nextInt();
+        if(!tmp.isFile())
+        {
+            Scanner myFile = new Scanner(new InputStreamReader(getClass().getResourceAsStream("/Data/Tables.txt")));
+
+            try{
+                Files.copy(getClass().getResourceAsStream("/Data/Tables.txt"), tmp.toPath());
+            }
+            catch(Exception e){
+
+            }
+        }
+
+        try {
+            BufferedReader txtReader = new BufferedReader(new InputStreamReader(new FileInputStream(tmp)));
+            int numTables = Integer.parseInt(txtReader.readLine());
             for(int i = 0; i < numTables; ++i)
                 addTable();
 
-            in.close();
+            txtReader.close();
         }
         catch(Exception e) {
             JOptionPane.showMessageDialog(new Frame(), "Tables.txt could not be properly loaded.");
@@ -673,7 +722,7 @@ public class PosGui extends JFrame{
         }
 
         else if(choice == 1) {
-            CashDialog test = new CashDialog(currentOrder.getReceipt().getTotal());
+            CashDialog test = new CashDialog(currentOrder.getReceipt().getTotal() + currentOrder.getReceipt().getTotal()* 0.0875);
             test.pack();
             test.setLocationRelativeTo(rootPanel);
             test.setVisible(true);
@@ -745,7 +794,9 @@ public class PosGui extends JFrame{
      */
     private void incrementTables() {
         try {
-            File j = new File("Resources/Data/Tables.txt");
+            File dir = new File("/tmp/test");
+            File tmp = new File(dir, "Tables.txt");
+            File j = new File("/tmp/test/Tables.txt");
             Scanner in = new Scanner(j);
 
             int numTables = in.nextInt();
@@ -762,7 +813,8 @@ public class PosGui extends JFrame{
 
     private void decrementTables(){
         try{
-            File j = new File("Resources/Data/Tables.txt");
+            File dir = new File("/tmp/test");
+            File j = new File(dir, "Tables.txt");
             Scanner in = new Scanner(j);
 
             int numTables = in.nextInt();
@@ -817,6 +869,8 @@ public class PosGui extends JFrame{
                 currentOrder = multiTable;
                 merging = -1;
                 tablePanel.updateUI();
+                tableAdminSplit.setDividerLocation(1800);
+                split2.setDividerLocation(1650);
             }
         }
     }
@@ -842,8 +896,11 @@ public class PosGui extends JFrame{
      *  Currently switches to the login card
      */
     private void logOff() {
+        File dir = new File("/tmp/test");
+        File tmp = new File(dir, "UserData.txt");
+
         try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
-                new FileOutputStream("Resources/Data/UserData.txt", true), "utf-8"))) {
+                new FileOutputStream(tmp, true), "utf-8"))) {
             DateFormat df = DateFormat.getDateTimeInstance (DateFormat.MEDIUM, DateFormat.MEDIUM, new Locale ("en", "EN"));
             String formattedDate = df.format (new Date ());
             writer.write(textFieldUser.getText() + " logged off - " + formattedDate);

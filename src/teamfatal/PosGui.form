@@ -110,7 +110,7 @@
                         </constraints>
                         <properties>
                           <background color="-256"/>
-                          <font size="24"/>
+                          <font name="Comic Neue" size="24"/>
                           <foreground color="-16777216"/>
                           <text value="Add Order"/>
                           <visible value="false"/>
@@ -332,7 +332,9 @@
                       <foreground color="-16777216"/>
                       <horizontalAlignment value="2"/>
                       <iconTextGap value="4"/>
-                      <text value="Remove Table"/>
+                      <label value="&lt;html&gt;Remove&lt;br /&gt;Table&lt;/html&gt;"/>
+                      <opaque value="true"/>
+                      <text value="&lt;html&gt;Remove&lt;br /&gt;Table&lt;/html&gt;"/>
                       <visible value="false"/>
                     </properties>
                   </component>
@@ -1979,17 +1981,22 @@
               </component>
             </children>
           </grid>
-          <component id="2a8e0" class="javax.swing.JList" binding="listTransactions">
+          <scrollpane id="8f45d">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
-                <preferred-size width="150" height="50"/>
-              </grid>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
-            <properties>
-              <font name="Comic Neue" size="24"/>
-              <opaque value="false"/>
-            </properties>
-          </component>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="2a8e0" class="javax.swing.JList" binding="listTransactions">
+                <constraints/>
+                <properties>
+                  <font name="Comic Neue" size="24"/>
+                  <opaque value="false"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
         </children>
       </grid>
     </children>

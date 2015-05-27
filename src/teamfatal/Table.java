@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.net.URL;
 
 /**
  * Created by trenton on 4/2/15.
@@ -24,7 +25,7 @@ public class Table extends OrderObject
     public Table(int otherId)
     {
         super();
-        ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");
+        ImageIcon icon = createImageIcon("/Images/table-red.png", "");
         this.setIcon(icon);
         this.setVisible(true);
         occupied = false;
@@ -40,7 +41,7 @@ public class Table extends OrderObject
     public Table(Receipt receipt)
     {
         super(receipt);
-        ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");
+        ImageIcon icon = createImageIcon("/Images/table-red.png", "");
         this.setIcon(icon);
         this.setVisible(true);
         occupied = false;
@@ -51,13 +52,13 @@ public class Table extends OrderObject
         if(status)
         {
             occupied = true;
-            ImageIcon icon = createImageIcon("Resources/Images/table-green.png","");
+            ImageIcon icon = createImageIcon("/Images/table-green.png","");
             this.setIcon(icon);
         }
         else
         {
             occupied = false;
-            ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");
+            ImageIcon icon = createImageIcon("/Images/table-red.png", "");
             this.setIcon(icon);
         }
     }
@@ -65,7 +66,7 @@ public class Table extends OrderObject
     public void checkOut()
     {
         occupied = false;
-        ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");
+        ImageIcon icon = createImageIcon("/Images/table-red.png", "");
         this.setIcon(icon);
         receipt.clearReceipt();
     }

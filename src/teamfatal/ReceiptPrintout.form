@@ -253,7 +253,7 @@
                   <component id="c0355" class="javax.swing.JTable" binding="table1" default-binding="true">
                     <constraints/>
                     <properties>
-                      <font name="Comic Neue" size="24"/>
+                      <font name="Comic Neue" size="20"/>
                     </properties>
                   </component>
                 </children>

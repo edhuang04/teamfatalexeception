@@ -21,25 +21,25 @@ public class Booth extends OrderObject {
      */
     public Booth() {
         super();
-        this.setIcon(createImageIcon("Resources/Images/LeftBoothRed.jpg", "Booth"));
+        this.setIcon(createImageIcon("/Images/LeftBoothRed.jpg", "Booth"));
         occupied = false;
     }
 
     void setOccupied(boolean status) {
         if (status) {
             occupied = true;
-            ImageIcon icon = createImageIcon("Resources/Images/LeftBoothGreen.jpg", "");
+            ImageIcon icon = createImageIcon("/Images/LeftBoothGreen.jpg", "");
             this.setIcon(icon);
         } else {
             occupied = false;
-            ImageIcon icon = createImageIcon("Resources/Images/LeftBoothRed.jpg", "");
+            ImageIcon icon = createImageIcon("/Images/LeftBoothRed.jpg", "");
             this.setIcon(icon);
         }
     }
 
     public void checkOut() {
         occupied = false;
-        ImageIcon icon = createImageIcon("Resources/Images/LeftBoothRed.jpg", "");
+        ImageIcon icon = createImageIcon("/Images/LeftBoothRed.jpg", "");
         this.setIcon(icon);
         receipt.clearReceipt();
     }

@@ -2,6 +2,7 @@ package teamfatal;
 
 import javax.swing.*;
 import java.awt.*;
+import java.net.URL;
 
 /**
  * Created by trenton on 4/9/15.
@@ -11,7 +12,9 @@ public class ImagePanel extends JPanel {
 
     public ImagePanel()
     {
-        this.image = new ImageIcon("Resources/Images/login.png").getImage();
+        ClassLoader cldr = ImagePanel.class.getClassLoader();
+        URL url = ImagePanel.class.getResource("/Images/login.png");
+        this.image = new ImageIcon(url).getImage();
     }
 
     public ImagePanel(LayoutManager layout, boolean isDoubleBuffered) {
@@ -20,7 +23,8 @@ public class ImagePanel extends JPanel {
 
     public ImagePanel(LayoutManager layout) {
         super(layout);
-        image = new ImageIcon("Resources/Images/panelResized.png").getImage();
+        URL url = ImagePanel.class.getResource("/Images/panelResized.png");
+        image = new ImageIcon(url).getImage();
     }
 
     public ImagePanel(LayoutManager layout, Image image) {
@@ -33,11 +37,13 @@ public class ImagePanel extends JPanel {
 
         if(id == 1)
         {
-            this.image = new ImageIcon("Resources/Images/panelResized.png").getImage();
+            URL url = ImagePanel.class.getResource("/Images/panelResized.png");
+            this.image = new ImageIcon(url).getImage();
         }
         else
         {
-            this.image = new ImageIcon("Resources/Images/PanelResized2.jpg").getImage();
+            URL url = ImagePanel.class.getResource("/Images/PanelResized2.jpg");
+            this.image = new ImageIcon(url).getImage();
         }
     }
     @Override

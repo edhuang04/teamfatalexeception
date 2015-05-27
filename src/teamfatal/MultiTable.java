@@ -44,7 +44,7 @@ public class MultiTable extends OrderObject {
         if(status)
         {
             occupied = true;
-            ImageIcon icon = createImageIcon("Resources/Images/table-green.png","");
+            ImageIcon icon = createImageIcon("/Images/table-green.png","");
 
             for(Table table: tableList) {
                 table.setIcon(icon);
@@ -53,7 +53,7 @@ public class MultiTable extends OrderObject {
         else
         {
             occupied = false;
-            ImageIcon icon = createImageIcon("Resources/Images/table-red.png", "");
+            ImageIcon icon = createImageIcon("/Images/table-red.png", "");
             for(Table table: tableList) {
                 table.setIcon(icon);
             }

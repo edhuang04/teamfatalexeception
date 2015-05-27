@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="RestaurantPOS:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RestaurantPOS_jar</output-path>
+    <root id="archive" name="RestaurantPOS.jar">
+      <element id="module-output" name="RestaurantPOS" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Resources/javax.mail.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
